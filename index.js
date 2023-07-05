@@ -11,6 +11,7 @@ function makeHeaderSticky() {
     header.classList.add("sticky");
     sticky_header.classList.add("change_header_color");
     main__wrapper.classList.add("main__wrapper_padding");
+    
   } else {
     header.classList.remove("sticky");
     sticky_header.classList.remove("change_header_color");
