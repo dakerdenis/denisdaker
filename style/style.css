@@ -103,7 +103,7 @@
   body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-
+    background-color: #000;
   }
   /***********header container************/
 
@@ -112,11 +112,6 @@
 
     z-index: 10;
 }
-
-  .placeholder{
-    width: 100%;
-    height: 40px;
-  }
 .header__container__sticky {
     height: 90px;
 
@@ -150,7 +145,7 @@
     height: 1.64px;
     background-color: #1f9d96;
     position: absolute;
-    bottom: -2px;
+    bottom: -2.5px;
     right: 0;
 }
 
@@ -178,13 +173,13 @@
   /***********************/
 
 
-  /***********main wrapper***********/
+  /***********top wrapper for main block***********/
   .main__wrapper{
     height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
-
+    position: relative;
     background-image: url('./img/background_main.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -194,3 +189,9 @@
     z-index: 150;
     padding-top: 40px;
   }
+/*************right block with social networks***************/
+.right__block{
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
