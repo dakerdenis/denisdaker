@@ -1,2 +1,2 @@
 # denisdaker
-privat web site
+Own website
