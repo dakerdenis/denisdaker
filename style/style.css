@@ -259,6 +259,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
     color: var(--white);
     margin-top: 37px;
 }
+/******** bottom additional container*****************/
 .bottom__container{
   position: absolute;
   background-color: rgba(157, 157, 157, 0.5);
@@ -268,4 +269,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   width: 60%;
   z-index: 160;
   border-radius: 118px;
+}
+/******** daker & photo block*****************/
+.central__container__daker{
+
 }
