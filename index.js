@@ -17,3 +17,4 @@ function makeHeaderSticky() {
     main__wrapper.classList.remove("main__wrapper_padding");
   }
 }
+//************************************************
