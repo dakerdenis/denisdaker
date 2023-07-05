@@ -184,7 +184,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: relative;
     top: 0px;
     z-index: 150;
     padding-top: 40px;
@@ -194,4 +194,24 @@
     position: absolute;
     left: 0;
     height: 100%;
+    background-image: url('./img/right_background.svg');
+    z-index: 160;
+    width: 250px;
+    top: -2px;
+}
+/**********name & position block ********/
+.name__position__block{
+    position: absolute;
+    z-index: 160;
+    top: 236px;
+    left: 320px;
+}
+.name__position__block p {
+    font-size: 40px;
+    color: rgba(225, 225, 225, 0.7);
+}
+.name__position__block h1 {
+    font-size: 64px;
+    color: #fff;
+    margin-top: 37px;
 }
