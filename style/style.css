@@ -117,7 +117,7 @@
   .header {
     width: 100%;
 
-    z-index: 200;
+    z-index: 500;
 }
 .header__container__sticky {
     height: 90px;
@@ -271,6 +271,34 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   border-radius: 118px;
 }
 /******** daker & photo block*****************/
-.central__container__daker{
+.central__container{
+  position: absolute;
+  right: 10%;
 
+  z-index: 180;
+
+  bottom: 90px;
+  width: 490px;
+  height: 650px;
+}
+.central__container__photo{
+  height: 70%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.central__container__photo img {
+  height: 100%;
+}
+.central__container__daker{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.central__container__daker{
+  position: absolute;
+  left: -118px;
+  bottom: -130px;
 }
