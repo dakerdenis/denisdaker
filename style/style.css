@@ -309,20 +309,49 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   min-height: 100vh;
   width: 100%;
   background-color: red;
+  min-height: 450px;
 }
 .about__me__name {
   font-size: var(--header);
   color: var(--white);
+  width: 100%;
+  text-align: center;
 }
+
 .about__me__block {
     width: 88.4%;
+    height: 450px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.about__me__image__container{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about__me__image {
+  width: 450px;
+  height: 450px;
+  background-image: url('./img/Ellipse.png');
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .about__me__desc {
+  background-color: blue;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+
+}
+.about__me__desc p {
+
 }
 .about__me__contact {
   display: flex;
