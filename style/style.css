@@ -308,8 +308,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
 .about__me__container {
   min-height: 100vh;
   width: 100%;
-  background-color: red;
+
   min-height: 450px;
+
+  padding-top: 80px;
 }
 .about__me__name {
   font-size: var(--header);
@@ -319,11 +321,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
 }
 
 .about__me__block {
+
     width: 88.4%;
     height: 450px;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
+    margin-top: 80px;
 }
 .about__me__image__container{
   width: 50%;
@@ -331,6 +335,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.about__me__image__container img{
+  position: absolute;
+  z-index: 140px;
+  bottom: -20% ;
+  left: 10px;
 }
 .about__me__image {
   width: 450px;
@@ -340,18 +351,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 150;
+  box-shadow: 35px 22px 68px -9px rgba(188,37,37,0.28) , -57px 43px 68px -9px rgba(31, 157, 150,0.3);
 }
 .about__me__desc {
-  background-color: blue;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+
+  width: 40%;
+
   height: 100%;
 
 }
 .about__me__desc p {
-
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 30px;
+  color: var(--white);
 }
 .about__me__contact {
   display: flex;
@@ -363,9 +377,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   border: 1px solid var(--white);
   background-color: var(--main_color1);
   padding: 0px 30px;
+  margin: 0 auto;
 }
 .about__me__contact  p {
   color: var(--white);
-
+  margin-bottom: 0;
   font-size: 13px;
 }
