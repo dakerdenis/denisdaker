@@ -109,6 +109,7 @@
   :root {
     --main_color1: #1f9d96;
     --white: #ffffff;
+    --header: 45px;
   }
 
 
@@ -301,4 +302,41 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   position: absolute;
   left: -118px;
   bottom: -130px;
+}
+/*********about me section***********/
+
+.about__me__container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+.about__me__name {
+  font-size: var(--header);
+  color: var(--white);
+}
+.about__me__block {
+    width: 88.4%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.about__me__image {
+}
+.about__me__desc {
+}
+.about__me__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 172px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid var(--white);
+  background-color: var(--main_color1);
+  padding: 0px 30px;
+}
+.about__me__contact  p {
+  color: var(--white);
+
+  font-size: 13px;
 }
