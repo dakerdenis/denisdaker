@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denis Akershteyn</title>
 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -155,12 +158,50 @@
 
   <!----services---->
   <section class="services">
+    <div class="services__name">
+      <h3>Services</h3>
+    </div>
+    <div class="services__container">
+      <div class="services__swiper__container">
+        <!-- Swiper -->
+        <div class="swiper1 mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide1">Slide 1</div>
+            <div class="swiper-slide1">Slide 2</div>
+            <div class="swiper-slide1">Slide 3</div>
+            <div class="swiper-slide1">Slide 4</div>
+            <div class="swiper-slide1">Slide 5</div>
+            <div class="swiper-slide1">Slide 6</div>
+            <div class="swiper-slide1">Slide 7</div>
+            <div class="swiper-slide1">Slide 8</div>
+            <div class="swiper-slide1">Slide 9</div>
+          </div>
+          <div class="swiper-pagination1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!------services additional--->
+  <section class="services__additional">
+    <div class="services__additional__container">
+      <div class="services__additional__swiper">
+
+      </div>
+    </div>
   </section>
 
   <!-----portfolio------>
   <section class="portfolio">
+    <div class="portfolio__container">
+      <div class="portfolio__main__image">
 
+      </div>
+      <!-----portfolio element----->
+      <div class="portfolio__block">
+
+      </div>
+    </div>
   </section>
 
   <!----contact container----->
@@ -170,7 +211,22 @@
 
   </section>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper1 = new Swiper(".mySwiper1", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination1",
+        clickable: true,
+      },
+    });
+  </script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="./index.js"></script>
 </body>
