@@ -414,6 +414,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: 10em;
 }
 .services__name {
 }
@@ -426,4 +427,27 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
 .services__additional__container {
 }
 .services__additional__swiper {
+}
+
+
+
+.portfolio {
+  min-height: 100vh;
+  width: 100%;
+}
+.portfolio__container {
+  margin-top: 300px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: red;
+  position: relative;
+}
+.portfolio__main__image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+.portfolio__block {
+}
+.portfolio__element {
 }
