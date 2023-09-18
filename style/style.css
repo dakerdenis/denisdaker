@@ -117,8 +117,8 @@
 
   .header {
     width: 100%;
-
-    z-index: 500;
+    position: fixed;
+    z-index: 999;
 }
 .header__container__sticky {
     height: 90px;
@@ -209,7 +209,6 @@
     position: relative;
     top: 0px;
     z-index: 150;
-    padding-top: 40px;
   }
 /*************right block with social networks***************/
 .right__block{
@@ -351,7 +350,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 150;
+  z-index: 50;
   box-shadow: 35px 22px 68px -9px rgba(188,37,37,0.28) , -57px 43px 68px -9px rgba(31, 157, 150,0.3);
 }
 .about__me__desc {

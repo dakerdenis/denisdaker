@@ -1,21 +1,19 @@
-//change header to fixed & change it's color
-window.onscroll = ()=> {makeHeaderSticky()};
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.getElementById("myHeader");
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-var sticky_header = document.getElementById("sticky_header");
-var main__wrapper = document.getElementById("main__wrapper");
-
-function makeHeaderSticky() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    sticky_header.classList.add("change_header_color");
-    main__wrapper.classList.add("main__wrapper_padding");
-    
-  } else {
-    header.classList.remove("sticky");
-    sticky_header.classList.remove("change_header_color");
-    main__wrapper.classList.remove("main__wrapper_padding");
+  // Function to handle scroll events
+  function handleScroll() {
+      if (window.scrollY > 0) {
+          // User has scrolled down, change background color
+          header.style.backgroundColor = "#000"; // Change to your desired background color
+      } else {
+          // User is at the top of the page, remove background color
+          header.style.backgroundColor = "transparent";
+      }
   }
-}
+
+  // Add a scroll event listener to the window
+  window.addEventListener("scroll", handleScroll);
+});
 //************************************************
