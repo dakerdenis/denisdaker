@@ -119,6 +119,8 @@
     width: 100%;
     position: fixed;
     z-index: 999;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.2s ease; 
 }
 .header__container__sticky {
     height: 90px;
