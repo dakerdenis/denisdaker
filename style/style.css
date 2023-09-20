@@ -452,7 +452,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d",endCo
 
 }
 .portfolio__block {
-  background-color: #030f0e7e;
+  background-color: rgba(0, 2, 2, 0.842);
   height: 100%;
   width: 100%;
   z-index: 10;
@@ -472,6 +472,7 @@ backdrop-filter: blur(15px);
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 290px;
 }
 .portfolio__element {
   margin-top: 290px;
