@@ -109,11 +109,10 @@ contact__form.addEventListener("submit",(e)=>{
                 // Hide the error message div after 2 seconds
                 setTimeout(function () {
                     load__spinner.style.display="none";// Hide the close button
+                    var success__block = document.getElementById("success__block");
+                    success__block.style.display="flex";
                 }, 1500);
-
     }
-
-
 });
 
 function closeErrorMessages() {
