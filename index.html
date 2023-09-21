@@ -514,7 +514,7 @@
           </div>
         </div>
 
-        <div class="contact__form">
+        <form class="contact__form" onsubmit="return validateForm()">
           <div class="contact__form__container">
             <div class="contact__form__wrapper">
               <!--!-------->
@@ -554,7 +554,23 @@
                 <div class="contact__form__input">
                   <div class="contact__form__input__name">How can I contact you ?</div>
                   <div class="contact__form__input__radio">
+                    <div class="radio-container">
+                      <div class="radio__block">
+                        <input type="radio" id="radio1" name="radio-group">
+                        <label for="radio1">E-Mail</label>
+                      </div>
+                      
+                      <div class="radio__block">
+                        <input type="radio" id="radio2" name="radio-group">
+                        <label for="radio2">Phone</label>
+                      </div>
 
+                      <div class="radio__block">
+                        <input type="radio" id="radio3" name="radio-group">
+                        <label for="radio3">Both</label>
+                      </div>
+
+                  </div>
                   </div>
                 </div>
 
@@ -563,17 +579,20 @@
 
             <div class="contact__form_terms">
               <div class="contact__form__checkbox">
-
+                <label class="custom-checkbox" for="consentCheckbox">
+                  <input type="checkbox" id="consentCheckbox">
+                 <p> I give my consent to the processing of personal data in accordance with the <a href="#">Terms</a></p>
+              </label>
               </div>
             </div>
             <div class="contact__form__submit">
-              <button type="submit">
+              <button type="submit" name="submit" id="submit">
                 <p>Send request</p>
                 <img src="./style/img/contact_arrow.svg" alt="">
               </button>
             </div>
           </div>
-        </div>
+        </form>
 
       </div>
     </div>
@@ -598,6 +617,50 @@
         clickable: true,
       },
     });
+
+
+
+    function validateForm() {
+            // Check if the name field is filled
+            var nameInput = document.querySelector(".contact__form__input__input input[placeholder='Your name']");
+            var name = nameInput.value.trim();
+            
+            // Check if the number field is filled
+            var numberInput = document.querySelector(".contact__form__input__input input[placeholder='Your mobile number']");
+            var number = numberInput.value.trim();
+
+            // Check if the email field is filled
+            var emailInput = document.querySelector(".contact__form__input__input input[placeholder='Your e-mail address']");
+            var email = emailInput.value.trim();
+
+            // Check if the message textarea is filled
+            var messageTextarea = document.querySelector(".contact__form__input__textarea textarea");
+            var message = messageTextarea.value.trim();
+
+            // Check if at least one radio button is checked
+            var radioButtons = document.querySelectorAll(".contact__form__input__radio input[name='radio-group']");
+            var isRadioChecked = false;
+
+            for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    isRadioChecked = true;
+                    break;
+                }
+            }
+
+            // Check if the consent checkbox is checked
+            var consentCheckbox = document.getElementById("consentCheckbox");
+            var isConsentChecked = consentCheckbox.checked;
+
+            // Validate all fields
+            if (name === "" || number === "" || email === "" || message === "" || !isRadioChecked || !isConsentChecked) {
+                alert("Please fill in all fields and agree to the terms.");
+                return false;
+            }
+
+            // If all fields are filled and checkbox is checked, allow form submission
+            return true;
+        }
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

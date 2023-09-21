@@ -671,21 +671,21 @@ body {
 }
 
 .contact__form {
+  display: block;
   width: 752px;
   height: 527px;
-  flex-shrink: 0;
+
 
   border-radius: 16px;
   border: 1px solid #64646494;
   background: url('./img/daker_contact.png'), lightgray 10% / cover no-repeat;
   backdrop-filter: blur(5px);
-  padding: 32px 41px 41px 41px;
 }
 
 .contact__form__container {
   width: 100%;
   height: 100%;
-
+  padding: 32px 41px 41px 41px;
 }
 
 .contact__form__wrapper {
@@ -723,6 +723,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .contact__form__input__input input {
   border-radius: 8px;
   width: 100%;
@@ -730,23 +731,41 @@ body {
   padding: 10px 21px;
 
 }
+
 .contact__form__input__textarea {
+  margin-top: 16px;
   border-radius: 8px;
   border: 1px solid #FFF;
   background: #FBFBFB;
 }
-.contact__form__input__textarea textarea{
+
+.contact__form__input__textarea textarea {
   border-radius: 8px;
-  resize: none; /* Disable textarea resizing */
+  resize: none;
+  /* Disable textarea resizing */
   padding: 10px;
 }
 
 .contact__form__input__radio {}
 
-.contact__form_terms {}
+.contact__form_terms {
+  margin-top: 20px;
+  margin-bottom: 46px;
+}
 
-.contact__form__checkbox {
+.contact__form__checkbox a {
+  color: #fff;
+  text-decoration: underline;
+}
 
+.contact__form__checkbox label {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.contact__form__checkbox p {
+  margin-left: 10px;
 }
 
 .contact__form__submit {
@@ -757,15 +776,85 @@ body {
   justify-content: center;
 
 }
-.contact__form__submit button{
+
+.contact__form__submit button {
   display: flex;
-width: 252px;
-padding: 12px 30px 12px 32px;
-justify-content: center;
-align-items: center;
-gap: 14px;
-border-radius: 40px;
-border: 1px solid #FFF;
-background: #1F9D96;
-color: #FFF;
+  width: 252px;
+  padding: 12px 30px 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  background: #1F9D96;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+
+/* Style the radio button container */
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio__block {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  width: 33%;
+
+  height: 25px;
+  font-size: 16px;
+}
+
+/* Style individual radio buttons */
+.radio-container input[type="radio"] {
+  display: none;
+  /* Hide the default radio button */
+}
+
+/* Style radio button labels */
+.radio-container label {
+  margin-left: 23px;
+  /* Adjust spacing between radio button and label */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style the radio button indicator (circle) */
+.radio-container label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  /* Adjust the size of the radio button */
+  height: 20px;
+  /* Adjust the size of the radio button */
+  border-radius: 50%;
+  border: 1px solid #1F9D96;
+  /* Border color of the radio button */
+  background-color: #fff;
+
+
+  /* Background color when unchecked */
+  position: absolute;
+  left: -26px;
+  top: -2.5px;
+}
+
+/* Change the indicator color when the radio button is checked */
+.radio-container input[type="radio"]:checked+label::before {
+  background-color: #1F9D96;
+  /* Color when checked */
+  border-color: #fff;
+  /* Border color when checked */
 }
