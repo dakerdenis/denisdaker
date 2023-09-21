@@ -87,7 +87,7 @@ contact__form.addEventListener("submit",(e)=>{
         closeButton.style.display = 'block'; // Show the close button
         errorMessages.innerHTML+='<span class="close-button" onclick="closeErrorMessages()">X</span>';
 
-        var contact__form__container = document.getElementById("contact__form__container");
+
         // Hide the error message div after 2 seconds
         setTimeout(function () {
             errorMessages.style.display = 'none';
@@ -97,6 +97,20 @@ contact__form.addEventListener("submit",(e)=>{
         formContent =  false;
     } else {
         formContent = true;
+        
+        var contact__form__container = document.getElementById("contact__form__container");
+        contact__form__container.style.display="none";
+        contact__form.style.backgroundImage = "url('./style/img/daker_contact_black.png')";
+
+
+        var load__spinner = document.getElementById("load__spinner");
+        load__spinner.style.display="block";
+        load__spinner.style.zIndex="200";
+                // Hide the error message div after 2 seconds
+                setTimeout(function () {
+                    load__spinner.style.display="none";// Hide the close button
+                }, 1500);
+
     }
 
 
