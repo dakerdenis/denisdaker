@@ -514,13 +514,13 @@
           </div>
         </div>
 
-        <form class="contact__form" onsubmit="return validateForm()">
+        <form class="contact__form" id="contact__form" onsubmit="return validateForm()">
           <!-- Error message div -->
           <div id="errorMessages" class="error-messages">
-            <span class="close-button" onclick="closeErrorMessages()">X</span>
-            <div class="close">X</div>
+            <span class="close-button" onclick="closeErrorMessages()">&#215;</span>
+
           </div>
-          <div class="contact__form__container">
+          <div class="contact__form__container" id="contact__form__container">
             <div class="contact__form__wrapper">
               <!--!-------->
               <div class="contact__form__block">
@@ -528,21 +528,21 @@
                 <div class="contact__form__input">
                   <div class="contact__form__input__name">Name</div>
                   <div class="contact__form__input__input">
-                    <input type="text" placeholder="Your name">
+                    <input id="name" name="name" type="text" placeholder="Your name">
                   </div>
                 </div>
                 <!---------->
                 <div class="contact__form__input">
                   <div class="contact__form__input__name">Number</div>
                   <div class="contact__form__input__input">
-                    <input type="text" placeholder="Your mobile number">
+                    <input id="number" name="number" type="number" placeholder="Your mobile number">
                   </div>
                 </div>
 
                 <div class="contact__form__input">
                   <div class="contact__form__input__name">E-mail</div>
                   <div class="contact__form__input__input">
-                    <input type="text" placeholder="Your e-mail address">
+                    <input type="email" placeholder="Your e-mail address">
                   </div>
                 </div>
               </div>
@@ -561,17 +561,17 @@
                   <div class="contact__form__input__radio">
                     <div class="radio-container">
                       <div class="radio__block">
-                        <input type="radio" id="radio1" name="radio-group">
+                        <input type="radio" id="email" name="radio-group">
                         <label for="radio1">E-Mail</label>
                       </div>
 
                       <div class="radio__block">
-                        <input type="radio" id="radio2" name="radio-group">
+                        <input type="radio" id="Phone" name="radio-group">
                         <label for="radio2">Phone</label>
                       </div>
 
                       <div class="radio__block">
-                        <input type="radio" id="radio3" name="radio-group">
+                        <input type="radio" id="Both" name="radio-group">
                         <label for="radio3">Both</label>
                       </div>
 

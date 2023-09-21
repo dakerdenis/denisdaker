@@ -766,6 +766,7 @@ body {
 
 .contact__form__checkbox p {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .contact__form__submit {
@@ -865,23 +866,28 @@ body {
 /* Style for the error message box */
 .error-messages {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ff3333;
+  background-color: #1F9D96;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   text-align: center;
+  width: 300px;
   display: none;
-}
 
+}
+.error-messages p{
+  margin-bottom: 7px;
+}
 /* Style for the close button */
 .close-button {
   z-index: 200;
-  color: #000;
+  color: #fff;
   position: absolute;
   top: 5px;
   right: 10px;
   cursor: pointer;
+  font-weight: 600;
 }
