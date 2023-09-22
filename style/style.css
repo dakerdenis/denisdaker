@@ -454,11 +454,34 @@ body {
   margin-top: 10em;
 }
 
-.services__name {}
 
-.services__container {}
 
-.services__swiper__container {}
+.services__container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #00000091;
+  backdrop-filter: blur(15px);
+
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0.76234243697479) 25%, rgba(0,0,0,0.4822303921568627) 100%);
+background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0.76234243697479) 25%, rgba(0,0,0,0.4822303921568627) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0.76234243697479) 25%, rgba(0,0,0,0.4822303921568627) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.services__name {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  text-align: center;
+}
+.services__swiper__container {
+  width: 100%;
+  height: calc(100vh - 78px);
+}
 
 .services__additional {}
 
