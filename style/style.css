@@ -551,18 +551,94 @@ body {
 .services__additional {
   width: 100%;
   min-height: 80vh;
-}
+  position: relative;
 
+
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4822303921568627) 10%, rgba(0,0,0,0) 15%);
+background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4822303921568627) 10%, rgba(0,0,0,0) 15%);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4822303921568627) 10%, rgba(0,0,0,0) 15%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.services__additional__image1{
+  position: absolute;
+  top: -350px;
+  right: -150px;
+}
+.services__additional__image2{
+  position: absolute;
+  top: -180px;
+
+  left: -290px;
+  transform: rotate(45deg);
+}
 .services__additional__swiper {
   width: 100%;
   min-height: 80vh;
-  background-color: #1f9d9728;
+
 }
 .mySwiper1{
   min-height: 80vh;
 }
 
+.swiper-slide_additional{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 100%;
+height: 100%;
+min-height: 80vh;
+}
+.additional__swiper__container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.additional__slide__name_img {
+  display: flex;
 
+}
+.additional__slide__img {
+  
+}
+.additional__slide__name {
+  height: 90px;
+margin-top: 5px;
+  color: #FFF;
+font-family: Montserrat;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+margin-left: 40px;
+}
+.additional__slide__name span{
+  display: block;
+  width: 135px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.additional__slide__text {
+  margin-top: 50px;
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 149.4%; /* 23.904px */
+text-align: left;
+}
+.additional__slide__text p {
+  margin-bottom: 17px;
+}
+
+
+
+/************************************************************/
+/************************************************************/
 .portfolio {
   min-height: 100vh;
   width: 100%;
