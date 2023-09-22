@@ -17,6 +17,35 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScroll);
 });
 //************************************************
+// Get the height of the fixed header
+const headerHeight = document.querySelector('header').offsetHeight;
+
+// Get all the anchor links in the header
+const headerLinks = document.querySelectorAll('header a');
+
+// Add a click event listener to each link
+headerLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default behavior of the anchor link
+
+        // Get the target section's ID from the link's href attribute
+        const targetId = link.getAttribute('href').substring(1);
+
+        // Find the corresponding section element by ID
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            // Calculate the scroll position, accounting for the header height
+            const scrollPosition = targetSection.offsetTop - headerHeight;
+
+            // Scroll to the target section with the adjusted position
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        }
+    });
+});
+
+
+//****************************************************** */
 
 var contact__form = document.getElementById("contact__form");
 
@@ -119,3 +148,5 @@ function closeErrorMessages() {
     var errorMessages = document.getElementById("errorMessages");
     errorMessages.style.display = 'none'; // Hide the error message box
 };
+
+/**************************************** */
