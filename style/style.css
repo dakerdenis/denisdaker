@@ -443,11 +443,13 @@ body {
   background-color: #00000091;
   backdrop-filter: blur(15px);
 
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 0.76234243697479) 25%, rgba(0, 0, 0, 0.4822303921568627) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 0.76234243697479) 25%, rgba(0, 0, 0, 0.4822303921568627) 100%);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 0.76234243697479) 25%, rgba(0, 0, 0, 0.4822303921568627) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0) 83%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0) 83%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0) 83%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+
+
 }
 
 .services__name {
@@ -486,6 +488,9 @@ body {
 
 .first-slide {
   margin-left: 90px;
+}
+.last-slide{
+  margin-right: 90px;
 }
 
 .services__swiper__element {
@@ -527,6 +532,8 @@ body {
   font-style: normal;
   font-weight: 600;
   margin-top: 53px;
+  width: 100%;
+  text-align: left;
 }
 
 .swiper__element__desc {
@@ -537,10 +544,14 @@ body {
   font-weight: 400;
   line-height: 149.4%;
   margin-top: 44px;
+  text-align: left;
   /* 20.916px */
 }
 
-.services__additional {}
+.services__additional {
+  width: 100%;
+  min-height: 90vh;
+}
 
 .services__additional__container {}
 
