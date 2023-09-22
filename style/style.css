@@ -550,13 +550,17 @@ body {
 
 .services__additional {
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
-.services__additional__container {}
-
-.services__additional__swiper {}
-
+.services__additional__swiper {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #1f9d9728;
+}
+.mySwiper1{
+  min-height: 80vh;
+}
 
 
 .portfolio {
