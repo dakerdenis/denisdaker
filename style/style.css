@@ -422,26 +422,7 @@ body {
 
 /***********SERVICES************/
 /*******SWIPER 1 - services small desc*************/
-.swiper1 {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide1 {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide1 img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /*****************************************/
 .services {
@@ -481,7 +462,41 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 .services__swiper__container {
   width: 100%;
   height: calc(100vh - 78px);
+  display: flex;
+  align-items: center;
+
+  overflow-y: auto;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.first-slide{
+  margin-left: 90px;
+}
+
+.services__swiper__element{
+  width: 466px;
+  height: 510px;
+  background-image: url('./img/services_small.svg');
+
+}
+
 
 .services__additional {}
 

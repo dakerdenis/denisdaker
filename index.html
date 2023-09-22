@@ -30,7 +30,7 @@
         <!---- header navigation --->
         <div class="header__navigation">
           <div class="header__navigation__element">
-            <a  href="#section1">About</a>
+            <a href="#section1">About</a>
           </div>
           <div class="header__navigation__element">
             <a href="#section2">Services</a>
@@ -168,7 +168,57 @@
         <h3>Services</h3>
       </div>
       <div class="services__swiper__container">
-        <!-- Swiper -->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide first-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="services__swiper__element">
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
       </div>
     </div>
@@ -519,7 +569,7 @@
           <div class="success__block" id="success__block">
             <div class="success__block__name">
               <p>Your request has been successfully accepted!</p>
-              <p>I will contact you as soon as possible.</p> 
+              <p>I will contact you as soon as possible.</p>
               <p>Thank you!</p>
             </div>
             <div class="success__block__image">
@@ -645,15 +695,15 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    var swiper1 = new Swiper(".mySwiper", {
+      slidesPerView: 2.8,
+      spaceBetween: 10,
       freeMode: true,
       pagination: {
         el: ".swiper-pagination1",
@@ -661,9 +711,18 @@
       },
     });
 
+
+    swiper1.on('init', function () {
+      var firstSlide = document.querySelector('.first-slide');
+      if (firstSlide) {
+        var spaceBeforeFirstSlide = 60; // Adjust this value as needed
+        firstSlide.style.marginLeft = spaceBeforeFirstSlide + 'px';
+      }
+    });
+
   </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
   <script src="./index.js"></script>
 </body>
 
