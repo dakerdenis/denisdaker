@@ -207,7 +207,10 @@ body {
 }
 
 /***********************/
-
+.content__container{
+  width: 100%;
+  overflow: hidden;
+}
 
 /***********top wrapper for main block***********/
 .main__wrapper {
@@ -555,6 +558,8 @@ body {
   width: 100%;
   min-height: 80vh;
   position: relative;
+overflow-y: visible;
+
 
 
   background: rgb(0,0,0);
@@ -584,7 +589,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
   margin: 0 auto;
   min-height: 80vh;
 
-  z-index: 200;
+  z-index: 100;
 
 }
 .services__additional__swiper .swiper{
@@ -649,9 +654,33 @@ text-align: left;
 .additional__slide__text p {
   margin-bottom: 17px;
 }
+.swiper-button-next{
+  color: rgba(0, 0, 0, 0);
+  width: 56px;
+  height: 56px;
+  background-image: url('./img/arrow_back.png');
+  background-position: center;
+  background-size: contain;
 
+}
+.swiper-button-next:hover{
+  background-image: url('./img/arrow_forward.png');
+  transform: rotate(180deg);
+}
 
-
+.swiper-button-prev{
+  color: rgba(0, 0, 0, 0);
+  width: 56px;
+  height: 56px;
+  background-image: url('./img/arrow_back.png');
+  background-position: center;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+.swiper-button-prev:hover{
+  background-image: url('./img/arrow_forward.png');
+  transform: rotate(0deg);
+}
 /************************************************************/
 /************************************************************/
 .portfolio {
@@ -825,6 +854,18 @@ text-align: left;
   display: flex;
   justify-content: space-evenly;
 
+}
+/* For Webkit-based browsers (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .contact__image_wrapper {

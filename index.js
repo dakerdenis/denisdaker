@@ -1,44 +1,25 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function () {
-  const header = document.getElementById("myHeader");
+    const header = document.getElementById("myHeader");
 
-  // Function to handle scroll events
-  function handleScroll() {
-      if (window.scrollY > 0) {
-          // User has scrolled down, change background color
-          header.style.backgroundColor = "#000"; // Change to your desired background color
-      } else {
-          // User is at the top of the page, remove background color
-          header.style.backgroundColor = "transparent";
-      }
-  }
-
-  // Add a scroll event listener to the window
-  window.addEventListener("scroll", handleScroll);
+    function handleScroll() {
+        if (window.scrollY > 0) {
+            header.style.backgroundColor = "#000";
+        } else {
+            header.style.backgroundColor = "transparent";
+        }
+    }
+    window.addEventListener("scroll", handleScroll);
 });
 //************************************************
-// Get the height of the fixed header
 const headerHeight = document.querySelector('header').offsetHeight;
-
-// Get all the anchor links in the header
 const headerLinks = document.querySelectorAll('header a');
-
-// Add a click event listener to each link
 headerLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent the default behavior of the anchor link
-
-        // Get the target section's ID from the link's href attribute
+        e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
-
-        // Find the corresponding section element by ID
         const targetSection = document.getElementById(targetId);
-
         if (targetSection) {
-            // Calculate the scroll position, accounting for the header height
             const scrollPosition = targetSection.offsetTop - headerHeight;
-
-            // Scroll to the target section with the adjusted position
             window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
         }
     });
@@ -48,34 +29,26 @@ headerLinks.forEach(link => {
 //****************************************************** */
 
 var contact__form = document.getElementById("contact__form");
-
-contact__form.addEventListener("submit",(e)=>{
+contact__form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     var errorMessages = document.getElementById("errorMessages");
     var closeButton = document.querySelector(".close-button");
-    errorMessages.innerHTML = ''; // Clear previous error messages
-
-
-    // Check if the name field is filled
+    errorMessages.innerHTML = '';
     var nameInput = document.querySelector(".contact__form__input__input input[placeholder='Your name']");
     var name = nameInput.value.trim();
-    
-    // Check if the number field is filled
+
     var numberInput = document.querySelector(".contact__form__input__input input[placeholder='Your mobile number']");
     var number = numberInput.value.trim();
 
-    // Check if the email field is filled
     var emailInput = document.querySelector(".contact__form__input__input input[placeholder='Your e-mail address']");
     var email = emailInput.value.trim();
 
-    // Check if the message textarea is filled
     var messageTextarea = document.querySelector(".contact__form__input__textarea textarea");
     var message = messageTextarea.value.trim();
 
-    // Check if at least one radio button is checked
     var radioButtons = document.querySelectorAll(".contact__form__input__radio input[name='radio-group']");
-    
+
     var isRadioChecked = false;
 
     for (var i = 0; i < radioButtons.length; i++) {
@@ -84,15 +57,11 @@ contact__form.addEventListener("submit",(e)=>{
             break;
         }
     }
-
-    // Check if the consent checkbox is checked
     var consentCheckbox = document.getElementById("consentCheckbox");
     var isConsentChecked = consentCheckbox.checked;
 
     var formContent = false;
-     // Validate all fields
-     if (name === "" || number === "" || email === "" || message === "" || !isRadioChecked || !isConsentChecked) {
-        // Display error messages in the errorMessages div
+    if (name === "" || number === "" || email === "" || message === "" || !isRadioChecked || !isConsentChecked) {
         if (name === "") {
             errorMessages.innerHTML += "<p>Name is required.</p>";
         }
@@ -112,41 +81,57 @@ contact__form.addEventListener("submit",(e)=>{
             errorMessages.innerHTML += "<p>Please agree to the terms.</p>";
         }
 
-        errorMessages.style.display = 'block'; // Show the error message box
-        closeButton.style.display = 'block'; // Show the close button
-        errorMessages.innerHTML+='<span class="close-button" onclick="closeErrorMessages()">X</span>';
+        errorMessages.style.display = 'block';
+        closeButton.style.display = 'block';
+        errorMessages.innerHTML += '<span class="close-button" onclick="closeErrorMessages()">X</span>';
 
-
-        // Hide the error message div after 2 seconds
         setTimeout(function () {
             errorMessages.style.display = 'none';
-            closeButton.style.display = 'none'; // Hide the close button
+            closeButton.style.display = 'none';
         }, 3000);
 
-        formContent =  false;
+        formContent = false;
     } else {
         formContent = true;
-        
+
         var contact__form__container = document.getElementById("contact__form__container");
-        contact__form__container.style.display="none";
+        contact__form__container.style.display = "none";
         contact__form.style.backgroundImage = "url('./style/img/daker_contact_black.png')";
 
 
         var load__spinner = document.getElementById("load__spinner");
-        load__spinner.style.display="block";
-        load__spinner.style.zIndex="200";
-                // Hide the error message div after 2 seconds
-                setTimeout(function () {
-                    load__spinner.style.display="none";// Hide the close button
-                    var success__block = document.getElementById("success__block");
-                    success__block.style.display="flex";
-                }, 1500);
+        load__spinner.style.display = "block";
+        load__spinner.style.zIndex = "200";
+        setTimeout(function () {
+            load__spinner.style.display = "none";
+            var success__block = document.getElementById("success__block");
+            success__block.style.display = "flex";
+        }, 1500);
     }
 });
 
 function closeErrorMessages() {
     var errorMessages = document.getElementById("errorMessages");
-    errorMessages.style.display = 'none'; // Hide the error message box
+    errorMessages.style.display = 'none';
 };
 
 /**************************************** */
+
+
+const numericInput = document.getElementById('numericInput');
+const maxLength = 30;
+numericInput.addEventListener('input', function () {
+    const inputValue = numericInput.value;
+    if (inputValue.length > maxLength) {
+        numericInput.value = inputValue.slice(0, maxLength);
+    }
+});
+
+const textArea = document.getElementById('textArea');
+const textAreamaxLength = 150;
+textArea.addEventListener('input', function () {
+    const inputValue = textArea.value;
+    if (inputValue.length > textAreamaxLength) {
+      textArea.value = inputValue.slice(0, textAreamaxLength);
+    }
+  });
