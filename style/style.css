@@ -294,6 +294,36 @@ body {
   width: 60%;
   z-index: 160;
   border-radius: 118px;
+  display: flex;
+  align-items: center;
+}
+.bottom__container__wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 50px;
+}
+.bottom__container__element__image{}
+.bottom__container__element{
+  width: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+.bottom__container__element__desc{
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+
+  color: #FFF;
+text-align: center;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 149.4%; /* 20.916px */
 }
 
 /******** daker & photo block*****************/
@@ -1217,8 +1247,32 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
-
+.footer__absolute__text1{
+  position: absolute;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: rotate(90deg);
+  top: -150px;
+  left: -60px;
+}
+.footer__absolute__text2{
+  position: absolute;
+  color: #FFF;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+right: -15%;
+top: -190px;
+transform: rotate(-90deg);
+}
 .footer__logo {
   height: 24px;
   width: 115px;
@@ -1254,6 +1308,10 @@ input[type="number"] {
   visibility: hidden;
 }
 
+
+
+
+/************************************************/
 @media only screen and (max-width: 769px) {
   .header__navigation{
     display: none;
