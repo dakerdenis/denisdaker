@@ -493,7 +493,7 @@ body {
 
 
 .first-slide {
-  margin-left: 90px;
+
 }
 .last-slide{
   margin-right: 90px;
@@ -1389,5 +1389,52 @@ input[type="number"] {
   .services__swiper__element:hover {
     transform: scale(1.05);
   }
-  
+  .portfolio__main__image{
+    width: 250px;
+    height: 250px;
+  }
+  .portfolio__main__image img{
+    height: 100%;
+  }
+  .portfolio__element{
+    transform: scale(0.3);
+    min-height: initial;
+    margin-top: 0;
+  }
+  .portfolio__element__desc_border{
+    display: none;
+  }
+  .portfolio__element__desc{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -665px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149.4%;
+  }
+  .portfolio__element__link{
+    width: 220px;
+    bottom: -830px;
+    transform: scale(2.4);
+    left: calc(150px);
+  }
+  .portfolio__element__desc_agroup{
+    bottom: -740px;
+  }
+  .portfolio__element__link_agroup{
+    bottom: -950px;
+    width: 290px;
+  }
+  .portfolio__element__desc_fintrend{
+    bottom: -750px;
+  }
+  .portfolio__element__link_fintrend{
+    bottom: -930px;
+  }
 }
