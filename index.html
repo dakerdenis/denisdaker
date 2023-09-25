@@ -812,13 +812,17 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper1 = new Swiper(".mySwiper", {
-      slidesPerView: 2.8,
+      slidesPerView: 1,
       spaceBetween: 10,
       freeMode: true,
       pagination: {
         el: ".swiper-pagination1",
         clickable: true,
-      },
+      },breakpoints: {
+        768:{
+          slidesPerView: 2.8,
+        }
+      }
     });
 
     var swiper1 = new Swiper(".mySwiper1", {

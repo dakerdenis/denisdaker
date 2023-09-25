@@ -599,6 +599,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 }
 .mySwiper1{
   min-height: 80vh;
+  position: relative;
 }
 
 .swiper-slide_additional{
@@ -1289,5 +1290,34 @@ input[type="number"] {
   .about__me__desc{
     width: 100%;
   }
-
+  .services__swiper__element{
+    width: 320px;
+    height: 350px;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    padding: 15px 20px 50px 20px;
+  }
+  .swiper__element__number {
+    font-size: 56px;
+  }
+  .swiper__element__image {
+    height: 55px;
+  }
+  .swiper__element__image img {
+    height: 100%;
+  }
+  .swiper__element__name {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .swiper__element__desc{
+    font-size: 12px;
+  }
+  .services__additional__image2 {
+    display: none;
+  }
+  .services__additional__image1 {
+    display: none;
+  }
 }
