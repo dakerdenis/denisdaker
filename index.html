@@ -330,7 +330,7 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination2"></div>
         </div>
       </div>
     </section>
@@ -818,28 +818,37 @@
       pagination: {
         el: ".swiper-pagination1",
         clickable: true,
-      },breakpoints: {
-        768:{
+      }, breakpoints: {
+        768: {
           slidesPerView: 2.8,
         }
       }
     });
 
-    var swiper1 = new Swiper(".mySwiper1", {
+    var swiper2 = new Swiper(".mySwiper1", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      }, pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
       },
+      breakpoints: {
+        768: {
+          pagination: false,
+        }
+      }
+
     });
 
 
-    swiper1.on('init', function () {
+    swiper2.on('init', function () {
       var firstSlide = document.querySelector('.first-slide');
       if (firstSlide) {
-        var spaceBeforeFirstSlide = 60; // Adjust this value as needed
+        var spaceBeforeFirstSlide = 10; // Adjust this value as needed
         firstSlide.style.marginLeft = spaceBeforeFirstSlide + 'px';
       }
     });

@@ -1249,6 +1249,10 @@ input[type="number"] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d9d9d", endColorstr="#1f9d96", GradientType=1);
 
 }
+.swiper-pagination2{
+  display: none;
+  visibility: hidden;
+}
 
 @media only screen and (max-width: 769px) {
   .header__navigation{
@@ -1320,4 +1324,70 @@ input[type="number"] {
   .services__additional__image1 {
     display: none;
   }
+
+  .additional__slide__name_img{
+    
+  }
+  .additional__slide__name{
+    font-size: 16px;
+  }
+  .additional__slide__img{
+    height: 56px;
+  }
+  .additional__slide__img img{
+    height: 100%;
+  }
+  .additional__slide__name{
+    justify-content: initial;
+    height: auto;
+    text-align: left;
+  }
+  .additional__slide__name span{
+    margin-top: 5px;
+  }
+  .additional__slide__text{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .mySwiper1 {
+    position: relative;
+  }
+  .swiper-button-next{
+    position: absolute;
+    display: none;
+  }
+  .swiper-button-prev{
+    position: absolute;
+    display: none;
+  }
+  .swiper-pagination2{
+    display: initial;
+    visibility: visible;
+
+    position: absolute;
+    margin-right: 50px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px; /* Adjust width as needed */
+    height: 10px; /* Adjust height as needed */
+    background-color: #ccc; /* Change the background color for non-active circles */
+    opacity: 0.7; /* Adjust opacity for non-active circles */
+    margin: 0 5px; /* Adjust spacing between circles as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Style the active pagination circle */
+  .swiper-pagination-bullet-active {
+    background-color: #1F9D96; /* Change the background color for the active circle */
+    opacity: 1; /* Adjust opacity for the active circle */
+  }
+  .first-slide{
+    margin-left: 0px;
+  }
+  .services__swiper__element:hover {
+    transform: scale(1.05);
+  }
+  
 }
