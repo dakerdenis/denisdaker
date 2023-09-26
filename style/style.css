@@ -1495,4 +1495,23 @@ transform: rotate(-90deg);
   .portfolio__element__link_fintrend{
     bottom: -930px;
   }
+  .contact__name{
+    font-size: 17px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact__wrapper{
+    flex-direction: column;
+  }
+  .contact__image_wrapper{
+    width: 80%;
+    margin:  0 auto;
+  }
+  .contact__image{
+    width: 250px;
+    height: 250px;
+  }
+  .contact__image img{
+    width: 100%;
+  }
 }
