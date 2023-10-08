@@ -1559,7 +1559,7 @@ transform: rotate(-90deg);
 }
 .footer__absolute__text2{
   transform: initial;
-  top: 100px;
+  top: 130px;
   left: 10px;
 
 }
@@ -1595,5 +1595,9 @@ transform: rotate(-90deg);
   .footer__social__networks__wrapper a:last-child{
     display: none;
     visibility: hidden;
+  }
+  .footer__social__networks{
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
