@@ -1204,10 +1204,12 @@ input[type="number"] {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .success__block__name p {
