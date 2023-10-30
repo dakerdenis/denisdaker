@@ -1602,4 +1602,25 @@ transform: rotate(-90deg);
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .about__me__desc {
+    width: 90%;
+  }
+  .services__name{
+    font-size: 32px;
+  }
+  .additional__swiper__container{
+    max-width: 90%;
+  }
+  .portfolio__container{
+  }
+  .contact__container{
+  }
+  .footer__social__networks__wrapper a {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__social__networks__wrapper a img{
+    width: 20px;
+    height: 20px;
+  }
 }
