@@ -1,1 +1,0 @@
-<div class="min-h-medium  bg-black text-white">Stack screeen</div>
