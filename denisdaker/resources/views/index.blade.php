@@ -1,20 +1,25 @@
 <x-layout>
     <!-----main_screen---->
-    <x-main-screen />
+    <x-main-screen id="main-screen" />
 
     <!-----About_me---->
-    <x-about-screen />
+    <x-about-screen id="about-me" />
+    
     <!-----services---->
-    <x-services-screen/>
+    <x-services-screen id="services" />
+    
     <!-----services 2---->
-    <div class="min-h-small  bg-black"></div>
+    <x-services2-screen />
+    
     <!-----stack---->
-    <div class="min-h-medium  bg-black"></div>
-
+    <x-stack-screen id="stack" />
+    
     <!-----Soft---->
-    <div class="min-h-big  bg-black"></div>
+    <x-soft-screen id="soft" />
+    
     <!-----Portfolio---->
-    <div class="min-h-big  bg-black"></div>
+    <x-portfolio-screen id="portfolio" />
+    
     <!-----contact--->
-    <div class="min-h-screen bg-black"> </div>
+    <x-contact-screen id="contact" />
 </x-layout>

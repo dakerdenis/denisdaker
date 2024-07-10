@@ -23,7 +23,7 @@ export default {
         '40': '40px',
       },
       minHeight: {
-
+        'screen': '100vh',
         'small': '550px', // Add this line to extend minHeight
         'medium': '650px',
         'big': '750px',
@@ -39,6 +39,14 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.smooth-scroll': {
+          'scroll-behavior': 'smooth',
+        },
+      })
+    }
+  ],
 }
 
