@@ -151,17 +151,6 @@ const Hero = () => {
         </div>
 
       </div>
-
-      <h1>Hero Section</h1>
-      <p>This is the hero section.</p>
-      <p
-        style={{
-          height: "1000px",
-          backgroundColor: "rgba(137, 43, 226, 0.13)",
-        }}
-      >
-        Scroll down to see the sticky header in action.
-      </p>
     </section>
   );
 };

@@ -21,8 +21,7 @@ function App() {
           {/**SERVICES**/}
           <Services />
 
-          {/* Adding more content to ensure scrolling */}
-          <div style={{ height: "1000px" }}></div>
+
         </div>
       </div>
     </div>

@@ -213,7 +213,7 @@
 }
 
 .hero_rectangle1 {
-    right: 22%;
+    right: 0;
     bottom: 10%;
     opacity: 0.8;
 }
@@ -230,6 +230,6 @@
 }
 .hero_rectangle4{
     right: 0;
-    bottom: 0;
+    bottom: -10%;
     opacity: 0.4;
 }
