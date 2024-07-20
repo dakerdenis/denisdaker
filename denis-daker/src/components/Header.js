@@ -22,21 +22,21 @@ const Header = () => {
               </li>
               <li>
                 <a href="#">
-                <span className="blue-symbol">&lt;</span>
+                  <span className="blue-symbol">&lt;</span>
                   Services
                   <span className="blue-symbol">&gt;</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                <span className="blue-symbol">&lt;</span>
+                  <span className="blue-symbol">&lt;</span>
                   Portfolio
                   <span className="blue-symbol">&gt;</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                <span className="blue-symbol">&lt;</span>
+                  <span className="blue-symbol">&lt;</span>
                   Contacts
                   <span className="blue-symbol">&gt;</span>
                 </a>

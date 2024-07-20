@@ -3,6 +3,9 @@ import "../styles/about.css";
 import about from "../assets/about.png";
 import about_poligon1 from "../assets/poligon_about/poligon_about1.svg";
 import about_poligon2 from "../assets/poligon_about/poligon_about2.svg";
+
+import arrow_contact from "../assets/symbols/arrow_contact.svg";
+
 const About = () => {
   return (
     <section id="about">
@@ -39,14 +42,32 @@ const About = () => {
               </div>
             </div>
 
-
             {/****ABOUT ME TEXT******/}
             <div className="about__me__text">
-                  <div></div>
+              <div className="about__me__text-block">
+                Hi! <br /> My name is Denis Akershteyn, and I develop websites
+                and landing pages on a turnkey basis. <br /> <br />
+                For more than 4 years I have been constantly improving my skills
+                in this area. <br />
+                <br /> Having extensive experience in developing websites,
+                participating in large projects, now I provide both my services
+                and services represented by the studio to private clients.
+                <br />
+                <br />I can and am always sincerely happy to help any business
+                in its development and undertakings, based on modern realities.
+                To bring to life your ideas about how your customers should see
+                your business is the main goal of my work.
+              </div>
+
+              <div className="about__button__contact">
+                <button>
+                  <p> Contact me</p>
+                  <img src={arrow_contact} alt="" />
+                </button>
+              </div>
+              
             </div>
           </div>
-
-
         </div>
       </div>
     </section>

@@ -62,7 +62,6 @@
   width: 570px;
   height: 100%;
   margin: 0 auto;
-
 }
 .about__desc__exp {
   width: 100%;
@@ -95,4 +94,42 @@
   line-height: 30.48px;
   text-align: left;
   margin-left: 10px;
+}
+.about__me__text {
+  margin-top: 61px;
+  width: 100%;
+}
+
+.about__me__text-block {
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.9px;
+  text-align: justify;
+}
+.about__button__contact {
+  margin-top: 37px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__button__contact button {
+  background-color: var(--blue_azure);
+  color: #fff;
+  width: 214px;
+  height: 48px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__button__contact button p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.38px;
+  text-align: center;
+  margin-right: 13px;
 }
