@@ -1,0 +1,20 @@
+.section__hero__container {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    top: -124px;
+
+}
+
+.hero__social{
+    position: absolute;
+    left: 0;
+    width: 243px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.16) 50%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.16) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.16) 50%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+

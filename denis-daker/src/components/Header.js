@@ -10,23 +10,40 @@ const Header = () => {
           <img src={logo} alt="Logo" /> {/* Add the image here */}
         </div>
         <div className="header__navigation__lang">
+          {/**NAvigation***/}
           <div className="header__navigation">
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="#">
+                  <span className="blue-symbol">&lt;</span>
+                  About
+                  <span className="blue-symbol">&gt;</span>
+                </a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#">
+                <span className="blue-symbol">&lt;</span>
+                  Services
+                  <span className="blue-symbol">&gt;</span>
+                </a>
               </li>
               <li>
-                <a href="">Portfolio</a>
+                <a href="#">
+                <span className="blue-symbol">&lt;</span>
+                  Portfolio
+                  <span className="blue-symbol">&gt;</span>
+                </a>
               </li>
               <li>
-                <a href="">Contacts</a>
+                <a href="#">
+                <span className="blue-symbol">&lt;</span>
+                  Contacts
+                  <span className="blue-symbol">&gt;</span>
+                </a>
               </li>
             </ul>
           </div>
-
+          {/**Switch Language***/}
           <div className="header__lang">
             <img src={lang} alt="Language" /> {/* Add the image here */}
           </div>
