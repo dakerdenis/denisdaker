@@ -5,7 +5,9 @@
   position: relative;
   top: -124px;
 }
-
+.hero_z {
+  z-index: 200;
+}
 .hero__social {
   position: absolute;
   left: 0;
@@ -169,38 +171,65 @@
 .skills__element__circle {
   width: 94px;
   height: 94px;
-  background: linear-gradient(180deg, #1F9D96 0%, #9D9D9D 100%);
-    border-radius: 50%;
+  background: linear-gradient(180deg, #1f9d96 0%, #9d9d9d 100%);
+  border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.skills__element__desc{
-
-font-size: 14px;
-font-weight: 500;
-line-height: 20.92px;
-text-align: center;
-height: 63px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+.skills__element__desc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.92px;
+  text-align: center;
+  height: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.hero__image__daker{
-    height: 215px;
-    width: 525px;
-    border-radius: 118px;
-    background-color: #9D9D9D;
+.hero__image__daker {
+  height: 215px;
+  width: 525px;
+  border-radius: 118px;
+  background-color: #9d9d9d;
+  position: absolute;
+  right: -200px;
+  top: -70px;
+  background-image: url("../assets/daker.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_rectangle{
+    z-index: 100;
     position: absolute;
-    right: -200px;
-    top: -70px;
-    background-image: url('../assets/daker.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.hero_rectangle1 {
+    right: 22%;
+    bottom: 10%;
+    opacity: 0.8;
+}
+
+.hero_rectangle2{
+    bottom: 0;
+    left: 10%;
+    opacity: 0.5;
+}
+.hero_rectangle3{
+    top: 0%;
+    left: 14%;
+    opacity: 0.7;
+}
+.hero_rectangle4{
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
 }

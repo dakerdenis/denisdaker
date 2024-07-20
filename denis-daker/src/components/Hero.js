@@ -11,12 +11,17 @@ import skill1 from "../assets/skills/1.svg";
 import skill2 from "../assets/skills/2.svg";
 import skill3 from "../assets/skills/3.svg";
 import skill4 from "../assets/skills/4.svg";
+
+import poligon1 from "../assets/poligon_hero/poligon1.svg";
+import poligon2 from "../assets/poligon_hero/poligon2.svg";
+import poligon3 from "../assets/poligon_hero/poligon3.svg";
+import poligon4 from "../assets/poligon_hero/poligon4.svg";
 const Hero = () => {
   return (
     <section id="hero">
       <div className="section__hero__container">
         {/*---LEFT SECTION SOCIAL----*/}
-        <div className="hero__social">
+        <div className="hero__social hero_z">
           <div className="hero__social__container">
             <ul>
               <li>
@@ -63,7 +68,7 @@ const Hero = () => {
           </div>
         </div>
         {/*--HERO ABOUT---*/}
-        <div className="hero__general">
+        <div className="hero__general hero_z">
           <div className="hero__genaral__about">
             <div className="hero__general___name">
               <p>FULL-STACK WEB DEVELOPER</p>
@@ -89,7 +94,7 @@ const Hero = () => {
           </div>
         </div>
         {/*-HERO ADDITIONAL---*/}
-        <div className="hero__additional">
+        <div className="hero__additional hero_z">
           <div className="hero__skills">
             <div className="hero__skills__wrapper">
               {/*------------------*/}
@@ -127,10 +132,24 @@ const Hero = () => {
           </div>
 
           <div className="hero__image__daker">
-              
+
           </div>
           <div className="hero__image__main"></div>
         </div>
+        {/*----BACGROUND RECTANGLES---*/}
+        <div className="hero_rectangle hero_rectangle1">
+            <img src={poligon1} alt="" />
+        </div>
+        <div className="hero_rectangle hero_rectangle2">
+            <img src={poligon2} alt="" />
+        </div>
+        <div className="hero_rectangle hero_rectangle3">
+            <img src={poligon3} alt="" />
+        </div>
+        <div className="hero_rectangle hero_rectangle4">
+            <img src={poligon4} alt="" />
+        </div>
+
       </div>
 
       <h1>Hero Section</h1>
