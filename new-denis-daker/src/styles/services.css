@@ -172,3 +172,56 @@
   text-align: left;
   color: #fff;
 }
+
+
+
+
+
+
+/* Second Swiper Specific Styles */
+.section__second__services {
+  height: 505px;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.section__second__services .swiper {
+  height: 100%;
+}
+
+.section__second__services .swiper-slide {
+  background-color: #be2a2a3f;
+  width: 1000px; /* Set the width for each slide */
+  height: 100%; /* Set the height for each slide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+
+
+
+
+
+
+
