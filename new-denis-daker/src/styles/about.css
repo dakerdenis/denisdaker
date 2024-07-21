@@ -1,0 +1,135 @@
+.section__about__container {
+  min-height: 100vh;
+
+  margin-top: 137px;
+}
+
+.section__about__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.abput__image__name {
+  position: relative;
+  width: 50%;
+}
+.about-z {
+  z-index: 200;
+}
+
+.about__image__block {
+  position: absolute;
+  height: 560px;
+  width: 560px;
+  left: calc(50% - 280px);
+}
+
+.about__poligon {
+  position: absolute;
+  z-index: 100;
+}
+.about__poligon1 {
+  top: -17%;
+  right: -7%;
+}
+
+.about__poligon2 {
+  top: -16%;
+  opacity: 0.5;
+}
+.about__name {
+  width: 185px;
+  height: 126px;
+
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 63.39px;
+  text-align: left;
+
+  position: absolute;
+  right: 13%;
+}
+
+.about__desc__text {
+  width: 50%;
+  height: 560px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.about__desc__text_wrapper {
+  width: 570px;
+  height: 100%;
+  margin: 0 auto;
+}
+.about__desc__exp {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__desc__element {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+.about__desc__element div {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60.95px;
+  text-align: right;
+  color: #ffffff80;
+  height: 100%;
+  width: 88px;
+  text-align: left;
+}
+.about__desc__element p {
+  display: block;
+  height: 100%;
+  width: 169px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30.48px;
+  text-align: left;
+  margin-left: 10px;
+}
+.about__me__text {
+  margin-top: 61px;
+  width: 100%;
+}
+
+.about__me__text-block {
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.9px;
+  text-align: justify;
+}
+.about__button__contact {
+  margin-top: 37px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__button__contact button {
+  background-color: var(--blue_azure);
+  color: #fff;
+  width: 214px;
+  height: 48px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__button__contact button p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.38px;
+  text-align: center;
+  margin-right: 13px;
+}
