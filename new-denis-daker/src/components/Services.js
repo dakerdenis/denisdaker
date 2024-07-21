@@ -1,38 +1,131 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/hero.css";
 import "../styles/services.css";
+
+import kvadrat from "../assets/symbols/kvadrat.svg";
+
+import service1 from "../assets/services/1.svg";
+import service2 from "../assets/services/2.svg";
+import service3 from "../assets/services/3.svg";
+import service4 from "../assets/services/4.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { FreeMode, Navigation, Pagination } from "swiper/modules";
-
-// No need to call SwiperCore.use([])
+import { FreeMode } from "swiper/modules";
 
 const Services = () => {
+  const [spaceBetween, setSpaceBetween] = useState(100);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1600) {
+        setSpaceBetween(25);
+      } else {
+        setSpaceBetween(100);
+      }
+    };
+
+    // Set the initial value
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section id="services">
       <div className="section__services__container">
-        <div className="services__name">
-          Services <span>.</span>
-        </div>
-        <div className="services__wrapper__swiper">
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
-            freeMode={true}
-            navigation={true}
-            pagination={{ clickable: true }}
-            modules={[FreeMode, Navigation, Pagination]} // Registering modules here
-          >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            {/* Add more slides as needed */}
-          </Swiper>
+        <div className="section__services__background">
+          <div className="services__name">
+            <div className="services__name__block">
+              <p>Services</p>
+              <img src={kvadrat} alt="" />
+            </div>
+          </div>
+          <div className="services__wrapper__swiper">
+            <Swiper
+              spaceBetween={spaceBetween} // Use the state value
+              slidesPerView="auto" // Set slidesPerView to auto
+              freeMode={true}
+              modules={[FreeMode]} // Only FreeMode module
+            >
+              <SwiperSlide
+                style={{ width: "466px", height: "510px", marginLeft: "100px" }}
+              >
+                <div className="swiper__block">
+                  <div className="swiper__content__container">
+                    <div className="swiper__number">.01</div>
+                    <div className="swiper__image">
+                      <img src={service1} alt="" />
+                    </div>
+                    <div className="swiper_name">Website development</div>
+                    <div className="swiper__desc">
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book.
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "466px", height: "510px" }}>
+                <div className="swiper__block">
+                <div className="swiper__content__container">
+                    <div className="swiper__number">.02</div>
+                    <div className="swiper__image">
+                      <img src={service2} alt="" />
+                    </div>
+                    <div className="swiper_name">Design</div>
+                    <div className="swiper__desc">
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book.
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "466px", height: "510px" }}>
+                <div className="swiper__block">
+                <div className="swiper__content__container">
+                    <div className="swiper__number">.03</div>
+                    <div className="swiper__image">
+                      <img src={service3} alt="" />
+                    </div>
+                    <div className="swiper_name">B2C Architecture</div>
+                    <div className="swiper__desc">
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book.
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "466px", height: "510px" }}>
+                <div className="swiper__block">
+                <div className="swiper__content__container">
+                    <div className="swiper__number">.04</div>
+                    <div className="swiper__image">
+                      <img src={service4} alt="" />
+                    </div>
+                    <div className="swiper_name">Server Maintenance</div>
+                    <div className="swiper__desc">
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book.
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {/* Add more slides as needed */}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

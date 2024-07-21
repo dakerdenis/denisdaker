@@ -1,26 +1,174 @@
-.section__services__container{
-    min-height: 811px;
-    width: 100%;
+#services {
+  margin-top: 75px;
+  min-height: 100vh;
+  width: 100%;
 
+  background-image: url("../assets/daker_back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* hero.css */
+/* services.css */
+.section__services__container {
+  background-color: #00000066;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0; /* Ensure there's no padding */
+  margin: 0; /* Ensure there's no margin */
+
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(255, 255, 255, 0) 52%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(255, 255, 255, 0) 52%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(255, 255, 255, 0) 52%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.section__services__background {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #00000066;
+}
+.services__name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Optional: Add padding to the services name */
+}
+
+.services__name__block {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  position: relative;
+}
+
+.services__name__block p {
+  font-size: 52px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.services__name__block img {
+  position: absolute;
+  right: -20px;
+  bottom: 7.5px;
+}
+
 .services__wrapper__swiper {
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    color: #000;
-  }
-  
+  width: 100%;
+  height: 510px; /* Set the height for the Swiper container to match the slide height */
+  margin: 0; /* Ensure there's no margin */
+  padding: 0; /* Ensure there's no padding */
+  margin-top: 110px;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Ensure there's no margin */
+  padding: 0; /* Ensure there's no padding */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+  width: 466px; /* Set the width for each slide */
+  height: 510px; /* Set the height for each slide */
+  margin: 0; /* Ensure there's no margin */
+  padding: 0; /* Ensure there's no padding */
+}
+
+.swiper__block {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #433e42;
+  background: rgb(67, 62, 66);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(67, 62, 66, 0.2699054621848739) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(67, 62, 66, 0.2699054621848739) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(67, 62, 66, 0.2699054621848739) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#433e42",endColorstr="#ffffff",GradientType=1);
+  border-radius: 16px;
+  backdrop-filter: blur(30px); /* Adjust the blur radius */
+  -webkit-backdrop-filter: blur(30px); /* Adjust the blur radius for Safari */
+}
+
+.swiper__content__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 41px;
+}
+
+.swiper__number {
+  width: 100%;
+  text-align: right;
+
+  font-size: 128px;
+  font-weight: 600;
+
+  text-align: right;
+  color: #ffffff1a;
+}
+.swiper__image {
+  height: 99px;
+}
+
+.swiper_name {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39.01px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 140px;
+  height: 78px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.92px;
+  text-align: left;
+  color: #fff;
+}
