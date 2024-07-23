@@ -218,7 +218,11 @@
   right: 10px;
 }
 
-
+.second-swiper-slide {
+  width: 90%;
+  height: 100%;
+  background-color: #433e42;
+}
 
 
 

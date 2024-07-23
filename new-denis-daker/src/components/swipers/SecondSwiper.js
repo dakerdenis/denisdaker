@@ -17,7 +17,15 @@ const SecondSwiper = () => {
       >
         <SwiperSlide>
           <div className="second-swiper-slide">
-            1
+              <div className="second-swiper-block-container">
+                    <div className="second-swiper-nameandlogo">
+
+                    </div>
+
+                    <div className="second-swiper-desc">
+
+                    </div>
+              </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
