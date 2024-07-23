@@ -4,6 +4,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
+import service1 from "../../assets/services/1.svg";
+import service2 from "../../assets/services/2.svg";
+import service3 from "../../assets/services/3.svg";
+import service4 from "../../assets/services/4.svg";
 const SecondSwiper = () => {
   return (
     <div className="section__second__services">
@@ -17,15 +21,24 @@ const SecondSwiper = () => {
       >
         <SwiperSlide>
           <div className="second-swiper-slide">
-              <div className="second-swiper-block-container">
-                    <div className="second-swiper-nameandlogo">
+            <div className="second-swiper-block-container">
+              <div className="second-swiper-nameandlogo">
+                <div className="second-swiper-Logo">
+                  <img src={service1} alt="" />
+                </div>
 
-                    </div>
-
-                    <div className="second-swiper-desc">
-
-                    </div>
+                <div className="second-swiper-name">
+                  <p>Website Development</p>
+                  <div></div>
+                </div>
               </div>
+
+              <div className="second-swiper-desc">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>

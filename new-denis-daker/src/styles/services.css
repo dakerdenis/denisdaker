@@ -191,7 +191,7 @@
 }
 
 .section__second__services .swiper-slide {
-  background-color: #be2a2a3f;
+
   width: 1000px; /* Set the width for each slide */
   height: 100%; /* Set the height for each slide */
   display: flex;
@@ -219,13 +219,57 @@
 }
 
 .second-swiper-slide {
-  width: 90%;
+  width: 80%;
   height: 100%;
-  background-color: #433e42;
+}
+.second-swiper-block-container{
+  width: 100%;
+  height: 100%;
+}
+.second-swiper-nameandlogo{
+  display: flex;
+  align-items: center;
+  height: 87px;
+}
+.second-swiper-Logo{
+  height: 100%;
+  width: 106px;
+  margin-right: 40px;
+}
+.second-swiper-Logo img{
+  width: 106px;
+  height: 87px;
 }
 
+.second-swiper-name{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
+}
+.second-swiper-name p {
+font-size: 48px;
+font-weight: 600;
+text-align: left;
+color: #fff;
+}
+.second-swiper-name div{
+  width: 135px;
+  height: 1px;
 
+  margin-top: 32px;
+}
+.second-swiper-desc{
+  margin-top: 48px;
 
+}
+.second-swiper-desc p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.9px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+}
 
 
