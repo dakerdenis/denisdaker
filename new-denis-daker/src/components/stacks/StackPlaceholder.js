@@ -3,7 +3,7 @@ import React from "react";
 const StackPlaceholder = () => {
   return (
     <div className="stack__placeholder__container">
-      PIZDA
+      I went from a beginner student to an experienced developer, mastering a number of key technologies and frameworks. In 2 years, my knowledge has expanded to include HTML, CSS, JavaScript, Python, TypeScript and ReactJS. These languages ​​and tools allowed me to create lively and dynamic web projects, developing skills from layout and styling to creating interactive features and full-fledged applications
     </div>
   );
 };

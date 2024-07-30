@@ -87,16 +87,40 @@ margin-top: 20px;
     position: absolute;
     right: 32px;
     top: 24px;
+
+font-size: 22px;
+font-weight: 400;
+line-height: 32.87px;   
+color: #fff;
+
 }
 
 
 
-
+.stack__element__raiting{
+    display: flex;
+    height: 61px;
+    margin-top: 20px;
+}
 .stack__rating__block {
-    /* Your existing styles */
+    height: 61px;
+    width: 12.24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    margin-right: 15px;
   }
   
   .stack__rating__block.filled {
-    background-color: red; /* Set your desired fill color */
+    background-color:  #1F9D96;
+    border: 2px solid #1F9D96;
+; /* Set your desired fill color */
+  }
+  .stack__placeholder__container{
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0.1em;
+text-align: justify;
+
   }
   
