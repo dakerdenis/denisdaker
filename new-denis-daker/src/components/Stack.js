@@ -5,6 +5,7 @@ import "../styles/stack.css";
 import dot from "../assets/dot.svg";
 
 import StackElement from "./stacks/StackElement";
+import StackPlaceholder from "./stacks/StackPlaceholder";
 const Stack = () => {
   const stackData = [
     { name: "HTML/CSS", percentage: 70, rating: 7 },
@@ -25,12 +26,15 @@ const Stack = () => {
 
         <div className="stack__elements__wrapper">
         {stackData.map((item, index) => (
-            <StackElement
-              key={index}
-              name={item.name}
-              percentage={item.percentage}
-              rating={item.rating}
-            />
+            <>
+              <StackElement
+                key={item.name} // Use unique key based on item name
+                name={item.name}
+                percentage={item.percentage}
+                rating={item.rating}
+              />
+              {index === 0 && <StackPlaceholder key="placeholder" />}
+            </>
           ))}
         </div>
       </div>
