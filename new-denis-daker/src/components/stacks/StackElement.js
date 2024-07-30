@@ -1,25 +1,18 @@
 import React from "react";
 
-
-
-
-const StackElement = () => {
+const StackElement = ({ name, percentage, rating }) => {
   return (
     <div className="stack__element__container">
-      <div className="stack__element__percentage">70%</div>
-      <div className="stack__element__name">HTML/CSS</div>
+      <div className="stack__element__percentage">{percentage}</div>
+      <div className="stack__element__name">{name}</div>
 
       <div className="stack__element__raiting">
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
-        <div className="stack__rating__block"></div>
+        {Array.from({ length: 10 }, (_, index) => (
+          <div
+            key={index}
+            className={`stack__rating__block ${index < rating ? "filled" : ""}`}
+          ></div>
+        ))}
       </div>
     </div>
   );

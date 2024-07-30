@@ -1,0 +1,8 @@
+.stack__rating__block {
+    /* Your existing styles */
+  }
+  
+  .stack__rating__block.filled {
+    background-color: red; /* Set your desired fill color */
+  }
+  
