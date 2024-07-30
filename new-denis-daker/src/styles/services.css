@@ -181,7 +181,8 @@
 /* Second Swiper Specific Styles */
 .section__second__services {
   height: 505px;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   position: relative;
   margin-top: 50px;
 }
@@ -271,5 +272,55 @@ color: #fff;
   color: #fff;
   margin-bottom: 20px;
 }
+.custom-arrow {
 
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
 
+ 
+
+}
+
+.swiper-button-prev.custom-arrow {
+  left: 10px; /* Adjust as necessary */
+  color: #0000000c;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #07E6D9 0%, #1C423F 89.58%);
+  position: absolute;
+}
+.swiper-button-prev.custom-arrow img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+.swiper-button-next.custom-arrow  img{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+.swiper-button-next.custom-arrow {
+  right: 10px; /* Adjust as necessary */
+  color: #0000000c;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #07E6D9 0%, #1C423F 89.58%);
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+  background: linear-gradient(135deg, #180B0B 0%, #1C423F 89.58%);
+
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+  background: linear-gradient(135deg, #180B0B 0%, #1C423F 89.58%);
+}

@@ -8,6 +8,9 @@ import service1 from "../../assets/services/1.svg";
 import service2 from "../../assets/services/2.svg";
 import service3 from "../../assets/services/3.svg";
 import service4 from "../../assets/services/4.svg";
+
+import arrow_left from "../../assets/swiper/arrow-left.svg";
+import arrow_right from "../../assets/swiper/arrow-right.svg";
 const SecondSwiper = () => {
   return (
     <div className="section__second__services">
@@ -58,8 +61,12 @@ const SecondSwiper = () => {
         </SwiperSlide>
         {/* Add more slides as needed */}
       </Swiper>
-      <div className="swiper-button-prev custom-arrow">⬅️</div>
-      <div className="swiper-button-next custom-arrow">➡️</div>
+      <div className="swiper-button-prev custom-arrow"> 
+          <img src={arrow_left} alt="" />
+         </div>
+      <div className="swiper-button-next custom-arrow">
+          <img src={arrow_right} alt="" />
+      </div>
     </div>
   );
 };

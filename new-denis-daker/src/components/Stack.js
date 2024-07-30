@@ -6,13 +6,9 @@ import "../styles/stack.css";
 const Stack = () => {
   return (
     <section id="stack">
+        <div className="stack__container">
 
-            adsdasd
-            section__services__background 
-            adsdasdb
-            <br/>
-            <br/>
-            <br/>
+        </div>
     </section>
   );
 };
