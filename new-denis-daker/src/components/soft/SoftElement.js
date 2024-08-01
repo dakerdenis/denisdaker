@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const StackElement = ({ name, percentage, rating }) => {
+const SoftElement = ({ name, image, percentage, rating }) => {
   const [currentRating, setCurrentRating] = useState(0);
   const ratingRef = useRef();
 
@@ -35,15 +35,18 @@ const StackElement = ({ name, percentage, rating }) => {
   }, [rating]);
 
   return (
-    <div className="stack__element__container" ref={ratingRef}>
-      <div className="stack__element__percentage">{percentage}%</div>
-      <div className="stack__element__name">{name}</div>
+    <div className="soft__element__container" ref={ratingRef}>
+      <div className="soft__element__percentage">{percentage}%</div>
+      <div className="soft__element__name">
+        <img src={require(`../../assets/soft/${image}`)} alt={name} />
+        {name}
+      </div>
 
-      <div className="stack__element__raiting">
+      <div className="soft__element__rating">
         {Array.from({ length: 10 }, (_, index) => (
           <div
             key={index}
-            className={`stack__rating__block ${
+            className={`soft__rating__block ${
               index < currentRating ? "filled" : ""
             }`}
           ></div>
@@ -53,4 +56,4 @@ const StackElement = ({ name, percentage, rating }) => {
   );
 };
 
-export default StackElement;
+export default SoftElement;

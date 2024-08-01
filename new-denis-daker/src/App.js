@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Stack from "./components/Stack";
+import Soft from "./components/Soft";
 function App() {
   return (
     <div className="App">
@@ -24,7 +25,8 @@ function App() {
 
           {/**STACK**/}
           <Stack />
-
+          {/**SOFT**/}
+          <Soft />
 
         </div>
       </div>

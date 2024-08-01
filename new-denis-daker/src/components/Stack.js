@@ -1,19 +1,18 @@
 import React from "react";
-
 import "../styles/stack.css";
-
 import dot from "../assets/dot.svg";
-
 import StackElement from "./stacks/StackElement";
 import StackPlaceholder from "./stacks/StackPlaceholder";
+
 const Stack = () => {
   const stackData = [
     { name: "HTML/CSS", percentage: 70, rating: 7 },
-    { name: "JavaScript", percentage: 80, rating: 8 },
-    { name: "React", percentage: 75, rating: 7 },
-    { name: "Node.js", percentage: 60, rating: 6 },
-    { name: "Python", percentage: 85, rating: 9 },
+    { name: "React JS", percentage: 50, rating: 5 },
+    { name: "JavaScript", percentage: 90, rating: 9 },
+    { name: "Java", percentage: 30, rating: 3 },
+    { name: "Python", percentage: 80, rating: 8 },
   ];
+
   return (
     <section id="stack">
       <div className="stack__container">
@@ -25,7 +24,7 @@ const Stack = () => {
         </div>
 
         <div className="stack__elements__wrapper">
-        {stackData.map((item, index) => (
+          {stackData.map((item, index) => (
             <>
               <StackElement
                 key={item.name} // Use unique key based on item name
