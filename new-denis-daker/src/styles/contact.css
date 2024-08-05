@@ -298,3 +298,10 @@ resize: none; /* Disable resizing */
   border-radius: 2px;
   background-color: white;
 }
+
+
+
+
+.contact__form-terms{
+    background-color: red;
+}
