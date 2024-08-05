@@ -9,15 +9,13 @@ import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 
 const Portfolio = () => {
-    const [spaceBetween, setSpaceBetween] = useState(25); // Adjusted spaceBetween for your scenario
+    const [spaceBetween, setSpaceBetween] = useState(43); // Fixed space between slides
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth < 1600) {
-                setSpaceBetween(25);
-            } else {
-                setSpaceBetween(50); // Adjusted to keep space consistent with the slide width
-            }
+            // You can adjust this if you want to change behavior based on screen size,
+            // but if you want a fixed space of 43px, we can leave this out
+            setSpaceBetween(90);
         };
 
         // Set the initial value
@@ -50,27 +48,27 @@ const Portfolio = () => {
                 <div className="porfolio__container__swiper">
                     <div className="porfolio__wrapper__swiper">
                         <Swiper
-                            spaceBetween={spaceBetween} // Use the state value
-                            slidesPerView={1.4} // Show 1.4 slides at a time
+                            spaceBetween={spaceBetween} // Use the fixed spaceBetween value
+                            slidesPerView="auto" // We don't need to set a specific slidesPerView
                             freeMode={true}
                             modules={[FreeMode]} // Only FreeMode module
                         >
-                            <SwiperSlide style={{ width: "760px", height: "598px", marginLeft: "100px" }}>
+                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide style={{ width: "760px", height: "598px" }}>
+                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide style={{ width: "760px", height: "598px" }}>
+                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide style={{ width: "760px", height: "598px" }}>
+                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                 </div>

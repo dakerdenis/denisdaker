@@ -1,3 +1,68 @@
-.portfolio{
+.portfolio {
     width: 100%;
+}
+
+.section__portfolio__container {
+    width: 100%;
+    height: 100%;
+}
+
+.porfolio__name {
+    height: 63px;
+    width: 80%;
+    margin: 0 auto;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.porfolio__name-name {
+    height: 100%;
+    position: relative;
+
+}
+
+.porfolio__name-name p{
+
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 63.39px;
+    text-align: left;
+    
+    color: #fff;
+}
+.porfolio__name-name img {
+    position: absolute;
+    right: -20px;
+    bottom: 13px;
+
+}
+
+.porfolio__container__swiper {
+    width: 100%;
+    height: 600px;
+    margin-top: 64px;
+}
+
+.swiper__block_porfolio {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+}
+
+.porfolio__wrapper__swiper .swiper-slide {
+    width: 767px;
+    /* Set the width for each slide */
+    height: 598px;
+    /* Set the height for each slide */
+    margin-right: 43px;
+    /* Set right margin for spacing between slides */
+}
+
+.porfolio__wrapper__swiper .swiper-slide:first-child {
+    margin-left: 100px;
+    /* Set left margin for the first slide */
 }
