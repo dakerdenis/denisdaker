@@ -6,6 +6,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Stack from "./components/Stack";
 import Soft from "./components/Soft";
+import Portfolio from "./components/Portfolio";
 function App() {
   return (
     <div className="App">
@@ -25,8 +26,12 @@ function App() {
 
           {/**STACK**/}
           <Stack />
+
           {/**SOFT**/}
           <Soft />
+
+          {/**PORTFOLIO**/}
+          <Portfolio />
 
         </div>
       </div>
