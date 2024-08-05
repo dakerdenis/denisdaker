@@ -39,7 +39,7 @@ const SoftElement = ({ name, image, percentage, rating }) => {
       <div className="soft__element__percentage">{percentage}%</div>
       <div className="soft__element__name">
         <img src={require(`../../assets/soft/${image}`)} alt={name} />
-        {name}
+        <p> {name}</p>
       </div>
 
       <div className="soft__element__rating">

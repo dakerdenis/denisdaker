@@ -1,14 +1,14 @@
-.soft{
+.soft {
     width: 100%;
     max-height: 700px;
 }
 
-.soft__container{
+.soft__container {
     width: 100%;
     height: 100%;
 }
 
-.soft__name{
+.soft__name {
     position: relative;
     margin: 0 auto;
     height: 52px;
@@ -18,22 +18,22 @@
 
 .soft__name p {
     color: #fff;
-font-size: 52px;
-font-weight: 600;
-line-height: 63.39px;
-text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 63.39px;
+    text-align: center;
 
 }
 
 .soft__name img {
     position: absolute;
-    right: -10px;
+    right: 10px;
     bottom: 0;
     height: 12px;
     width: 12px;
 }
 
-.soft__elements__wrapper{
+.soft__elements__wrapper {
     width: 1240px;
     margin: 0 auto;
     margin-top: 75px;
@@ -41,3 +41,73 @@ text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+.soft__placeholder__container {
+    height: 100px;
+    width: 430px;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.81px;
+letter-spacing: 0.1em;
+text-align: justify;
+
+}
+
+.soft__element__container {
+    width: 380px;
+    height: 147px;
+    padding: 20px 20px 36px 36px;
+    border-radius: 16px;
+    margin-bottom: 35px;
+    filter: blur();
+    border: 1px solid #433e42;
+    position: relative;
+    background: linear-gradient(180deg, rgba(67, 62, 66, 0.2699054621848739) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.soft__element__percentage {
+    position: absolute;
+    right: 25px;
+    top: 24px;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32.87px;
+    color: #fff;
+
+}
+
+.soft__element__name {
+    display: flex;
+    align-items: flex-end;
+}
+
+.soft__element__name p {
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.57px;
+    text-align: left;
+    color: #FFFFFF66;
+    margin-left: 10px;
+}
+.soft__element__rating{
+    display: flex;
+    height: 21px;
+    margin-top: 20px;
+}
+.soft__rating__block {
+    height: 21px;
+    width: 12.24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .soft__rating__block.filled {
+    background-color:  #1F9D96;
+    border: 2px solid #1F9D96;
+; /* Set your desired fill color */
+  }

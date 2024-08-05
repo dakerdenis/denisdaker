@@ -11,13 +11,16 @@ const Soft = () => {
     { name: "JavaScript",image:'soft1.png', percentage: 90, rating: 9 },
     { name: "Java",image:'soft1.png', percentage: 30, rating: 3 },
     { name: "Python",image:'soft1.png', percentage: 80, rating: 8 },
+    { name: "Figma",image:'soft1.png', percentage: 10, rating: 1 },
+    { name: "Python",image:'soft1.png', percentage: 100, rating: 10 },
+    { name: "Stalker",image:'soft1.png', percentage: 30, rating: 3 },
   ];
 
   return (
     <section id="soft">
       <div className="soft__container">
         <div className="soft__name">
-          <p>Stack</p>
+          <p>Soft</p>
             <img src={dot} alt="" />
         </div>
 
