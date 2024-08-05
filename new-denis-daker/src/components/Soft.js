@@ -18,9 +18,7 @@ const Soft = () => {
       <div className="soft__container">
         <div className="soft__name">
           <p>Stack</p>
-          <span>
             <img src={dot} alt="" />
-          </span>
         </div>
 
         <div className="soft__elements__wrapper">
