@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Stack from "./components/Stack";
 import Soft from "./components/Soft";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,8 @@ function App() {
           {/**PORTFOLIO**/}
           <Portfolio />
 
+          {/***CONTACT***/}
+          <Contact />
         </div>
       </div>
     </div>
