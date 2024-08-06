@@ -5,9 +5,6 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 import service1 from "../../assets/services/1.svg";
-import service2 from "../../assets/services/2.svg";
-import service3 from "../../assets/services/3.svg";
-import service4 from "../../assets/services/4.svg";
 
 import arrow_left from "../../assets/swiper/arrow-left.svg";
 import arrow_right from "../../assets/swiper/arrow-right.svg";

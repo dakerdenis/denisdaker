@@ -1,11 +1,5 @@
 # syntax=docker/dockerfile:1
 
-# Comments are provided throughout this file to help you get started.
-# If you need more help, visit the Dockerfile reference guide at
-# https://docs.docker.com/go/dockerfile-reference/
-
-# Want to help us make this template better? Share your feedback here: https://forms.gle/ybq9Krt8jtBL3iCk7
-
 ARG NODE_VERSION=20.14.0
 
 ################################################################################
@@ -17,7 +11,7 @@ WORKDIR /usr/src/app
 
 
 ################################################################################
-# Create a stage for installing production dependecies.
+# Create a stage for installing production dependencies.
 FROM base as deps
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
@@ -42,8 +36,13 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 
 # Copy the rest of the source files into the image.
 COPY . .
+
+# Fix permissions issue for ESLint cache
+RUN mkdir -p /usr/src/app/node_modules/.cache && chown -R node:node /usr/src/app/node_modules/.cache
+
 # Run the build script.
 RUN npm run build
+
 
 ################################################################################
 # Create a new stage to run the application with minimal runtime dependencies
@@ -63,7 +62,6 @@ COPY package.json .
 # the built application from the build stage into the image.
 COPY --from=deps /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/. ./.
-
 
 # Expose the port that the application listens on.
 EXPOSE 3000
