@@ -1,7 +1,7 @@
 import React  from "react";
 import "../styles/contact.css";
 import dot from "../assets/dot.svg";
-
+import arrow from "../assets/contact/Vector.svg";
 const Contact = () => {
   return (
     <section id="contact">
@@ -122,7 +122,10 @@ const Contact = () => {
 
               {/**submit button***/}
               <div className="contact__form-button">
-                <button type="submit">Submit</button>
+                <button type="submit">
+                  <p>Send request</p>
+                  <img src={arrow} alt="" />
+                </button>
               </div>
             </form>
           </div>

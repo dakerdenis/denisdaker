@@ -305,6 +305,7 @@ resize: none; /* Disable resizing */
 .contact__form-terms{
 
   cursor: pointer;
+  margin-top: 35px;
 }
 .contact__form-terms label {
   width: 670px;
@@ -313,6 +314,8 @@ font-weight: 400;
 line-height: 20px;
 letter-spacing: 0.25px;
 text-align: left;
+margin-top: 12px;
+margin-left: 6px;
 
 }
 .contact__form-terms .input-group{
@@ -321,8 +324,63 @@ text-align: left;
   justify-content: initial;
   flex-direction: row;
   align-items: center;
+
 }
 .contact__form-terms #terms{
-  width: 24px;
-  height: 24px;
+
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 28px;
+  border: 2px solid #1f9d96;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+
+/* When the checkbox is checked */
+input[type="checkbox"]:checked {
+  background-color: #1f9d96;
+}
+
+/* Optional: Change the color when hovering */
+input[type="checkbox"]:hover {
+  border-color: #fff;
+}
+
+
+
+
+.contact__form-button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact__form-button button {
+  width: 280px;
+  height: 48px;
+  background-color: #1f9d96;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__form-button button p {
+color: #fff;
+font-size: 20px;
+font-weight: 500;
+line-height: 24.38px;
+text-align: center;
+margin-right: 20px;
 }
