@@ -1,7 +1,17 @@
-import React  from "react";
+import React from "react";
 import "../styles/contact.css";
 import dot from "../assets/dot.svg";
 import arrow from "../assets/contact/Vector.svg";
+import logo from "../assets/contact/Logo.svg";
+
+
+import linkdin from "../assets/social/ri_linkedin-fill.svg";
+import telegram from "../assets/social/mingcute_telegram-fill.svg";
+import instagram from "../assets/social/mdi_instagram.svg";
+import facebook from "../assets/social/ic_baseline-facebook.svg";
+import whatsapp from "../assets/social/ic_baseline-whatsapp.svg";
+import phone from "../assets/social/ph_phone-fill.svg";
+import email from "../assets/social/fluent_mail-32-filled.svg";
 const Contact = () => {
   return (
     <section id="contact">
@@ -111,7 +121,7 @@ const Contact = () => {
               {/**contact form - check btton***/}
               <div className="contact__form-terms">
                 <div className="input-group">
-                <input type="checkbox" id="terms" />
+                  <input type="checkbox" id="terms" />
                   <label htmlFor="terms">
                     I give my consent to the processing of personal data in
                     accordance with the Terms*
@@ -130,6 +140,63 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
+
+
+        <div className="contact__social__">
+
+          {/**Footer Logo***/}
+          <div className="contact__social__daker">
+            <img src={logo} alt="" />
+          </div>
+
+          {/**contact social social***/}
+          <div className="contact__social__social">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src={linkdin} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={telegram} />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src={instagram} />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src={facebook} />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src={whatsapp} />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src={phone} />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src={email} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
   );
