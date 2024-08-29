@@ -303,5 +303,26 @@ resize: none; /* Disable resizing */
 
 
 .contact__form-terms{
-    background-color: red;
+
+  cursor: pointer;
+}
+.contact__form-terms label {
+  width: 670px;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.25px;
+text-align: left;
+
+}
+.contact__form-terms .input-group{
+  display: flex;
+  height: 30px;
+  justify-content: initial;
+  flex-direction: row;
+  align-items: center;
+}
+.contact__form-terms #terms{
+  width: 24px;
+  height: 24px;
 }

@@ -108,14 +108,15 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/**contact form - radio buttons***/}
+              {/**contact form - check btton***/}
               <div className="contact__form-terms">
                 <div className="input-group">
+                <input type="checkbox" id="terms" />
                   <label htmlFor="terms">
                     I give my consent to the processing of personal data in
                     accordance with the Terms*
                   </label>
-                  <input type="checkbox" id="terms" />
+
                 </div>
               </div>
 
