@@ -228,15 +228,26 @@
 .hero_rectangle2{
     bottom: 0;
     left: 10%;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .hero_rectangle3{
     top: 0%;
     left: 14%;
-    opacity: 0.7;
+    opacity: 1;
 }
 .hero_rectangle4{
     right: 0;
     bottom: -10%;
     opacity: 0.4;
+}
+
+.hero_rectangle5{
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+.hero_rectangle6{
+  left: 20%;
+  top: 0;
+  opacity: 1;
 }

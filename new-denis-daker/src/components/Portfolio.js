@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 
+import link from "../assets/swiper/link.svg";
 const Portfolio = () => {
     const [spaceBetween, setSpaceBetween] = useState(43); // Fixed space between slides
 
@@ -56,6 +57,24 @@ const Portfolio = () => {
                             <SwiperSlide style={{ width: "767px", height: "598px" }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
+                                    <div className="swiper__image__container">
+
+                                    </div>
+
+
+                                    <div className="swiper__border__left"></div>
+                                    <div className="swiper__border__right swiper__border__right1"></div>
+                                    
+
+
+                                    <div className="swiper__button">
+                                        <a target="_blank" href="#">
+                                            <div className="swiper__button_image swiper__button_image1">
+                                                <img src={link} alt="" />
+                                            </div>
+                                            <p>ati.az</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide style={{ width: "767px", height: "598px" }}>

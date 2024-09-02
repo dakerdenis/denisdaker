@@ -16,6 +16,8 @@ import poligon1 from "../assets/poligon_hero/poligon1.svg";
 import poligon2 from "../assets/poligon_hero/poligon2.svg";
 import poligon3 from "../assets/poligon_hero/poligon3.svg";
 import poligon4 from "../assets/poligon_hero/poligon4.svg";
+import poligon5 from "../assets/poligon_hero/poligon5.svg";
+import poligon6 from "../assets/poligon_hero/poligon6.svg";
 
 import stalker from '../assets/stalker.png'
 const Hero = () => {
@@ -152,6 +154,14 @@ const Hero = () => {
         </div>
         <div className="hero_rectangle hero_rectangle4">
             <img src={poligon4} alt="" />
+        </div>
+
+        <div className="hero_rectangle hero_rectangle5">
+            <img src={poligon5} alt="" />
+        </div>
+
+        <div className="hero_rectangle hero_rectangle6">
+            <img src={poligon6} alt="" />
         </div>
 
       </div>

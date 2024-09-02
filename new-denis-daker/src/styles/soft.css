@@ -31,6 +31,7 @@
     bottom: 0;
     height: 12px;
     width: 12px;
+
 }
 
 .soft__elements__wrapper {
@@ -41,7 +42,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.soft__elements__wrapper img{
+    max-width: 55px;
+}
 
 .soft__placeholder__container {
     height: 100px;

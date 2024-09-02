@@ -6,14 +6,14 @@ import SoftPlaceholder from "./soft/SoftPlaceholder";
 
 const Soft = () => {
   const softData = [
-    { name: "HTML/CSS",image:'soft1.png', percentage: 70, rating: 7 },
-    { name: "React JS",image:'soft1.png', percentage: 50, rating: 5 },
-    { name: "JavaScript",image:'soft1.png', percentage: 90, rating: 9 },
-    { name: "Java",image:'soft1.png', percentage: 30, rating: 3 },
-    { name: "Python",image:'soft1.png', percentage: 80, rating: 8 },
-    { name: "Figma",image:'soft1.png', percentage: 10, rating: 1 },
-    { name: "Python",image:'soft1.png', percentage: 100, rating: 10 },
-    { name: "Stalker",image:'soft1.png', percentage: 30, rating: 3 },
+    { name: "Figma",image:'soft1.png', percentage: 100, rating: 10 },
+    { name: "Canva",image:'soft2.png', percentage: 100, rating: 10 },
+    { name: "Postman",image:'soft3.png', percentage: 90, rating: 9 },
+    { name: "Git",image:'soft7.png', percentage: 80, rating: 8 },
+    { name: "WinSCP",image:'soft5.png', percentage: 70, rating: 7 },
+    { name: "Photoshop",image:'soft6.png', percentage: 60, rating: 6 },
+    { name: "Docker",image:'soft4.png', percentage: 50, rating: 5},
+    { name: "Composer",image:'soft8.png', percentage: 30, rating: 3 },
   ];
 
   return (

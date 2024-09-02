@@ -3,6 +3,7 @@ import "../styles/about.css";
 import about from "../assets/about.png";
 import about_poligon1 from "../assets/poligon_about/poligon_about1.svg";
 import about_poligon2 from "../assets/poligon_about/poligon_about2.svg";
+import about_poligon3 from "../assets/poligon_about/poligon_about3.svg";
 
 import arrow_contact from "../assets/symbols/arrow_contact.svg";
 
@@ -24,6 +25,10 @@ const About = () => {
           </div>
           <div className="about__poligon2 about__poligon">
             <img src={about_poligon2} alt="" />
+          </div>
+
+          <div className="about__poligon3 about__poligon">
+            <img src={about_poligon3} alt="" />
           </div>
         </div>
         {/*****EXP AND TEXT******/}

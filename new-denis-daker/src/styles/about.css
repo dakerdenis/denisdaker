@@ -36,7 +36,10 @@
 
 .about__poligon2 {
   top: -16%;
-  opacity: 0.5;
+  opacity: 0.95;
+}
+.about__poligon3{
+  bottom: 10%;
 }
 .about__name {
   width: 185px;

@@ -1,5 +1,10 @@
+#portfolio {
+    margin-top: 40px;
+}
+
 .portfolio {
     width: 100%;
+
 }
 
 .section__portfolio__container {
@@ -24,27 +29,30 @@
 
 }
 
-.porfolio__name-name p{
+.porfolio__name-name p {
 
     font-family: Montserrat;
     font-size: 52px;
     font-weight: 600;
     line-height: 63.39px;
     text-align: left;
-    
+
     color: #fff;
 }
+
 .porfolio__name-name img {
     position: absolute;
     right: -20px;
     bottom: 13px;
 
 }
-.porfolio__name-link{
+
+.porfolio__name-link {
     width: 270.6px;
     height: 48px;
 
 }
+
 .porfolio__name-link a {
     width: 100%;
     height: 100%;
@@ -55,24 +63,70 @@
     border-radius: 40px;
     border: 1px solid #fff;
 }
-.porfolio__name-link a p{
+
+.porfolio__name-link a p {
     color: #fff;
-font-size: 20px;
-font-weight: 400;
-line-height: 24.38px;
-text-align: center;
-margin-right: 14px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: center;
+    margin-right: 14px;
 }
+
 .porfolio__container__swiper {
     width: 100%;
-    height: 600px;
+    height: 767px;
     margin-top: 64px;
 }
 
 .swiper__block_porfolio {
-    background-color: aquamarine;
+    background-color: rgb(0, 46, 31);
     height: 100%;
     width: 100%;
+    border: 2px solid white;
+    border-bottom: none;
+    /* Remove bottom border */
+    border-radius: 25px;
+    /* Adjust the border-radius as needed */
+}
+
+.swiper__border__left {
+    content: "";
+    position: absolute;
+    background-color: red;
+    left: 0px;
+    /* Align with the padding */
+    /* Align with the padding */
+    bottom: 0px;
+    /* Position at the bottom */
+    height: 50px;
+    width: 99px;
+    /* Thickness of the border */
+    border-radius: 0px 0px 0px 25px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.swiper__border__right {
+    content: "";
+    position: absolute;
+    background-color: red;
+    right: 0px;
+    /* Align with the padding */
+    /* Align with the padding */
+    bottom: 0px;
+    /* Position at the bottom */
+    height: 50px;
+    width: 360px;
+    /* Thickness of the border */
+    border-radius: 0px 0px 25px 0px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.porfolio__wrapper__swiper {
+    width: 100%;
+    height: 100%;
 }
 
 .porfolio__wrapper__swiper .swiper-slide {
@@ -84,7 +138,88 @@ margin-right: 14px;
     /* Set right margin for spacing between slides */
 }
 
+.swiper__button {
+    position: absolute;
+    min-width: 150px;
+    height: 55px;
+
+    bottom: 0;
+    left: 99px;
+    bottom: -26px;
+}
+
+.swiper__button a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.swiper__button_image {
+    height: 54px;
+    width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F9D96;
+    border-radius: 19px;
+    margin-right: 12px;
+
+}
+
+.swiper__button a p {
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+    color: #fff;
+}
+
+.swiper__block_porfolio {
+    overflow: visible;
+}
+
+.swiper-slide {
+    overflow: visible;
+}
+.swiper__border__right1{
+    width: 500px;
+}
+.swiper__button_image1{
+    background-color: #4682B4;
+    box-shadow: 0px 0px 24px 0px #4682B4;
+
+}
+.swiper__image__container{
+    position: absolute;
+    width: calc(100% + 2px);
+    height: 389px;
+    left: -1px;
+    top: -1px;
+    border-radius: 24px;
+    background-color: red;
+
+    clip-path: polygon(
+        0% 0%, /* Верхний левый угол */
+        100% 0%, /* Верхний правый угол */
+        100% 90%, /* Правая сторона чуть выше низа */
+        80% 100%, /* Неровный низ */
+        60% 85%, /* Еще одна точка для неровности */
+        40% 100%, /* Еще одна точка для неровности */
+        20% 85%, /* Еще одна точка для неровности */
+        0% 90% /* Нижний левый угол */
+    );
+
+}
+
+
+
+
+
+
 .porfolio__wrapper__swiper .swiper-slide:first-child {
     margin-left: 180px;
-    /* Set left margin for the first slide */
+    /* Set left margin for the first slide */   
 }

@@ -6,11 +6,11 @@ import StackPlaceholder from "./stacks/StackPlaceholder";
 
 const Stack = () => {
   const stackData = [
-    { name: "HTML/CSS", percentage: 70, rating: 7 },
-    { name: "React JS", percentage: 50, rating: 5 },
+    { name: "HTML/CSS", percentage: 100, rating: 10 },
     { name: "JavaScript", percentage: 90, rating: 9 },
-    { name: "Java", percentage: 30, rating: 3 },
-    { name: "Python", percentage: 80, rating: 8 },
+    { name: "PHP", percentage: 80, rating: 8 },
+    { name: "Laravel", percentage: 70, rating: 7 },
+    { name: "Nginx", percentage: 60, rating: 6 },
   ];
 
   return (
