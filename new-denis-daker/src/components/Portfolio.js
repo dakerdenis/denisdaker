@@ -57,7 +57,7 @@ const Portfolio = () => {
                             <SwiperSlide style={{ width: "767px", height: "598px" }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
-                                    <div className="swiper__image__container">
+                                    <div className="swiper__image__container swiper__image__container1">
 
                                     </div>
 
