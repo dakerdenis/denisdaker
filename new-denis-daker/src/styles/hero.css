@@ -145,6 +145,7 @@
   background-color: #9d9d9d80;
   bottom: calc(0% - 150px);
   left: calc(50% - 800px);
+
 }
 .hero__skills {
   position: absolute;
@@ -206,7 +207,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero__image__main{
+  position: absolute;
+  bottom: 0;
 
+  right: -120px;
+  bottom: calc(100% - 60px);
+}
 .hero_rectangle{
     z-index: 100;
     position: absolute;

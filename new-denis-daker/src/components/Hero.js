@@ -16,6 +16,8 @@ import poligon1 from "../assets/poligon_hero/poligon1.svg";
 import poligon2 from "../assets/poligon_hero/poligon2.svg";
 import poligon3 from "../assets/poligon_hero/poligon3.svg";
 import poligon4 from "../assets/poligon_hero/poligon4.svg";
+
+import stalker from '../assets/stalker.png'
 const Hero = () => {
   return (
     <section id="hero">
@@ -134,7 +136,9 @@ const Hero = () => {
           <div className="hero__image__daker">
 
           </div>
-          <div className="hero__image__main"></div>
+          <div className="hero__image__main">
+              <img src={stalker} alt="" />
+          </div>
         </div>
         {/*----BACGROUND RECTANGLES---*/}
         <div className="hero_rectangle hero_rectangle1">
