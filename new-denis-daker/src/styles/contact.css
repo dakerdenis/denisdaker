@@ -392,6 +392,9 @@ margin-right: 20px;
   align-items: center;
   justify-content: space-between;
   padding: 0px 53px;
+
+
+  position: relative;
 }
 
 .contact__social__daker{

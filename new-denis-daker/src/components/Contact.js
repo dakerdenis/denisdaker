@@ -195,6 +195,14 @@ const Contact = () => {
               </li>
             </ul>
           </div>
+          {/**Absolute text 1***/}
+          <div className="contact__social__text contact__social__text1">
+            Daker Creative Studio
+          </div>
+          {/**Absolute text 2***/}
+          <div className="contact__social__text contact__social__text2">
+            © 2024 denisdaker.coom - All rights reserved
+          </div>
         </div>
 
       </div>
