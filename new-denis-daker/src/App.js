@@ -28,14 +28,28 @@ function App() {
           {/**STACK**/}
           <Stack />
 
-          {/**SOFT**/}
-          <Soft />
+          <div className="main__background__placeholder">
+          <div className="main__placeholder__background">
 
-          {/**PORTFOLIO**/}
-          <Portfolio />
+            </div>
+            <div className="main__placeholder__blur"></div>
+            <div className="main__placeholder__content">
+              {/**SOFT**/}
+              <Soft />
 
-          {/***CONTACT***/}
-          <Contact />
+              {/**PORTFOLIO**/}
+              <Portfolio />
+
+              {/***CONTACT***/}
+              <Contact />
+            </div>
+
+
+
+
+
+          </div>
+
         </div>
       </div>
     </div>

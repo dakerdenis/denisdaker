@@ -4,6 +4,10 @@ import dot from "../assets/dot.svg";
 import StackElement from "./stacks/StackElement";
 import StackPlaceholder from "./stacks/StackPlaceholder";
 
+
+
+import polygon1 from "../assets/stack/poligon1.svg";
+import polygon2 from "../assets/stack/poligon2.svg";
 const Stack = () => {
   const stackData = [
     { name: "HTML/CSS", percentage: 100, rating: 10 },
@@ -16,13 +20,14 @@ const Stack = () => {
   return (
     <section id="stack">
       <div className="stack__container">
+        {/**name**/}
         <div className="stack__name">
           <p>Stack</p>
           <span>
             <img src={dot} alt="" />
           </span>
         </div>
-
+        {/**Content**/}
         <div className="stack__elements__wrapper">
           {stackData.map((item, index) => (
             <>
@@ -36,6 +41,16 @@ const Stack = () => {
             </>
           ))}
         </div>
+        {/**polygons**/}
+
+
+        <div className="stack__polygon stack__polygon1">
+            <img src={polygon1} alt="" />
+        </div>
+        <div className="stack__polygon stack__polygon2">
+            <img src={polygon2} alt="" />
+        </div>
+
       </div>
     </section>
   );

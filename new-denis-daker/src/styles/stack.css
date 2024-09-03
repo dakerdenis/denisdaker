@@ -5,7 +5,7 @@
 .stack__container{
     width: 100%;
     height: 100%;
-
+    position: relative;
 }
 
 .stack__name{
@@ -122,6 +122,15 @@ line-height: 19px;
 letter-spacing: 0.1em;
 text-align: justify;
 
+  }
+  .stack__polygon{
+    position: absolute;
+    right: 0;
+    top: -70%;
+    z-index: 700;
+  }
+  .stack__polygon2{
+    top: -57%;
   }
   
   
