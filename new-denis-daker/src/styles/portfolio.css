@@ -191,6 +191,22 @@
 .swiper__border__right2{
     width: 450px;
 }
+.swiper__border__right3{
+    width: 390px;
+}
+.swiper__border__right4{
+    width: 495px;
+}
+.swiper__border__right5{
+    width: 458px;
+}
+.swiper__border__right6{
+    width: 496px;
+}
+.swiper__border__right7{
+    width: 540px;
+}
+
 .swiper__button_image1 {
     background-color: #404040;
     box-shadow: 0px 0px 24px 0px #404040;
@@ -200,6 +216,28 @@
     background-color: #D0BFC4;
     box-shadow: 0px 0px 24px 0px #D0BFC4;
 }
+.swiper__button_image3{
+    background-color: #6C5D31;
+    box-shadow: 0px 0px 24px 0px #6C5D31;
+}
+.swiper__button_image4{
+    background-color: #ECB101;
+    box-shadow: 0px 0px 24px 0px #ECB101;
+}
+.swiper__button_image5{
+    background-color: #CE2525;
+    box-shadow: 0px 0px 24px 0px #CE2525; 
+}
+.swiper__button_image6{
+    background-color: #273049;
+    box-shadow: 0px 0px 24px 0px #273049; 
+}
+.swiper__button_image7{
+    background-color: #4682B4;
+    box-shadow: 0px 0px 24px 0px #4682B4;  
+}
+
+
 .swiper__image__container {
     position: absolute;
     width: calc(100% + 6px);
