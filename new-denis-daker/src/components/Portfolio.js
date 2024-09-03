@@ -71,23 +71,28 @@ const Portfolio = () => {
 
 
                                     
-                                    
+                                    {/* Slide quotes */}
                                     <div className="swiper__portfolio__quotes">
                                         <img src={quotes} alt="" />
                                     </div>
 
-                                    
+                                    {/* Slide Desc */}
                                     <div className="swiper__portfolio__desc">
                                         <p>
-                                        The site was developed for an Architectural advertising agency with more than 20 years of experience in the Azerbaijani market and abroad. 
-                                        The company didn't have a website, and our team was tasked with incorporating the company's years of experience and history into a simple, easy-to-use portfolio
+                                        The site was developed for an <span>Architectural advertising agency</span> with more than <span>20 years of experience</span> in the Azerbaijani market and abroad. 
+                                        The company didn't have a website, and our team was tasked with incorporating the company's <span>years of experience</span> and history into a simple, easy-to-use portfolio
                                         </p>
-                                        
+
                                         <p>
-                                        The design and concept were developed on a turnkey basis in accordance with all the wishes and requirements of the client. 
-                                        The site is designed in two color modes - day and night and in two languages, and an admin panel was developed for complete content management from the client.
+                                        The design and concept were <span>developed on a turnkey basis</span> in accordance with all the <span>wishes and requirements</span> of the client. 
+                                        The site is <span>designed in two color modes</span> - day and night and in <span>two languages</span>, and an admin panel was developed for <span>complete content management</span> from the client.
                                         </p>
                                     </div>
+                                    {/* Slide additional */}
+                                    <div className="swiper__portfolio__additional-photo">
+
+                                    </div>
+
                                     <div className="swiper__border__left"></div>
                                     <div className="swiper__border__right swiper__border__right1"></div>
                                     
