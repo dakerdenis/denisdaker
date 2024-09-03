@@ -188,13 +188,18 @@
 .swiper__border__right1 {
     width: 500px;
 }
-
+.swiper__border__right2{
+    width: 450px;
+}
 .swiper__button_image1 {
     background-color: #404040;
     box-shadow: 0px 0px 24px 0px #404040;
 
 }
-
+.swiper__button_image2{
+    background-color: #D0BFC4;
+    box-shadow: 0px 0px 24px 0px #D0BFC4;
+}
 .swiper__image__container {
     position: absolute;
     width: calc(100% + 6px);
@@ -205,6 +210,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .swiper__image__container img {
@@ -248,6 +254,24 @@
     margin-bottom: 15px;
 
 }
+
+.swiper__portfolio__additional-photo{
+    width: 455px;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 200;
+    right: 15px;
+    bottom: 180px;
+}
+.swiper__portfolio__additional-photo img {
+    max-width: 146px;
+}
+
+
+
 .porfolio__wrapper__swiper .swiper-slide:first-child {
     margin-left: 180px;
     /* Set left margin for the first slide */
