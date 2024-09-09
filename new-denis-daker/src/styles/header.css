@@ -1,9 +1,4 @@
-.blue-symbol{
-    color: var(--blue_azure);
-    font-size: 20px;
-}
-
-.header{
+.header {
     width: 100%;
     height: 65px;
     position: sticky; /* Use sticky positioning */
@@ -11,56 +6,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 48px;
     z-index: 1000; /* Ensure the header is above other content */
-}
-.header__container{
+    transition: background-color 0.1s ease-in-out; /* Smooth background transition */
+  }
+  
+  .header.with-background {
+    background-color: rgba(0, 0, 0, 0.8); /* Add background when sticky or scrolls down */
+  }
+  
+  .header.sticky {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow when sticky */
+  }
+
+
+.header__container {
     width: 100%;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     height: 50px;
 }
 
-.header__logo{
+.header__logo {
     height: 31.5px;
     width: 146px;
-
 }
+
 .header__logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.header__navigation__lang{
+
+.header__navigation__lang {
     display: flex;
     height: 100%;
 }
 
-.header__navigation{
+.header__navigation {
     height: 100%;
-
-
 }
+
 .header__navigation ul {
     height: 100%;
     align-items: center;
     display: flex;
-    
 }
-.header__navigation ul li{
+
+.header__navigation ul li {
     margin: 0px 15px;
     font-weight: 600;
     color: var(--white);
 }
+
 .header__navigation ul li a {
     color: var(--white);
     font-size: 20px;
     position: relative;
 }
-.header__navigation ul li a::before{
+
+.header__navigation ul li a::before {
     content: "";
     width: 51px;
     height: 1px;
@@ -70,12 +76,14 @@
     display: none;
     background-color: var(--blue_azure);
 }
-.header__navigation ul li a:hover::before{
+
+.header__navigation ul li a:hover::before {
     display: initial;
 }
-.header__lang{
-height: 100%;
-display: flex;
-align-items: center;
-margin-left: 30px;
+
+.header__lang {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }

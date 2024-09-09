@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/header.css";
 import logo from "../assets/Logo.svg";
 import lang from "../assets/lang.svg";
+
 const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const [hasBackground, setHasBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const stickyThreshold = 40; // The point at which the header is fully sticky
+      const earlyThreshold = stickyThreshold + 150; // 80px before the sticky point
+
+      // Add background when scrolling down
+      if (window.scrollY > stickyThreshold) {
+        setIsSticky(true);
+        setHasBackground(true);
+      }
+
+      // Remove background when scrolling back up before sticky point
+      if (window.scrollY < earlyThreshold) {
+        setIsSticky(false);
+        setHasBackground(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isSticky ? "sticky" : ""} ${hasBackground ? "with-background" : ""}`}>
       <div className="header__container">
         <div className="header__logo">
-          <img src={logo} alt="Logo" /> {/* Add the image here */}
+          <img src={logo} alt="Logo" />
         </div>
         <div className="header__navigation__lang">
-          {/**NAvigation***/}
           <div className="header__navigation">
             <ul>
               <li>
@@ -43,9 +70,8 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          {/**Switch Language***/}
           <div className="header__lang">
-            <img src={lang} alt="Language" /> {/* Add the image here */}
+            <img src={lang} alt="Language" />
           </div>
         </div>
       </div>

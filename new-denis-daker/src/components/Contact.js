@@ -12,6 +12,14 @@ import facebook from "../assets/social/ic_baseline-facebook.svg";
 import whatsapp from "../assets/social/ic_baseline-whatsapp.svg";
 import phone from "../assets/social/ph_phone-fill.svg";
 import email from "../assets/social/fluent_mail-32-filled.svg";
+
+
+import poligon1 from "../assets/contact/poligon1.svg";
+import poligon2 from "../assets/contact/poligon2.svg";
+import poligon3 from "../assets/contact/poligon3.svg";
+import poligon4 from "../assets/contact/poligon4.svg";
+import poligon5 from "../assets/contact/poligon5.svg";
+import poligon6 from "../assets/contact/poligon6.svg";
 const Contact = () => {
   return (
     <section id="contact">
@@ -203,6 +211,38 @@ const Contact = () => {
           <div className="contact__social__text contact__social__text2">
             © 2024 denisdaker.com - All rights reserved
           </div>
+
+
+
+
+        </div>
+
+
+        {/********contact poligon 1********/}
+        <div className="contact_poligon contact_poligon1">
+          <img src={poligon1} alt="" />
+        </div>
+        {/********contact poligon 2********/}
+        <div className="contact_poligon contact_poligon2">
+          <img src={poligon2} alt="" />
+        </div>
+        {/********contact poligon 3********/}
+        <div className="contact_poligon contact_poligon3">
+          <img src={poligon3} alt="" />
+        </div>
+
+        {/********contact poligon 4********/}
+        <div className="contact_poligon contact_poligon4">
+          <img src={poligon4} alt="" />
+        </div>
+        {/********contact poligon 5********/}
+        <div className="contact_poligon contact_poligon5">
+          <img src={poligon5} alt="" />
+        </div>
+
+        {/********contact poligon 6********/}
+        <div className="contact_poligon contact_poligon6">
+          <img src={poligon6} alt="" />
         </div>
 
       </div>
