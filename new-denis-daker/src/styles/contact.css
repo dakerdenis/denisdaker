@@ -490,3 +490,21 @@ bottom: 0;
   transform: rotate(-90deg);
 
 }
+
+@media only screen and (max-width: 1500px) {
+  .contact__container {
+    width: 92%;
+  }
+  .contact__social__text2 {
+    right: -120px;
+  }
+  .contact__social__text1{
+    left: -120px;
+  }
+  .contact__social__social {
+    margin-right: calc(165px);
+  }
+  .contact__image{
+    margin-left: 63px;
+  }
+}
