@@ -283,4 +283,33 @@ bottom: calc(100% - 106px);
     left: 0;
     width: 100%;
   }
+  .hero__image__daker {
+    height: 120px;
+    width: 360px;
+    right: calc(50% - 180px);
+}
+.hero__image__main{
+  transform: scale(0.8);
+  right: -202px;
+  bottom: calc(100% - 128px);
+}
+.hero__general___name p:nth-child(1) {
+  font-size: 25px;
+}
+.hero__additional{
+  background-color: initial;
+}
+.hero__skills{
+  left: 0;
+}
+.hero__skills__wrapper{
+  justify-content: space-evenly;
+}
+.skills__element__circle{
+  width: 60px;
+  height: 60px;
+}
+.skills__element__circle img{
+  width: 30px;height: 30px;
+}
 }
