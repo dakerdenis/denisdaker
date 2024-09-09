@@ -114,6 +114,8 @@ h6 {
 }
 .main__wrapper {
   padding-top: 60px; /* Ensure there is enough padding at the top */
+  width: 100%;
+
 }
 .main__background__placeholder{
   width: 100%;

@@ -1,7 +1,6 @@
 .section__about__container {
 
-
-  margin-top: 137px;
+  margin-top: 225px;
 }
 
 .section__about__container {
@@ -139,5 +138,30 @@
 @media only screen and (max-width: 790px) {
   .section__about__container{
     flex-direction: column;
+
   }
+  .abput__image__name{
+    width: 100%;
+  }
+  .about__image__block{
+    left: initial;
+    position: relative;
+    width: 250px;height: 250px;
+    margin: 0 auto;
+  }
+  .about__image__block img{
+    width: 250px;height: 250px;
+  }
+  .about__name{
+    width: 282px;
+    height: 79px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 63.39px;
+    text-align: left;
+    position: absolute;
+    right: calc(50% - 240px);
+    top: 0;
+  }
+.about__poligon{}
 }

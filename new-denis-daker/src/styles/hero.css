@@ -294,7 +294,7 @@ bottom: calc(100% - 106px);
   bottom: calc(100% - 128px);
 }
 .hero__general___name p:nth-child(1) {
-  font-size: 25px;
+  font-size: 18px;
 }
 .hero__additional{
   background-color: initial;
@@ -311,5 +311,44 @@ bottom: calc(100% - 106px);
 }
 .skills__element__circle img{
   width: 30px;height: 30px;
+}     .hero__general {
+  left: 4%;
+}
+.hero__general___name p:nth-child(2) {
+  font-size: 37px;
+  line-height: initial;
+  margin-top: 0;
+}
+.hero__general__desc{
+  display: none;
+  visibility: hidden;
+}
+
+.hero__general {
+  top: calc(50% - 291.5px);
+}
+.hero__image__daker {
+  right: calc(50% - 180px);
+  top: -122px;
+}
+
+.hero__image__main {
+  transform: scale(0.8);
+  right: 5px;
+  bottom: calc(100% - 80px);
+}
+.hero__skills__wrapper{
+  width: 330px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.hero__skills{
+  width: 100%;
+  margin: 0 auto;
+}
+.hero{
+  width: 100%;
+}.section__hero__container{
+  width: 100%;
 }
 }
