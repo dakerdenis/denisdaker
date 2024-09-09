@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .section__hero__container {
-  min-height: 100vh;
+  min-height: 868px;
   width: 100%;
   position: relative;
   top: -124px;
@@ -40,7 +40,7 @@
   position: absolute;
 
   left: calc(50% - 22.5px);
-  top: 241px;
+  top: 223px;
   height: 430px;
 }
 .hero__social__container ul {
@@ -143,8 +143,8 @@
   width: 1046px;
   border-radius: 118px;
   background-color: #9d9d9d80;
-  bottom: calc(0% - 150px);
-  left: calc(50% - 800px);
+  bottom: calc(0% - 199px);
+  left: calc(50% - 550px);
 
 }
 .hero__skills {
@@ -178,7 +178,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-bottom: 4px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -250,4 +250,17 @@
   left: 20%;
   top: 0;
   opacity: 1;
+}
+@media only screen and (max-width: 1680px) {
+  .hero__additional {
+    left: calc(50% - 523px);
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .hero__additional{
+    left: calc(50% - 580px);
+  }
+  .hero__general {
+    left: 21%;
+  }
 }
