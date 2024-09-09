@@ -508,3 +508,8 @@ bottom: 0;
     margin-left: 63px;
   }
 }
+@media only screen and (max-width: 1400px) {
+  .contact__image{
+    margin-left: 0px;
+  } 
+}

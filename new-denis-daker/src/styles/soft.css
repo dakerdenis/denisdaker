@@ -114,3 +114,49 @@ text-align: justify;
     border: 2px solid #1F9D96;
 ; /* Set your desired fill color */
   }
+
+
+  @media only screen and (max-width: 768px) {
+    .soft__element__container{
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 7px;
+    }
+    .soft__element__name p{
+        font-size: 16px;
+        line-height: initial;
+        margin-top: 0px;
+    }
+    .soft__element__name img{
+        height: 30px;
+        
+    }
+    .soft__element__percentage{
+        font-size: 10px;
+        line-height: initial;
+        top: 6px;
+        right: 10px;
+    }
+    .soft__element__rating{
+        margin-top: 15px;
+    }
+    .soft__rating__block{
+        height: 30px;
+        margin-right: 9.7px;
+        border-radius: 1.5px;
+    }
+    .soft__placeholder__container{
+        width: calc(150px + 150px + 10px);
+        order: 0;
+        height: 100%;  
+        order: 0; 
+    }
+    .soft__element__container:nth-child(1){
+        order: 1;
+    }
+    .soft__elements__wrapper{
+        width: 100%;
+    }
+  }

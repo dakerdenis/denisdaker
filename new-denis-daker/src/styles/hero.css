@@ -206,13 +206,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 300;
 }
 .hero__image__main{
   position: absolute;
   bottom: 0;
-
-  right: -120px;
-  bottom: calc(100% - 60px);
+z-index: 200;
+right: -173px;
+bottom: calc(100% - 106px);
 }
 .hero_rectangle{
     z-index: 100;
@@ -262,5 +263,14 @@
   }
   .hero__general {
     left: 21%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .hero__skills {
+    width: 536px;
+  }
+  .hero__additional{
+    width: 965px;
+    left: calc(50% - 513px);
   }
 }
