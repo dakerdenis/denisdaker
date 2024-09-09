@@ -161,7 +161,12 @@ z-index: 1000;
   
 }
 
+@media only screen and (max-width: 790px) {
 
+  .main__placeholder__content{
+    overflow: hidden;
+  }
+}
 
 
 

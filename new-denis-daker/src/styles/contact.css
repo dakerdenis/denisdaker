@@ -513,3 +513,18 @@ bottom: 0;
     margin-left: 0px;
   } 
 }
+@media only screen and (max-width: 790px) {
+.contact__container{
+  flex-direction: column;
+}
+
+/***!! *******************/
+/***!! *******************/
+/***!! *******************/
+/***!! *******************/
+/***!! *******************/
+.contact__form{
+  display: none;
+  visibility: hidden;
+}
+}

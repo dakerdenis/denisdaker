@@ -136,3 +136,8 @@
   text-align: center;
   margin-right: 13px;
 }
+@media only screen and (max-width: 790px) {
+  .section__about__container{
+    flex-direction: column;
+  }
+}

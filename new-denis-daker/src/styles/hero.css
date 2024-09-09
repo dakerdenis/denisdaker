@@ -274,3 +274,13 @@ bottom: calc(100% - 106px);
     left: calc(50% - 513px);
   }
 }
+@media only screen and (max-width: 790px) {
+  .hero__social{
+    display: none;
+    visibility: hidden;
+  }
+  .hero__additional {
+    left: 0;
+    width: 100%;
+  }
+}
