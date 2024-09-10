@@ -162,7 +162,9 @@ z-index: 1000;
   height: 100%;
   
 }
-
+.main__container{
+  width: 100%;
+}
 @media only screen and (max-width: 790px) {
 
   .main__placeholder__content{

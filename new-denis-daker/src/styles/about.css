@@ -163,5 +163,25 @@
     right: calc(50% - 240px);
     top: 0;
   }
-.about__poligon{}
+.about__poligon{
+  width: 100%;
+
+}
+.about__poligon img {
+  width: 100%;
+}
+.section__about__container {
+  margin-top: 50px;
+}
+.about__desc__text{
+  width: 95%;
+  margin: 0 auto;
+}
+.about__desc__text_wrapper{
+  width: 100%;
+}
+.about__desc__exp{
+  flex-direction: column;
+  height: initial;
+}
 }

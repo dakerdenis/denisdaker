@@ -5,6 +5,10 @@
   position: relative;
   top: -124px;
 }
+#hero {
+  width: 100%;
+
+}
 .hero_z {
   z-index: 200;
 }
@@ -216,10 +220,13 @@ right: -173px;
 bottom: calc(100% - 106px);
 }
 .hero_rectangle{
+
     z-index: 100;
     position: absolute;
 }
-
+.hero_rectangle img{
+  width: 100%;
+}
 .hero_rectangle1 {
     right: 0;
     bottom: 10%;
@@ -335,7 +342,7 @@ bottom: calc(100% - 106px);
 .hero__image__main {
   transform: scale(0.8);
   right: 5px;
-  bottom: calc(100% - 80px);
+  bottom: calc(100% - 25px);
 }
 .hero__skills__wrapper{
   width: 330px;
@@ -350,5 +357,31 @@ bottom: calc(100% - 106px);
   width: 100%;
 }.section__hero__container{
   width: 100%;
+}
+.hero_rectangle6{
+  left: 0;
+  overflow: hidden;
+}
+.hero_rectangle3 {
+  transform: rotate(-90deg);
+  left: -15%;
+}
+.hero_rectangle2{
+  bottom: 40%;
+}
+.hero_rectangle4 {
+  opacity: 1;
+}
+.hero__image__main{
+  width: 320px;
+
+  right: calc(50% - 160px);
+}
+.hero__image__main img{
+  width: 100%;
+
+}
+.hero__additional {
+  bottom: calc(0% - 40px);
 }
 }
