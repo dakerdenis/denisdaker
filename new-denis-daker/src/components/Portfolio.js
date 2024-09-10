@@ -8,9 +8,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 
-
-
-
 /***PORTFOLIO IMAGES 1****/
 import portfolio1 from "../assets/portfolio/1.png";
 import subportfolio1 from "../assets/portfolio/1/1.png";
@@ -53,30 +50,42 @@ import subportfolio7_1 from "../assets/portfolio/7/1.png";
 import subportfolio7_2 from "../assets/portfolio/7/2.png";
 import subportfolio7_3 from "../assets/portfolio/7/3.png";
 
-
-
-import quotes from '../assets/portfolio/quotes.svg';
-
+import quotes from "../assets/portfolio/quotes.svg";
 import link from "../assets/swiper/link.svg";
+
 const Portfolio = () => {
-    const [spaceBetween, setSpaceBetween] = useState(43); // Fixed space between slides
+  const [spaceBetween, setSpaceBetween] = useState(43);
+  const [slideStyle, setSlideStyle] = useState({
+    width: "767px",
+    height: "598px",
+  });
 
-    useEffect(() => {
-        const handleResize = () => {
-            // You can adjust this if you want to change behavior based on screen size,
-            // but if you want a fixed space of 43px, we can leave this out
-            setSpaceBetween(90);
-        };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSpaceBetween(25);
+        setSlideStyle({
+          width: "330px",
+          height: "500px",
+        });
+      } else {
+        setSpaceBetween(43);
+        setSlideStyle({
+          width: "767px",
+          height: "598px",
+        });
+      }
+    };
 
-        // Set the initial value
-        handleResize();
+    // Set the initial value
+    handleResize();
 
-        // Add event listener
-        window.addEventListener("resize", handleResize);
+    // Add event listener
+    window.addEventListener("resize", handleResize);
 
-        // Remove event listener on cleanup
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
     return (
         <section id="portfolio">
@@ -87,7 +96,7 @@ const Portfolio = () => {
                         <img src={dot} alt="" />
                     </div>
 
-                    <div className="porfolio__name-link">
+                    <div className="porfolio__name-link porfolio__name-link-pc">
                         <a href="#">
                             <p>View all projects</p>
                             <img src={arrow_portfolio} alt="" />
@@ -103,7 +112,7 @@ const Portfolio = () => {
                             freeMode={true}
                             modules={[FreeMode]} // Only FreeMode module
                         >
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{ ...slideStyle  }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -158,7 +167,7 @@ const Portfolio = () => {
                                 </div>
                             </SwiperSlide>
 
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{ ...slideStyle }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -210,7 +219,7 @@ const Portfolio = () => {
                                 </div>
                             </SwiperSlide>
 
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{ ...slideStyle }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -247,12 +256,12 @@ const Portfolio = () => {
                                         </div>
                                     </div>
 
-                                    <div className="swiper__border__left"></div>
+                                    <div className="swiper__border__left swiper__border__left3"></div>
                                     <div className="swiper__border__right swiper__border__right3"></div>
 
 
 
-                                    <div className="swiper__button">
+                                    <div className="swiper__button swiper__button3">
                                         <a target="_blank" href="https://fahribagirov.daker.site/">
                                             <div className="swiper__button_image swiper__button_image3">
                                                 <img src={link} alt="" />
@@ -263,7 +272,7 @@ const Portfolio = () => {
                                 </div>
                             </SwiperSlide>
 
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{ ...slideStyle  }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -318,7 +327,7 @@ const Portfolio = () => {
                             </SwiperSlide>
 
 
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{...slideStyle }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -375,7 +384,7 @@ const Portfolio = () => {
                                 </div>
                             </SwiperSlide>
 
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{ ...slideStyle  }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -427,7 +436,7 @@ const Portfolio = () => {
                                 </div>
                             </SwiperSlide>
 
-                            <SwiperSlide style={{ width: "767px", height: "598px" }}>
+                            <SwiperSlide style={{ ...slideStyle }}>
                                 <div className="swiper__block_porfolio">
                                     {/* Slide content goes here */}
                                     <div className="swiper__image__container swiper__image__container1">
@@ -481,7 +490,15 @@ const Portfolio = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
+
+
                 </div>
+                <div className="porfolio__name-link porfolio__name-link-mobile">
+                        <a href="#">
+                            <p>View all projects</p>
+                            <img src={arrow_portfolio} alt="" />
+                        </a>
+                    </div>
             </div>
         </section>
     );

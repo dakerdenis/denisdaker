@@ -76,7 +76,7 @@
 .porfolio__container__swiper {
     width: 100%;
     height: 767px;
-    margin-top: 64px;
+    margin-top: 30px;
 }
 
 .swiper__block_porfolio {
@@ -313,4 +313,89 @@
 .porfolio__wrapper__swiper .swiper-slide:first-child {
     margin-left: 180px;
     /* Set left margin for the first slide */
+}
+@media only screen and (max-width: 768px) {
+    .porfolio__wrapper__swiper .swiper-slide:first-child{
+        margin-left: 20px;
+    }
+    .swiper__image__container {
+        height: 168px;
+    }
+    .swiper__portfolio__quotes{
+        bottom: initial;
+        bottom: initial;
+        top: 144px;
+        left: 32px;
+    transform: scale(0.4);
+    }
+    
+    .swiper__portfolio__additional-photo {
+        width: 310px;
+        height: 64px;
+        bottom: 256px;
+    }
+    .swiper__portfolio__additional-photo img{
+        max-width: 108px;
+    }
+    .swiper__portfolio__desc{
+        width: 300px;
+        height: 223px;
+        bottom: 25px;
+        left: calc(50% - 150px);
+    }
+    .swiper__portfolio__desc p{
+        font-size: 10px;
+    }
+    .swiper__portfolio__desc span{
+        font-size: 10px;
+    }
+    .swiper__portfolio__desc p:nth-child(1){
+        margin-bottom: 8px;
+    }
+    .swiper__border__left {
+        width: 60px;
+    }
+    .swiper__button {
+        left: 59px;
+
+    }.swiper__border__right {
+        width: 100px;
+    }
+    .swiper__border__right2 {
+        width: 52px;
+    }
+    .swiper__border__left3{
+        width: 24px;
+    }
+    .swiper__button3{
+        left: 23px;
+    }
+    .swiper__border__right3 {
+        width: 27px;
+    }
+    .swiper__border__right5{
+        width: 61px;
+    }
+    .swiper__border__right7 {
+        width: 146px;
+    }
+    .porfolio__name{
+        flex-direction: column;
+        align-items: flex-start;
+        height: initial;
+    }
+    .porfolio__name-link {
+        margin-top: 20px;
+    }
+    .porfolio__name-link-pc{
+        display: none;
+        visibility: hidden;
+    }
+    .porfolio__container__swiper{
+        height: 530px;
+    }
+    .porfolio__name-link-mobile{
+        visibility: visible;
+        margin: 0 auto;margin-top: 10px;
+    }
 }
