@@ -29,9 +29,19 @@ function App() {
           <Stack />
 
 
+          <div className="main__background__placeholder">
+            <div className="main__placeholder__background">
+            </div>
+            <div className="main__placeholder__blur"></div>
+            <div className="main__placeholder__content">
+              {/**SOFT**/}
+              <Soft />
+
+              {/*********REST CONTENT******* */}
+            </div>
+          </div>
 
 
-          
 
         </div>
       </div>

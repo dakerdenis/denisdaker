@@ -1,28 +1,31 @@
-.stack{
+.stack {
     width: 100%;
     max-height: 600px;
 }
-.stack__container{
+
+.stack__container {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.stack__name{
+.stack__name {
     position: relative;
     margin: 0 auto;
     height: 52px;
     width: 175px;
 
 }
-.stack__name p{
+
+.stack__name p {
     color: #fff;
-font-size: 52px;
-font-weight: 600;
-line-height: 63.39px;
-text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 63.39px;
+    text-align: center;
 
 }
+
 .stack__name img {
     position: absolute;
     right: -10px;
@@ -30,7 +33,8 @@ text-align: center;
     height: 12px;
     width: 12px;
 }
-.stack__elements__wrapper{
+
+.stack__elements__wrapper {
 
     width: 1240px;
     margin: 0 auto;
@@ -42,10 +46,10 @@ text-align: center;
     z-index: 500;
 }
 
-.stack__element__container{
+.stack__element__container {
     width: 380px;
     height: 224px;
-    padding:  20px 20px 36px 36px;
+    padding: 20px 20px 36px 36px;
     border-radius: 16px;
     margin-bottom: 35px;
     filter: blur();
@@ -54,109 +58,119 @@ text-align: center;
     background: linear-gradient(180deg, rgba(67, 62, 66, 0.2699054621848739) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.stack__element__background{
+.stack__element__background {
     border-radius: 16px;
     width: 100%;
     height: 100%;
- 
+
     position: absolute;
     z-index: 200;
     filter: blur(5px);
 }
 
 
-.stack__element__data{
+.stack__element__data {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 300;
 
-    padding: 27px  36px;
+    padding: 27px 36px;
 }
-.stack__placeholder__container{
+
+.stack__placeholder__container {
     width: 430px;
     height: 200px;
 }
 
-.stack__element__name{
-color:  #FFFFFF66;
-font-size: 50px;
-font-weight: 600;
-line-height: 60.95px;
-margin-top: 20px;
+.stack__element__name {
+    color: #FFFFFF66;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60.95px;
+    margin-top: 20px;
 }
-.stack__element__percentage{
+
+.stack__element__percentage {
     position: absolute;
     right: 25px;
     top: 24px;
 
-font-size: 22px;
-font-weight: 400;
-line-height: 32.87px;   
-color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32.87px;
+    color: #fff;
 
 }
 
 
 
-.stack__element__raiting{
+.stack__element__raiting {
     display: flex;
     height: 61px;
     margin-top: 20px;
 }
+
 .stack__rating__block {
     height: 61px;
     width: 12.24px;
     border: 2px solid #FFFFFF;
     border-radius: 4px;
     margin-right: 15px;
-  }
-  
-  .stack__rating__block.filled {
-    background-color:  #1F9D96;
-    border: 2px solid #1F9D96;
-; /* Set your desired fill color */
-  }
-  .stack__placeholder__container{
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.1em;
-text-align: justify;
+}
 
-  }
-  .stack__polygon{
+.stack__rating__block.filled {
+    background-color: #1F9D96;
+    border: 2px solid #1F9D96;
+    ;
+    /* Set your desired fill color */
+}
+
+.stack__placeholder__container {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-align: justify;
+
+}
+
+.stack__polygon {
     position: absolute;
     right: 0;
     top: -70%;
     z-index: 300;
-  }
-  .stack__polygon2{
+}
+
+.stack__polygon2 {
     top: -57%;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .stack__elements__wrapper{
+}
+
+@media only screen and (max-width: 768px) {
+    .stack__elements__wrapper {
         width: 90%;
     }
 
-    .stack__element__container{
-        width: 150px;
-        height: 100px;
+    .stack__element__container {
+        width: 160px;
+        height: 110px;
         padding: 10px;
         margin-top: 10px;
         border-radius: 7px;
     }
-    .stack__element__name{
+
+    .stack__element__name {
         font-size: 16px;
         line-height: initial;
         margin-top: 0px;
     }
-    .stack__element__percentage{
+
+    .stack__element__percentage {
         font-size: 8px;
         line-height: initial;
         top: 6px;
     }
+
     .stack__rating__block {
         height: 37px;
         margin-right: 9.7px;
@@ -167,12 +181,13 @@ text-align: justify;
 
 
 
-    .stack__placeholder__container{
+    .stack__placeholder__container {
         width: 100%;
         order: 0;
         height: 100%;
     }
-    .stack__element__container:nth-child(1){
+
+    .stack__element__container:nth-child(1) {
         order: 1;
     }
 
@@ -180,13 +195,18 @@ text-align: justify;
 
 
 
-.stack__polygon2{
-    display: none;
-    visibility: hidden;
-}
-.stack__polygon1{
-    display: none;
-    visibility: hidden;
-}
+    .stack__polygon2 {
+        display: none;
+        visibility: hidden;
+    }
 
-  }
+    .stack__polygon1 {
+        display: none;
+        visibility: hidden;
+    }
+    .stack__elements__wrapper{
+        justify-content: space-evenly;
+        margin-top: 35px;
+    }
+
+}

@@ -148,15 +148,18 @@ text-align: justify;
         border-radius: 1.5px;
     }
     .soft__placeholder__container{
-        width: calc(150px + 150px + 10px);
+        width: 100%;
         order: 0;
         height: 100%;  
-        order: 0; 
+        order: 0;
+        margin-bottom: 10px;
     }
     .soft__element__container:nth-child(1){
         order: 1;
     }
     .soft__elements__wrapper{
-        width: 100%;
+        width: 90%;
+        margin-top: 38px;
+        justify-content: space-evenly;
     }
   }
