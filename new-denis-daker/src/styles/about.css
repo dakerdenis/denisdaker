@@ -160,7 +160,7 @@
     line-height: 63.39px;
     text-align: left;
     position: absolute;
-    right: calc(50% - 240px);
+    right: calc(50% - 140px);
     top: 0;
   }
 .about__poligon{
@@ -183,5 +183,15 @@
 .about__desc__exp{
   flex-direction: column;
   height: initial;
+}
+.about__me__text{
+  margin-top: 10px;
+
+}
+.about__desc__text_wrapper{
+  margin-top: 25px;
+}
+.about__poligon1{
+  right: initial;
 }
 }

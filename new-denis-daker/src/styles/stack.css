@@ -168,7 +168,7 @@ text-align: justify;
 
 
     .stack__placeholder__container{
-        width: calc(150px + 150px + 10px);
+        width: 100%;
         order: 0;
         height: 100%;
     }
@@ -180,6 +180,13 @@ text-align: justify;
 
 
 
-
+.stack__polygon2{
+    display: none;
+    visibility: hidden;
+}
+.stack__polygon1{
+    display: none;
+    visibility: hidden;
+}
 
   }

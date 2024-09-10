@@ -324,3 +324,42 @@ color: #fff;
 .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
   background: linear-gradient(135deg, #180B0B 0%, #1C423F 89.58%);
 }
+@media only screen and (max-width: 790px) {
+  #services {
+    margin-top: 164px;
+    background-position: center;
+    min-height: initial;
+  }
+  .swiper__content__container{
+    padding: 20px;
+  }
+  .swiper__number {
+    font-size: 48px;
+  }
+  .swiper__image {
+    height: 50px;
+  }
+  .swiper__image img {
+    height: 100%;
+  }
+  .swiper_name {
+    font-size: 26px;
+    margin-bottom: 0px;
+  }
+  .swiper__content__container{
+    justify-content: space-between;
+  }
+  .services__wrapper__swiper{
+    margin-top: 50px;
+  }
+  .section__second__services{
+    display: none;
+    visibility: hidden;
+  }
+  .section__services__container{
+    min-height: initial;
+  }
+  .section__services__background{
+    min-height: initial;
+  }
+}

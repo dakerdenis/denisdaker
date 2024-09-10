@@ -22,10 +22,16 @@ function App() {
           {/**ABOUT ME***/}
           <About />
 
+          {/**SERVICES**/}
+          <Services />
+
+          {/**STACK**/}
+          <Stack />
 
 
 
 
+          
 
         </div>
       </div>
