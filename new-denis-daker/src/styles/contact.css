@@ -516,15 +516,89 @@ bottom: 0;
 @media only screen and (max-width: 790px) {
 .contact__container{
   flex-direction: column;
+  align-items: center;
+}
+.contact__desc{
+  width: 90%;
+  margin: 0 auto;
+  z-index: 500;
+  position: relative;
+}
+.contact__desc p{
+  font-size: 20px;
+  line-height: 30px;
+  
+}
+.contact__image{
+  width: 240px;
+  height: 240px;
+  border: 7px solid #1F9D96;
+}
+.contact__image-name img{
+  width: 8px;height: 8px;
+}
+.contact__image-name p {
+  font-size: 37px;
+}
+.contact__image-name{
+  height: 38px;
+  width: 156px;
+}
+.contact__container{
+  margin-top: 0;
 }
 
+.contact__social__text2{
+  right: initial;
+  top: initial;
+  transform: initial;
+  bottom: 10px;
+}
+.contact__social__text1{
+  display: none;
+  visibility: hidden;
+}
+.contact_poligon img {
+  width: 100%;
+}
+.contact_poligon3{
+
+}
 /***!! *******************/
 /***!! *******************/
 /***!! *******************/
 /***!! *******************/
 /***!! *******************/
 .contact__form{
+  width: 95%;
+  height: initial;
+}
+.contact__form-form {
+  padding: 20px;
+}
+.contact__form-input_container{
+  flex-direction: column;
+}
+.contact__form-input__data{
+  width: 100%;
+}
+.contact__social__social ul a{
+  width: 35px;
+  height: 35px;
+}
+.contact__social__social ul a img{
+  width: 20px;
+  height: 20px;
+}
+.contact__social__daker{
   display: none;
   visibility: hidden;
+}
+.contact__social__{
+  align-items: center;
+  justify-content: center;
+}
+.contact__social__social{
+  margin-right: 0;
 }
 }
