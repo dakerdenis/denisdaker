@@ -162,4 +162,10 @@ text-align: justify;
         margin-top: 38px;
         justify-content: space-evenly;
     }
+    .soft__placeholder__container{
+        font-size: 13px;
+    }
+    .porfolio__name{
+        justify-content: center;
+    }
   }

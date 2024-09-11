@@ -1,5 +1,0 @@
-    {/**PORTFOLIO**/}
-    <Portfolio />
-
-    {/***CONTACT***/}
-    <Contact />

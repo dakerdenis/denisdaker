@@ -38,8 +38,13 @@ function App() {
               <Soft />
 
               {/*********REST CONTENT******* */}
-                  {/**PORTFOLIO**/}
-    <Portfolio />
+              {/**PORTFOLIO**/}
+              <Portfolio />
+
+              
+
+    {/***CONTACT***/}
+    <Contact />
             </div>
           </div>
 
