@@ -384,4 +384,25 @@ bottom: calc(100% - 106px);
 .hero__additional {
   bottom: calc(0% - 40px);
 }
+
+}
+@media only screen and (max-width: 390px) {
+  .hero__image__daker{
+    right: calc(50% - 136px);
+    height: 107px;
+    width: 276px;
+  }
+  .hero__image__main {
+    right: calc(50% - 154px);
+  }
+  .hero__general___name p:nth-child(2) {
+    font-size: 31px;
+  }
+  .about__desc__element div {
+    font-size: 40px;
+  }
+  .about__desc__element p{
+    font-size: 18px;
+  }
+
 }
