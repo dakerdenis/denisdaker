@@ -13,22 +13,22 @@ const About = () => {
       <div className="section__about__container">
         {/*****NAME AND IMAGE******/}
         <div className="abput__image__name">
-          {/*about IMAGE main*/}
+          {/*about IMAGE main*/} 
           <div className="about__image__block about-z">
-            <img src={about} alt="" />
+            <img src={about} alt="Denis Akershteyn" />
           </div>
           {/*about name*/}
           <div className="about__name about-z">About me</div>
           {/*about poligons*/}
           <div className="about__poligon1 about__poligon">
-            <img src={about_poligon1} alt="" />
+            <img src={about_poligon1} alt="Polygon decoration 1" />
           </div>
           <div className="about__poligon2 about__poligon">
-            <img src={about_poligon2} alt="" />
+            <img src={about_poligon2} alt="Polygon decoration 2" />
           </div>
 
           <div className="about__poligon3 about__poligon">
-            <img src={about_poligon3} alt="" />
+            <img src={about_poligon3} alt="Polygon decoration 3" />
           </div>
         </div>
         {/*****EXP AND TEXT******/}
@@ -67,10 +67,9 @@ const About = () => {
               <div className="about__button__contact">
                 <button>
                   <p> Contact me</p>
-                  <img src={arrow_contact} alt="" />
+                  <img src={arrow_contact} alt="Arrow pointing to contact" />
                 </button>
               </div>
-              
             </div>
           </div>
         </div>
