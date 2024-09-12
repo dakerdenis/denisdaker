@@ -23,13 +23,15 @@ const SoftElement = ({ name, image, percentage, rating }) => {
       { threshold: 0.5 } // Adjust threshold as needed
     );
 
-    if (ratingRef.current) {
-      observer.observe(ratingRef.current);
+    const currentRef = ratingRef.current; // Capture current ref value
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ratingRef.current) {
-        observer.unobserve(ratingRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef); // Use the captured ref value here
       }
     };
   }, [rating]);

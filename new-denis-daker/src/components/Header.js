@@ -41,28 +41,28 @@ const Header = () => {
           <div className="header__navigation">
             <ul>
               <li>
-                <a href="#">
+                <a href="#about">
                   <span className="blue-symbol">&lt;</span>
                   About
                   <span className="blue-symbol">&gt;</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#services">
                   <span className="blue-symbol">&lt;</span>
                   Services
                   <span className="blue-symbol">&gt;</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#portfolio">
                   <span className="blue-symbol">&lt;</span>
                   Portfolio
                   <span className="blue-symbol">&gt;</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#contact">
                   <span className="blue-symbol">&lt;</span>
                   Contacts
                   <span className="blue-symbol">&gt;</span>

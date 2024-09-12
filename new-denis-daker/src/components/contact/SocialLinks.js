@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import linkdin from "../assets/social/ri_linkedin-fill.svg";
 import telegram from "../assets/social/mingcute_telegram-fill.svg";
 import instagram from "../assets/social/mdi_instagram.svg";
@@ -52,4 +52,3 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
-``

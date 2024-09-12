@@ -23,13 +23,15 @@ const StackElement = ({ name, percentage, rating }) => {
       { threshold: 0.5 } // Adjust threshold as needed
     );
 
-    if (ratingRef.current) {
-      observer.observe(ratingRef.current);
+    const currentRef = ratingRef.current; // Capture the ref value
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ratingRef.current) {
-        observer.unobserve(ratingRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef); // Use the captured ref value here
       }
     };
   }, [rating]);
@@ -39,7 +41,7 @@ const StackElement = ({ name, percentage, rating }) => {
       <div className="stack__element__percentage">{percentage}%</div>
       <div className="stack__element__name">{name}</div>
 
-      <div className="stack__element__raiting">
+      <div className="stack__element__rating">
         {Array.from({ length: 10 }, (_, index) => (
           <div
             key={index}
