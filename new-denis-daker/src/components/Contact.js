@@ -1,33 +1,18 @@
 import React from "react";
 import "../styles/contact.css";
 import dot from "../assets/dot.svg";
-import arrow from "../assets/contact/Vector.svg";
-import logo from "../assets/contact/Logo.svg";
+import ContactForm from "./contact/ContactForm";
+import SocialLinks from "./contact/SocialLinks";
+import ContactFooter from "./contact/ContactFooter";
+import ContactPolygons from "./contact/ContactPolygons";
 
-
-import linkdin from "../assets/social/ri_linkedin-fill.svg";
-import telegram from "../assets/social/mingcute_telegram-fill.svg";
-import instagram from "../assets/social/mdi_instagram.svg";
-import facebook from "../assets/social/ic_baseline-facebook.svg";
-import whatsapp from "../assets/social/ic_baseline-whatsapp.svg";
-import phone from "../assets/social/ph_phone-fill.svg";
-import email from "../assets/social/fluent_mail-32-filled.svg";
-
-
-import poligon1 from "../assets/contact/poligon1.svg";
-import poligon2 from "../assets/contact/poligon2.svg";
-import poligon3 from "../assets/contact/poligon3.svg";
-import poligon4 from "../assets/contact/poligon4.svg";
-import poligon5 from "../assets/contact/poligon5.svg";
-import poligon6 from "../assets/contact/poligon6.svg";
 const Contact = () => {
   return (
     <section id="contact">
       <div className="contact__wrapper">
         <div className="contact__desc">
           <p>
-            Leave your details for feedback or contact me in a way convenient
-            for you.
+            Leave your details for feedback or contact me in a way convenient for you.
           </p>
         </div>
 
@@ -36,215 +21,17 @@ const Contact = () => {
           <div className="contact__image">
             <div className="contact__image-name">
               <p>Contact</p>
-              <img src={dot} alt="" />
+              <img src={dot} alt="Dot Decoration" />
             </div>
           </div>
+
           {/**contact form***/}
-          <div className="contact__form">
-            <form className="contact__form-form">
-              {/**contact form - inputs***/}
-              <div className="contact__form-input_container">
-                <div className="contact__form-input__data">
-                  <div className="input-group">
-                    <label htmlFor="name">Name</label>
-                    <div className="input-group-input">
-                      <input type="text" id="name" placeholder="Your name" />
-                    </div>
-                  </div>
-
-                  <div className="input-group">
-                    <label htmlFor="number">Number</label>
-                    <div className="input-group-input">
-                      <input
-                        type="text"
-                        id="number"
-                        placeholder="Your mobile number"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="input-group">
-                    <label htmlFor="email">E-mail</label>
-                    <div className="input-group-input">
-                      <input
-                        type="email"
-                        id="email"
-                        placeholder="Your e-mail address"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="contact__form-input__data contact__form-input__data2">
-                  <div className="input-group">
-                    <label htmlFor="message">How can I help you?</label>
-                    <div className="contact-textarea">
-                      <textarea
-                        id="message"
-                        placeholder="Leave the message"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div className="input-group">
-                    <label>How can I contact you?</label>
-                    <div className="radio-group">
-                      <div className="radio-block-group">
-                        <input
-                          type="radio"
-                          id="email-contact"
-                          name="contact-method"
-                          value="email"
-                          className="custom-radio"
-                        />
-                        <label htmlFor="email-contact">E-Mail</label>
-                      </div>
-
-                      <div className="radio-block-group">
-                        <input
-                          type="radio"
-                          id="phone-contact"
-                          name="contact-method"
-                          value="phone"
-                          className="custom-radio"
-                        />
-                        <label htmlFor="phone-contact">Phone</label>
-                      </div>
-
-                      <div className="radio-block-group">
-                        <input
-                          type="radio"
-                          id="both-contact"
-                          name="contact-method"
-                          value="both"
-                          className="custom-radio"
-                        />
-                        <label htmlFor="both-contact">Both</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/**contact form - check btton***/}
-              <div className="contact__form-terms">
-                <div className="input-group">
-                  <input type="checkbox" id="terms" />
-                  <label htmlFor="terms">
-                    I give my consent to the processing of personal data in
-                    accordance with the Terms*
-                  </label>
-
-                </div>
-              </div>
-
-              {/**submit button***/}
-              <div className="contact__form-button">
-                <button type="submit">
-                  <p>Send request</p>
-                  <img src={arrow} alt="" />
-                </button>
-              </div>
-            </form>
-          </div>
+          <ContactForm />
         </div>
 
-
-
-        <div className="contact__social__">
-
-          {/**Footer Logo***/}
-          <div className="contact__social__daker">
-            <img src={logo} alt="" />
-          </div>
-
-          {/**contact social social***/}
-          <div className="contact__social__social">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src={linkdin} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src={telegram} />
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <img src={instagram} />
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <img src={facebook} />
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <img src={whatsapp} />
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <img src={phone} />
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <img src={email} />
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/**Absolute text 1***/}
-          <div className="contact__social__text contact__social__text1">
-            Daker Creative Studio
-          </div>
-          {/**Absolute text 2***/}
-          <div className="contact__social__text contact__social__text2">
-            © 2024 denisdaker.com - All rights reserved
-          </div>
-
-
-
-
-        </div>
-
-
-        {/********contact poligon 1********/}
-        <div className="contact_poligon contact_poligon1">
-          <img src={poligon1} alt="" />
-        </div>
-        {/********contact poligon 2********/}
-        <div className="contact_poligon contact_poligon2">
-          <img src={poligon2} alt="" />
-        </div>
-        {/********contact poligon 3********/}
-        <div className="contact_poligon contact_poligon3">
-          <img src={poligon3} alt="" />
-        </div>
-
-        {/********contact poligon 4********/}
-        <div className="contact_poligon contact_poligon4">
-          <img src={poligon4} alt="" />
-        </div>
-        {/********contact poligon 5********/}
-        <div className="contact_poligon contact_poligon5">
-          <img src={poligon5} alt="" />
-        </div>
-
-        {/********contact poligon 6********/}
-        <div className="contact_poligon contact_poligon6">
-          <img src={poligon6} alt="" />
-        </div>
-
+        <ContactFooter />
+        <SocialLinks />
+        <ContactPolygons />
       </div>
     </section>
   );
