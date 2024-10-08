@@ -1,40 +1,41 @@
-import portfolio1 from "../assets/portfolio/1.png";
-import subportfolio1 from "../assets/portfolio/1/1.png";
-import subportfolio2 from "../assets/portfolio/1/2.png";
-import subportfolio3 from "../assets/portfolio/1/3.png";
+import portfolio1 from "../../assets/portfolio/1.png";
+import subportfolio1 from "../../assets/portfolio/1/1.png";
+import subportfolio2 from "../../assets/portfolio/1/2.png";
+import subportfolio3 from "../../assets/portfolio/1/3.png";
 
-import portfolio2 from "../assets/portfolio/2.png";
-import subportfolio2_1 from "../assets/portfolio/2/1.png";
-import subportfolio2_2 from "../assets/portfolio/2/2.png";
-import subportfolio2_3 from "../assets/portfolio/2/3.png";
 
-import portfolio3 from "../assets/portfolio/3.png";
-import subportfolio3_1 from "../assets/portfolio/3/1.png";
-import subportfolio3_2 from "../assets/portfolio/3/2.png";
-import subportfolio3_3 from "../assets/portfolio/3/3.png";
+import portfolio2 from "../../assets/portfolio/2.png";
+import subportfolio2_1 from "../../assets/portfolio/2/1.png";
+import subportfolio2_2 from "../../assets/portfolio/2/2.png";
+import subportfolio2_3 from "../../assets/portfolio/2/3.png";
 
-import portfolio4 from "../assets/portfolio/4.png";
-import subportfolio4_1 from "../assets/portfolio/4/1.png";
-import subportfolio4_2 from "../assets/portfolio/4/2.png";
-import subportfolio4_3 from "../assets/portfolio/4/3.png";
+import portfolio3 from "../../assets/portfolio/3.png";
+import subportfolio3_1 from "../../assets/portfolio/3/1.png";
+import subportfolio3_2 from "../../assets/portfolio/3/2.png";
+import subportfolio3_3 from "../../assets/portfolio/3/3.png";
 
-import portfolio5 from "../assets/portfolio/5.png";
-import subportfolio5_1 from "../assets/portfolio/5/1.png";
-import subportfolio5_2 from "../assets/portfolio/5/2.png";
-import subportfolio5_3 from "../assets/portfolio/5/3.png";
+import portfolio4 from "../../assets/portfolio/4.png";
+import subportfolio4_1 from "../../assets/portfolio/4/1.png";
+import subportfolio4_2 from "../../assets/portfolio/4/2.png";
+import subportfolio4_3 from "../../assets/portfolio/4/3.png";
 
-import portfolio6 from "../assets/portfolio/6.png";
-import subportfolio6_1 from "../assets/portfolio/6/1.png";
-import subportfolio6_2 from "../assets/portfolio/6/2.png";
-import subportfolio6_3 from "../assets/portfolio/6/3.png";
+import portfolio5 from "../../assets/portfolio/5.png";
+import subportfolio5_1 from "../../assets/portfolio/5/1.png";
+import subportfolio5_2 from "../../assets/portfolio/5/2.png";
+import subportfolio5_3 from "../../assets/portfolio/5/3.png";
 
-import portfolio7 from "../assets/portfolio/7.png";
-import subportfolio7_1 from "../assets/portfolio/7/1.png";
-import subportfolio7_2 from "../assets/portfolio/7/2.png";
-import subportfolio7_3 from "../assets/portfolio/7/3.png";
+import portfolio6 from "../../assets/portfolio/6.png";
+import subportfolio6_1 from "../../assets/portfolio/6/1.png";
+import subportfolio6_2 from "../../assets/portfolio/6/2.png";
+import subportfolio6_3 from "../../assets/portfolio/6/3.png";
 
-import quotes from "../assets/portfolio/quotes.svg";
-import link from "../assets/swiper/link.svg";
+import portfolio7 from "../../assets/portfolio/7.png";
+import subportfolio7_1 from "../../assets/portfolio/7/1.png";
+import subportfolio7_2 from "../../assets/portfolio/7/2.png";
+import subportfolio7_3 from "../../assets/portfolio/7/3.png";
+
+import quotes from "../../assets/portfolio/quotes.svg";
+import link from "../../assets/swiper/link.svg";
 
 const portfolioData = [
   {

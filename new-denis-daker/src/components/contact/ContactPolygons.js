@@ -1,10 +1,10 @@
 import React from "react";
-import poligon1 from "../assets/contact/poligon1.svg";
-import poligon2 from "../assets/contact/poligon2.svg";
-import poligon3 from "../assets/contact/poligon3.svg";
-import poligon4 from "../assets/contact/poligon4.svg";
-import poligon5 from "../assets/contact/poligon5.svg";
-import poligon6 from "../assets/contact/poligon6.svg";
+import poligon1 from "../../assets/contact/poligon1.svg";
+import poligon2 from "../../assets/contact/poligon2.svg";
+import poligon3 from "../../assets/contact/poligon3.svg";
+import poligon4 from "../../assets/contact/poligon4.svg";
+import poligon5 from "../../assets/contact/poligon5.svg";
+import poligon6 from "../../assets/contact/poligon6.svg";
 
 const ContactPolygons = () => {
   return (

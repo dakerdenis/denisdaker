@@ -1,9 +1,9 @@
 // HeroSkills.js
 import React from "react";
-import skill1 from "../assets/skills/1.svg";
-import skill2 from "../assets/skills/2.svg";
-import skill3 from "../assets/skills/3.svg";
-import skill4 from "../assets/skills/4.svg";
+import skill1 from "../../assets/skills/1.svg";
+import skill2 from "../../assets/skills/2.svg";
+import skill3 from "../../assets/skills/3.svg";
+import skill4 from "../../assets/skills/4.svg";
 
 const HeroSkills = () => {
   return (

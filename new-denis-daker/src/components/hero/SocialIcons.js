@@ -1,12 +1,13 @@
 // SocialIcons.js
 import React from "react";
-import linkedin from "../assets/social/ri_linkedin-fill.svg";
-import telegram from "../assets/social/mingcute_telegram-fill.svg";
-import instagram from "../assets/social/mdi_instagram.svg";
-import facebook from "../assets/social/ic_baseline-facebook.svg";
-import whatsapp from "../assets/social/ic_baseline-whatsapp.svg";
-import phone from "../assets/social/ph_phone-fill.svg";
-import email from "../assets/social/fluent_mail-32-filled.svg";
+import linkedin from "../../assets/social/ri_linkedin-fill.svg";
+import telegram from "../../assets/social/mingcute_telegram-fill.svg";
+import instagram from "../../assets/social/mdi_instagram.svg";
+import facebook from "../../assets/social/ic_baseline-facebook.svg";
+import whatsapp from "../../assets/social/ic_baseline-whatsapp.svg";
+import phone from "../../assets/social/ph_phone-fill.svg";
+import email from "../../assets/social/fluent_mail-32-filled.svg";
+
 
 const SocialIcons = () => {
   return (

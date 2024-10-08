@@ -1,5 +1,5 @@
 import React from 'react';
-import arrow from "../assets/contact/Vector.svg";
+import arrow from "../../assets/contact/Vector.svg";
 
 const ContactForm = () => {
   return (

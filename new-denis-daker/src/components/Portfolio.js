@@ -2,8 +2,10 @@ import React from "react";
 import "../styles/portfolio.css";
 import dot from "../assets/dot.svg";
 import arrow_portfolio from "../assets/arow_portfolio.svg";
-import PortfolioContainer from "./hero/PortfolioContainer";
-import portfolioData from "../data/portfolioData"; // You'll create a file for this.
+import PortfolioContainer from "./portfolio/PortfolioContainer";
+import portfolioData from "./portfolio/portfolioData";
+
+
 
 const Portfolio = () => {
   return (
@@ -15,10 +17,11 @@ const Portfolio = () => {
             <img src={dot} alt="Dot" />
           </div>
           <div className="porfolio__name-link porfolio__name-link-pc">
-            <a href="#">
-              <p>View all projects</p>
-              <img src={arrow_portfolio} alt="View all projects" />
-            </a>
+            <button type="button">
+            <p>View all projects</p>
+            <img src={arrow_portfolio} alt="View all projects" />
+            </button>
+
           </div>
         </div>
 

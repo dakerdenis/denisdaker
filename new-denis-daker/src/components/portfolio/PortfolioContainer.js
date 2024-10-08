@@ -4,7 +4,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
 import PortfolioSlide from "./PortfolioSlide";
-import "../styles/portfolio.css";
+import "../../styles/portfolio.css";
+
 
 const PortfolioContainer = ({ portfolios }) => {
   const [spaceBetween, setSpaceBetween] = useState(43);
