@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/contact.css";
 import dot from "../assets/dot.svg";
 import ContactForm from "./contact/ContactForm";
-import SocialLinks from "./contact/SocialLinks";
 import ContactFooter from "./contact/ContactFooter";
 import ContactPolygons from "./contact/ContactPolygons";
 
@@ -30,7 +29,7 @@ const Contact = () => {
         </div>
 
         <ContactFooter />
-        <SocialLinks />
+
         <ContactPolygons />
       </div>
     </section>

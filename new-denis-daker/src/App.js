@@ -41,10 +41,10 @@ function App() {
               {/**PORTFOLIO**/}
               <Portfolio />
 
-              
 
-    {/***CONTACT***/}
-    <Contact />
+
+              {/***CONTACT***/}
+              <Contact />
             </div>
           </div>
 
