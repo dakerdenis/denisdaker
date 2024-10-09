@@ -32,10 +32,10 @@ const Portfolio = () => {
         </div>
 
         <div className="porfolio__name-link porfolio__name-link-mobile">
-          <a href="#">
+          <button>
             <p>View all projects</p>
             <img src={arrow_portfolio} alt="View all projects" />
-          </a>
+          </button>
         </div>
       </div>
     </section>
