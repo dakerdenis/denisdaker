@@ -264,10 +264,17 @@ height: 650px;
   top: 0;
   opacity: 1;
 }
+@media only screen and (max-width: 1610px){
+  .hero__skills {
+    width: 64%;
+    right: 20%;
+  } 
+}
 @media only screen and (max-width: 1680px) {
   .hero__additional {
     left: calc(50% - 523px);
   }
+  
 }
 @media only screen and (max-width: 1500px) {
   .hero__additional{
@@ -275,6 +282,10 @@ height: 650px;
   }
   .hero__general {
     left: 21%;
+  }
+  .hero__skills {
+    width: 921px;
+    right: 24%;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -284,6 +295,22 @@ height: 650px;
   .hero__additional{
     width: 965px;
     left: calc(50% - 513px);
+  }
+  .hero__skills{
+    right: 22%;
+  }
+  .hero__image__daker {
+    height: 191px;
+    width: 469px;
+  }
+  .hero__image__main{
+    height: 580px;
+    bottom: calc(100% - 97px);
+    right: 99px;
+  }
+  
+  .hero__skills {
+    bottom: -97px;
   }
 }
 @media only screen and (max-width: 790px) {
