@@ -200,4 +200,7 @@
 .about__desc__text{
   height: initial;
 }
+.section__about__container {
+  margin-top: 152px;
+}
 }

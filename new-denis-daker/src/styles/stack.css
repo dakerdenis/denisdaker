@@ -208,5 +208,10 @@
         justify-content: space-evenly;
         margin-top: 35px;
     }
+    .stack__placeholder__container {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 10px;
+    }
 
 }
