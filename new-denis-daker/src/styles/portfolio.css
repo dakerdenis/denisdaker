@@ -64,7 +64,7 @@
     border: 1px solid #fff;
 }
 
-.porfolio__name-link a p {
+.porfolio__name-link button p {
     color: #fff;
     font-size: 20px;
     font-weight: 400;
@@ -313,6 +313,10 @@
 .porfolio__wrapper__swiper .swiper-slide:first-child {
     margin-left: 180px;
     /* Set left margin for the first slide */
+}
+.porfolio__name-link-mobile{
+    display: none;
+    visibility: hidden;
 }
 @media only screen and (max-width: 768px) {
     .porfolio__wrapper__swiper .swiper-slide:first-child{

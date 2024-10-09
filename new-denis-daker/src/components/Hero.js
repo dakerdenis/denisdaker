@@ -11,7 +11,7 @@ import poligon3 from "../assets/poligon_hero/poligon3.svg";
 import poligon4 from "../assets/poligon_hero/poligon4.svg";
 import poligon5 from "../assets/poligon_hero/poligon5.svg";
 import poligon6 from "../assets/poligon_hero/poligon6.svg";
-import stalker from "../assets/stalker.png";
+
 
 const Hero = () => {
   return (
@@ -26,10 +26,7 @@ const Hero = () => {
         {/* Hero Skills */}
         <HeroSkills />
 
-        {/* Main Image */}
-        <div className="hero__image__main">
-          <img src={stalker} alt="Stalker character" />
-        </div>
+
 
         {/* Background Rectangles */}
         <div className="hero_rectangle hero_rectangle1">

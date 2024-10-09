@@ -41,7 +41,7 @@ const StackElement = ({ name, percentage, rating }) => {
       <div className="stack__element__percentage">{percentage}%</div>
       <div className="stack__element__name">{name}</div>
 
-      <div className="stack__element__rating">
+      <div className="stack__element__raiting">
         {Array.from({ length: 10 }, (_, index) => (
           <div
             key={index}

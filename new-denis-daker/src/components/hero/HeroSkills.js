@@ -4,7 +4,7 @@ import skill1 from "../../assets/skills/1.svg";
 import skill2 from "../../assets/skills/2.svg";
 import skill3 from "../../assets/skills/3.svg";
 import skill4 from "../../assets/skills/4.svg";
-
+import stalker from "../../assets/stalker.png";
 const HeroSkills = () => {
   return (
     <div className="hero__skills">
@@ -36,6 +36,12 @@ const HeroSkills = () => {
             <img src={skill4} alt="Design" />
           </div>
           <div className="skills__element__desc">Design</div>
+        </div>
+      </div>
+      <div className="hero__image__daker">
+        {/* Main Image */}
+        <div className="hero__image__main">
+          <img src={stalker} alt="Stalker character" />
         </div>
       </div>
     </div>
