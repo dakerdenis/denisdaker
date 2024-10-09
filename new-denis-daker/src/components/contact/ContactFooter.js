@@ -5,7 +5,7 @@ import Logo from '../../assets/contact/Logo.svg'
 const ContactFooter = () => {
   return (
     <div className="contact__footer">      
-        <img src={Logo} alt="" />
+        <img className='contact__footer_image' src={Logo} alt="" />
         <SocialLinks />
         <div className='contact__social__text contact__social__text1'>
         Daker Creative Studio

@@ -738,4 +738,19 @@ input[type="checkbox"]:hover {
   .input-group input {
     padding-left: 10px;
   }
+  input[type="checkbox"] {
+    width: 40px;
+  }
+  .contact__footer{
+    z-index: 500;
+  }
+  .contact__footer{
+    flex-direction: column-reverse;
+    justify-content: initial;
+    align-items: center;
+    padding: 0px 30px 40px 30px;
+  }
+  .contact__footer_image{
+    margin-top: 10px;
+  }
 }
