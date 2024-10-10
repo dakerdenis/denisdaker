@@ -6,6 +6,7 @@ import lang from "../assets/lang.svg";
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
+  const [showLangDropdown, setShowLangDropdown] = useState(false); // State for language dropdown visibility
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,8 +71,24 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="header__lang">
+
+          {/* Language Selector */}
+          <div
+            className="header__lang"
+            onMouseEnter={() => setShowLangDropdown(true)}
+            onMouseLeave={() => setShowLangDropdown(false)}
+          >
             <img src={lang} alt="Language" />
+
+            {showLangDropdown && (
+              <div className="header__lang-dropdown">
+                <ul>
+                  <li>AZ</li>
+                  <li>RU</li>
+                  <li>EN</li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -85,8 +85,55 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 30px;
+    cursor: pointer;
+
+    width: 50px;
+    
 }
+
+/********** language toggle***/
+/* Positioning for the language dropdown */
+.header__lang {
+    position: relative; /* Necessary to position the dropdown below the icon */
+  }
+  
+  .header__lang-dropdown {
+    position: absolute;
+    top: 100%; /* Places it below the language icon */
+    left: -10px;
+    background: linear-gradient(180deg, #07E6D9 10%, #1C423F 80.58%);
+
+    box-shadow: #ffffff4f 0px -2px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .header__lang-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__lang-dropdown ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: white;
+    
+  }
+  .header__lang-dropdown ul li:nth-child(2){
+    border-top: 0.5px #e3e3e34f solid;
+    border-bottom: 0.5px #e3e3e34f solid;;
+  }
+  
+  .header__lang-dropdown ul li:hover {
+
+  }
+  
+
 @media only screen and (max-width: 790px) {
     .header__navigation__lang{
         display: none;

@@ -95,7 +95,7 @@
     ,#1f9d96, #3c67e3 50%, #4e00c2);
     position: absolute;
     z-index: -1;
-    top: 0%;
+    top: -1%;
     left: 0%;
     animation: spin 2.5s linear infinite;
 }
