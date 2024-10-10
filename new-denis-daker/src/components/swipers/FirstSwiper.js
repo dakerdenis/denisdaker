@@ -61,7 +61,7 @@ const FirstSwiper = () => {
       <Swiper
         spaceBetween={spaceBetween} // Use the state value
         slidesPerView="auto" // Set slidesPerView to auto
-        freeMode={true}
+        freeMode={true}      
         modules={[FreeMode]} // Only FreeMode module
       >
         <SwiperSlide style={{ ...slideStyle }}>
