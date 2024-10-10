@@ -17,7 +17,7 @@ const Contact = () => {
 
         <div className="contact__container">
           {/**contact image***/}
-          <div className="contact__image">
+          <div className="contact__image card">
             <div className="contact__image-name">
               <p>Contact</p>
               <img src={dot} alt="Dot Decoration" />

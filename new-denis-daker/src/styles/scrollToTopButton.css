@@ -3,15 +3,28 @@
     bottom: 30px;
     right: 30px;
     padding: 10px;
+    height: 40px;
+    width: 40px;
     font-size: 24px;
-    background-color: #000;
+
     color: #fff;
     border: none;
-    border-radius: 50%;
+    border-radius: 100px;
     cursor: pointer;
     z-index: 1000;
     opacity: 0.8;
     transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 56px;
+    height: 56px;
+
+    background: linear-gradient(180deg, #07E6D9 10%, #1C423F 80.58%);
+
+    box-shadow: #ffffff4f 0px -2px 10px;
   }
   
   .scroll-to-top:hover {
