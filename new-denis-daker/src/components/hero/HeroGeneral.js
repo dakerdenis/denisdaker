@@ -1,22 +1,22 @@
 // HeroGeneral.js
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 const HeroGeneral = () => {
+  const { t } = useTranslation(); // Access translation functions
   return (
     <div className="hero__general hero_z">
       <div className="hero__general__about">
         <div className="hero__general__name">
-          <p>FULL-STACK WEB DEVELOPER</p>
-          <p>Denis Akershteyn</p>
+          <p>{t('hero.title')}</p>
+          <p>{t('hero.name')}</p>
         </div>
 
         <div className="hero__general__desc">
-          <p>Welcome!</p>
-          <p>I'm Denis Akershteyn— glad to welcome you to my website.</p>
-          <p>For more than 3 years, I have been constantly improving my skills in this area.</p>
+          <p>{t('hero.welcome')}</p>
+          <p>{t('hero.hero1')}</p>
+          <p>{t('hero.hero2')}</p>
           <p>
-            Having extensive experience in developing websites, participating in large projects, now I provide both my
-            services and services represented by the studio to private clients.
+          {t('hero.hero3')}
           </p>
         </div>
       </div>

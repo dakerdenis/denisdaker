@@ -110,6 +110,9 @@
   line-height: 23.9px;
   text-align: justify;
 }
+.about__me__text-block p {
+  margin-bottom: 10px;
+}
 .about__button__contact {
   margin-top: 37px;
   width: 100%;

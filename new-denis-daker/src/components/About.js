@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../styles/about.css";
 import about from "../assets/about.png";
 import about_poligon1 from "../assets/poligon_about/poligon_about1.svg";
@@ -8,6 +9,8 @@ import about_poligon3 from "../assets/poligon_about/poligon_about3.svg";
 import arrow_contact from "../assets/symbols/arrow_contact.svg";
 
 const About = () => {
+  const { t,i18n } = useTranslation(); // Access translation functions
+
   return (
     <section id="about">
       <div className="section__about__container">
@@ -18,7 +21,7 @@ const About = () => {
             <img src={about} alt="Denis Akershteyn" />
           </div>
           {/*about name*/}
-          <div className="about__name about-z">About me</div>
+          <div className="about__name about-z">{t('about.name')}</div>
           {/*about poligons*/}
           <div className="about__poligon1 about__poligon">
             <img src={about_poligon1} alt="Polygon decoration 1" />
@@ -38,35 +41,29 @@ const About = () => {
             <div className="about__desc__exp">
               <div className="about__desc__element">
                 <div>3+</div>
-                <p>YEARS OF EXPERINCE</p>
+                <p>{t('about.experience')}</p>
               </div>
               {/**********/}
               <div className="about__desc__element">
                 <div>20+ </div>
-                <p>PROJECTS COMPLETED</p>
+                <p>{t('about.projects')}</p>
               </div>
             </div>
 
             {/****ABOUT ME TEXT******/}
             <div className="about__me__text">
               <div className="about__me__text-block">
-                Hi! <br /> My name is Denis Akershteyn, and I develop websites
-                and landing pages on a turnkey basis. <br /> <br />
-                For more than 4 years I have been constantly improving my skills
-                in this area. <br />
-                <br /> Having extensive experience in developing websites,
-                participating in large projects, now I provide both my services
-                and services represented by the studio to private clients.
-                <br />
-                <br />I can and am always sincerely happy to help any business
-                in its development and undertakings, based on modern realities.
-                To bring to life your ideas about how your customers should see
-                your business is the main goal of my work.
+                <p>{t('about.hi')}</p>
+                <p>{t('about.about1')} </p> 
+                <p>{t('about.about2')} </p>
+                <p>{t('about.about3')}</p>
+                <p>{t('about.about4')} </p>
+                
               </div>
 
               <div className="about__button__contact">
                 <button>
-                  <p> Contact me</p>
+                  <p style={i18n.language === 'az' ? { fontSize: '18px' } : {}}>{t('about.contactme')}</p>
                   <img src={arrow_contact} alt="Arrow pointing to contact" />
                 </button>
               </div>

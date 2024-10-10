@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode } from "swiper/modules";
@@ -10,6 +11,7 @@ import service3 from "../../assets/services/3.svg";
 import service4 from "../../assets/services/4.svg";
 
 const FirstSwiper = () => {
+  const { t } = useTranslation(); // Access translation functions
   const [spaceBetween, setSpaceBetween] = useState(100);
   const [slideStyle, setSlideStyle] = useState({
     width: "466px",
@@ -71,11 +73,9 @@ const FirstSwiper = () => {
               <div className="swiper__image">
                 <img src={service1} alt="" />
               </div>
-              <div className="swiper_name">Website development</div>
+              <div className="swiper_name">{t('services.web.web_dev')}</div>
               <div className="swiper__desc">
-              I create modern, scalable websites using PHP, Laravel, HTML, CSS, and JavaScript. My focus is on building sites that are efficient, secure, and tailored to meet your business needs. With expertise in both frontend and backend, I ensure seamless user experiences and optimized performance.
-
-
+                  {t('services.web.web_dev_desc')}
               </div>
             </div>
           </div>
@@ -87,9 +87,9 @@ const FirstSwiper = () => {
               <div className="swiper__image">
                 <img src={service2} alt="" />
               </div>
-              <div className="swiper_name">Design</div>
+              <div className="swiper_name">{t('services.design.des_dev')}</div>
               <div className="swiper__desc">
-              Creating clean, modern web designs that enhance user experience and highlight brand identity. Design isn’t just about aesthetics, but also about functionality, ensuring every element is both useful and visually appealing. 
+              {t('services.design.des_dev_desc')}
               </div>
             </div>
           </div>
@@ -101,9 +101,9 @@ const FirstSwiper = () => {
               <div className="swiper__image">
                 <img src={service3} alt="" />
               </div>
-              <div className="swiper_name">B2C Architecture</div>
+              <div className="swiper_name">{t('services.b2C.b2c_dev')}</div>
               <div className="swiper__desc">
-              Experienced in designing business logic for B2C projects, ensuring smooth interactions between customers and businesses. Focused on creating user-friendly, scalable systems that support seamless transactions and customer engagement, while meeting business objectives efficiently.
+              {t('services.b2C.b2c_dev_desc')}
               </div>
             </div>
           </div>
@@ -115,9 +115,9 @@ const FirstSwiper = () => {
               <div className="swiper__image">
                 <img src={service4} alt="" />
               </div>
-              <div className="swiper_name">Server Maintenance</div>
+              <div className="swiper_name">{t('services.server.serveR_dev')}</div>
               <div className="swiper__desc">
-              Experienced in server setup and maintenance, including working with Nginx for efficient and reliable performance.
+              {t('services.server.serveR_dev_desc')}
               </div>
             </div>
           </div>
