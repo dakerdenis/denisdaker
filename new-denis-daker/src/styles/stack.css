@@ -213,5 +213,17 @@
             line-height: 22px;
             margin-bottom: 10px;
     }
+    .stack__element__container {
+        width: 143px;
+    }
+    .stack__rating__block {
+        margin-right: 9.1px;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+    .stack__element__percentage {
+        right: 8px;
+        font-size: 11px;
+    }
 }

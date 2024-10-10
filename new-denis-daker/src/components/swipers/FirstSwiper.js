@@ -73,7 +73,9 @@ const FirstSwiper = () => {
               </div>
               <div className="swiper_name">Website development</div>
               <div className="swiper__desc">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              I create modern, scalable websites using PHP, Laravel, HTML, CSS, and JavaScript. My focus is on building sites that are efficient, secure, and tailored to meet your business needs. With expertise in both frontend and backend, I ensure seamless user experiences and optimized performance.
+
+
               </div>
             </div>
           </div>
@@ -87,7 +89,7 @@ const FirstSwiper = () => {
               </div>
               <div className="swiper_name">Design</div>
               <div className="swiper__desc">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Creating clean, modern web designs that enhance user experience and highlight brand identity. Design isn’t just about aesthetics, but also about functionality, ensuring every element is both useful and visually appealing. 
               </div>
             </div>
           </div>
@@ -101,7 +103,7 @@ const FirstSwiper = () => {
               </div>
               <div className="swiper_name">B2C Architecture</div>
               <div className="swiper__desc">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Experienced in designing business logic for B2C projects, ensuring smooth interactions between customers and businesses. Focused on creating user-friendly, scalable systems that support seamless transactions and customer engagement, while meeting business objectives efficiently.
               </div>
             </div>
           </div>
@@ -115,7 +117,7 @@ const FirstSwiper = () => {
               </div>
               <div className="swiper_name">Server Maintenance</div>
               <div className="swiper__desc">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Experienced in server setup and maintenance, including working with Nginx for efficient and reliable performance.
               </div>
             </div>
           </div>

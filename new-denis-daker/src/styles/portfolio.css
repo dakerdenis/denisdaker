@@ -403,3 +403,14 @@
         margin: 0 auto;margin-top: 30px;
     }
 }
+@media only screen and (max-width: 360px) {
+    .porfolio__name-name p {
+      font-size: 41px;
+
+    }
+    .porfolio__name-name img{
+        width: 10px;
+        height: 10px;
+        bottom: 17px;
+    }
+}

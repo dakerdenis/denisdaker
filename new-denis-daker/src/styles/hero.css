@@ -445,5 +445,20 @@ height: 650px;
   .about__desc__element p{
     font-size: 18px;
   }
+  .hero__image__main {
+    height: initial;
+    right: calc(50% - 116px);
+        height: initial;
+        width: 267px;
+        z-index: 100;
+        bottom: calc(100% - 113px);
+  }
+  
+  .hero__image__daker {
+    height: 107px;
+        right: calc(50% - 145.5px);
+        width: 291px;
+        z-index: 400;
+  }
 
 }

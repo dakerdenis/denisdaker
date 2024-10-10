@@ -203,4 +203,10 @@
 .section__about__container {
   margin-top: 152px;
 }
+.about__desc__element p{
+  font-size: 20px;
+}
+.about__me__text-block {
+  font-size: 14px;
+}
 }
