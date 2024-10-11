@@ -40,18 +40,9 @@ import link from "../../assets/swiper/link.svg";
 const portfolioData = [
   {
     image: portfolio1,
-    title: "Architectural Advertising Agency",
+    title: "Architectural Advertising Agency", // You can translate this too, if needed
+    descriptionKey: "portfolio.architectural_agency",
     quotes: quotes,
-    description: [
-      <p>
-        The site was developed for an <span>Architectural advertising agency</span> with more than <span>20 years of experience</span> in the Azerbaijani market and abroad.
-        The company didn't have a website, and our team was tasked with incorporating the company's <span>years of experience</span> and history into a simple, easy-to-use portfolio.
-      </p>,
-      <p>
-        The design and concept were <span>developed on a turnkey basis</span> in accordance with all the <span>wishes and requirements</span> of the client.
-        The site is <span>designed in two color modes</span> - day and night and in <span>two languages</span>, and an admin panel was developed for <span>complete content management</span> from the client.
-      </p>
-    ],
     additionalImages: [subportfolio1, subportfolio2, subportfolio3],
     link: "https://altaysel.az/",
     linkText: "altaysel.az",
@@ -62,15 +53,8 @@ const portfolioData = [
   {
     image: portfolio2,
     title: "Psychologist Nigar Gadashova",
+    descriptionKey: "portfolio.psychologist_nigar",
     quotes: quotes,
-    description: [
-      <p>
-        Creation from scratch of a <span>multi-page business card site</span> for psychologist Nigar Gadashova.
-      </p>,
-      <p>
-        Work was done on <span>design and layout.</span> A simple and <span>convenient</span> site where you can easily get acquainted with the <span>services and information</span> about the experience and education of a specialist, as well as easily contact Nigar through contact information or social networks.
-      </p>
-    ],
     additionalImages: [subportfolio2_1, subportfolio2_2, subportfolio2_3],
     link: "https://gadashova.com/",
     linkText: "gadashova.com",
@@ -82,14 +66,7 @@ const portfolioData = [
     image: portfolio3,
     title: "Photographer Fakhri Bagirov",
     quotes: quotes,
-    description: [
-      <p>
-        The site is a <span>business card</span> for a young talented <span>photographer Fakhri Bagirov.</span> He started his career as a photographer while studying at a <span>university in Poland</span> and devoted most of his <span>time and life</span> to photography.
-      </p>,
-      <p>
-        The task was to build a <span>simple site from scratch</span> with a light and clear design, for a brief <span>description</span> of the services provided and data for communication, along with a <span>detailed gallery</span> written in jQuery.
-      </p>
-    ],
+    descriptionKey: "portfolio.photography",
     additionalImages: [subportfolio3_1, subportfolio3_2, subportfolio3_3],
     link: "https://fahribagirov.daker.site/",
     linkText: "fahribagirov.daker.site",
@@ -101,14 +78,7 @@ const portfolioData = [
     image: portfolio4,
     title: "UTC Parus LLC",
     quotes: quotes,
-    description: [
-      <p>
-        <span>LLC "UTC Parus"</span> collects the best educational programs from the most visited <span>educational centers</span> in Russia. They create new training courses and translate them into a distance learning format to make them even <span>more accessible</span>.
-      </p>,
-      <p>
-        For this site, I was <span>engaged</span> in assembling the <span>Front part</span> according to the finished technical task and design.
-      </p>
-    ],
+    descriptionKey: "portfolio.psychologist_nigar",
     additionalImages: [subportfolio4_1, subportfolio4_2, subportfolio4_3],
     link: "https://parus86.ru/",
     linkText: "parus86.ru",
@@ -120,14 +90,7 @@ const portfolioData = [
     image: portfolio5,
     title: "A-GROUP Insurance",
     quotes: quotes,
-    description: [
-      <p>
-        <span>A-GROUP</span> was founded in 1995. It is a private and 100% <span>national company</span> dealing with various types of insurance, including <span>Medical, Accident, Property, and Vehicle Insurance</span>.
-      </p>,
-      <p>
-        The <span>task was</span> to create a <span>promo page</span> for a <span>marketing project</span> for the sale of family insurance policies. More than <span>2,000 applications</span> passed through this page.
-      </p>
-    ],
+    descriptionKey: "portfolio.psychologist_nigar",
     additionalImages: [subportfolio5_1, subportfolio5_2, subportfolio5_3],
     link: "https://aile.a-group.az/",
     linkText: "aile.a-group.az",
@@ -139,14 +102,7 @@ const portfolioData = [
     image: portfolio6,
     title: "FinTrend Non-bank Credit Organization",
     quotes: quotes,
-    description: [
-      <p>
-        <span>"FinTrend"</span> operates on the basis of a license from the Central Bank of the Republic of Azerbaijan. Their mission is to support <span>small and medium-sized enterprises</span> by providing financial resources.
-      </p>,
-      <p>
-        The site is a <span>business card</span> built from scratch with a <span>minimalistic and strict design</span> to convey necessary information and communication.
-      </p>
-    ],
+    descriptionKey: "portfolio.psychologist_nigar",
     additionalImages: [subportfolio6_1, subportfolio6_2, subportfolio6_3],
     link: "https://fintrend.az/",
     linkText: "fintrend.az",
@@ -158,14 +114,7 @@ const portfolioData = [
     image: portfolio7,
     title: "Azerbaijan Travel International",
     quotes: quotes,
-    description: [
-      <p>
-        <span>Azerbaijan Travel International</span> specializes in organizing events and conferences, leisure and business trips for corporate clients and individuals.
-      </p>,
-      <p>
-        The task was to significantly <span>speed up page loading</span> and lighten the code. Several pages and <span>contact forms were updated</span>.
-      </p>
-    ],
+    descriptionKey: "portfolio.psychologist_nigar",
     additionalImages: [subportfolio7_1, subportfolio7_2, subportfolio7_3],
     link: "https://ati.az/",
     linkText: "ati.az",

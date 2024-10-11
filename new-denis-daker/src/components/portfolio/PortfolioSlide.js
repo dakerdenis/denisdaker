@@ -8,14 +8,13 @@ const PortfolioSlide = ({ portfolio }) => {
       <div className="swiper__image__container">
         <img src={portfolio.image} alt={portfolio.title} />
       </div>
-
       {/* Portfolio quotes */}
       <div className="swiper__portfolio__quotes">
         <img src={portfolio.quotes} alt="quotes" />
       </div>
 
       {/* Portfolio description */}
-      <PortfolioSlideContent description={portfolio.description} />
+      <PortfolioSlideContent descriptionKey={portfolio.descriptionKey} />
 
       {/* Additional photos */}
       <div className="swiper__portfolio__additional-photo">

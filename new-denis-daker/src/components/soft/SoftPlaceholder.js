@@ -1,9 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const SoftPlaceholder = () => {
+  const { t } = useTranslation();
   return (
     <div className="soft__placeholder__container">
-      I have a diverse set of tools for effectively creating and managing digital content. I can work with graphic editors Figma and Canva, as well as build websites using the WordPress and Tilda platforms.
+          {t('soft.desc')}
     </div>
   );
 };

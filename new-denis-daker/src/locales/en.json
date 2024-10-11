@@ -1,0 +1,136 @@
+{
+  "header": {
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contacts"
+  },
+  "hero": {
+    "title": "FULL-STACK WEB DEVELOPER",
+    "name": "Denis Akershteyn",
+    "welcome": "Welcome!",
+    "hero1": "I'm Denis Akershteyn— glad to welcome you to my website",
+    "hero2": "For more than 4 years, I have been constantly improving my skills in this area.",
+    "hero3": "Having extensive experience in developing websites, participating in large projects, now I provide both my services and services represented by the studio to private clients.",
+    "skills1": "Development & processing of sites",
+    "skills2": "B2C Architecture",
+    "skills3": "Website development",
+    "skills4": "Design"
+  },
+  "about": {
+    "name": "About me",
+    "experience": "YEARS OF EXPERIENCE",
+    "projects": "PROJECTS COMPLETED",
+    "hi": "Hi!",
+    "about1": "My name is Denis Akershteyn, and I develop websites and landing pages on a turnkey basis.",
+    "about2": "For more than 4 years I have been constantly improving my skills in this area.",
+    "about3": "Having extensive experience in developing websites, participating in large projects, now I provide both my services and services represented by the studio to private clients.",
+    "about4": "I can and am always sincerely happy to help any business in its development and undertakings, based on modern realities. To bring to life your ideas about how your customers should see your business is the main goal of my work.",
+    "contactme": "Contact me"
+  },
+  "services": {
+    "name": "Services",
+    "web": {
+      "web_dev": "Website development",
+      "web_dev_desc": "I create modern, scalable websites using PHP, Laravel, HTML, CSS, and JavaScript. My focus is on building sites that are efficient, secure, and tailored to meet your business needs. With expertise in both frontend and backend, I ensure seamless user experiences and optimized performance."
+    },
+    "design": {
+      "des_dev": "Design",
+      "des_dev_desc": "Creating clean, modern web designs that enhance user experience and highlight brand identity. Design isn’t just about aesthetics, but also about functionality, ensuring every element is both useful and visually appealing."
+    },
+    "b2C": {
+      "b2c_dev": "B2C Architecture",
+      "b2c_dev_desc": "Experienced in designing business logic for B2C projects, ensuring smooth interactions between customers and businesses. Focused on creating user-friendly, scalable systems that support seamless transactions and customer engagement, while meeting business objectives efficiently."
+    },
+    "server": {
+      "serveR_dev": "Server Maintenance",
+      "serveR_dev_desc": "Experienced in server setup and maintenance, including working with Nginx for efficient and reliable performance."
+    }
+  },
+  "services2": {
+    "web_dev": {
+      "name": "Website Development",
+      "desc": "With extensive experience in PHP, Laravel, HTML & CSS, and JavaScript, I specialize in creating robust and scalable websites tailored to client needs. From simple business card sites to complex web applications, I deliver solutions that are both aesthetically pleasing and highly functional. My deep understanding of modern web development allows me to craft seamless user experiences that drive engagement and deliver results.</p> <p>Leveraging MySQL and advanced database management skills, I ensure your website performs efficiently, regardless of the volume of traffic or data. My expertise in backend development guarantees fast, secure, and scalable solutions, while my frontend skills ensure your website is not only functional but visually compelling.</p> <p>Every project is approached with precision and attention to detail, resulting in websites that are reliable and easy to manage. Whether it's custom coding or integrating third-party tools, my goal is to create a digital presence that truly represents your brand and supports your business objectives."
+    },
+    "design": {
+      "name": "Design",
+      "desc": {
+        "design_desc1": "With experience in design tools like Canva, Photoshop, and Figma, I have worked on various projects, including larger ones that required detailed design work. While design may not be my primary focus, I have successfully delivered visually appealing and user-friendly designs that complement the functionality of the websites I develop. My design approach emphasizes simplicity and clarity, ensuring that the visual elements support the overall user experience.",
+        "design_desc2": "Leveraging my understanding of web design principles, I ensure that layouts are responsive, clean, and aligned with brand identity. I can create everything from logos and banners to entire web layouts, making sure the design enhances the user journey and strengthens engagement.",
+        "design_desc3": "Each design project is approached with practicality, ensuring it's easy to implement and maintain across different devices and platforms. Whether collaborating with other designers or working independently, my goal is to deliver designs that not only look good but also improve the usability and effectiveness of the final product."
+      }
+    },
+    "b2c": {
+      "name": "B2C Architecture",
+      "desc": {
+        "b2c_desc": "Crafting seamless experiences for users and businesses alike is at the heart of my approach to B2C architecture. Over the years, I’ve worked on diverse projects, from small startups to larger enterprises, focusing on building systems that streamline customer interactions and business processes. My aim is always to ensure that the architecture not only meets the business goals but also provides an intuitive, user-friendly experience. </p> <p> By leveraging backend expertise, I design solutions that are scalable and capable of managing high traffic and complex workflows. Whether it's managing customer data or optimizing transactions, my architecture solutions are built to enhance performance and provide a smooth experience for both the business and the end user. </p> <p> Every project is approached with a practical mindset, ensuring adaptability and ease of implementation. From integrating third-party services to creating custom solutions, my goal is to build a solid infrastructure that grows with your business while delivering consistent value to your customers."
+      }
+    },
+    "server": {
+      "name": "Server maintenance",
+      "desc": "Handling server maintenance is a critical aspect of ensuring smooth and reliable website performance. I have experience working with server configurations, particularly with Nginx, ensuring that servers are optimized for speed and security. While it's often behind the scenes, maintaining servers is essential for keeping websites running efficiently and minimizing downtime. </p> <p> Leveraging my knowledge of server management, I set up, monitor, and maintain servers to handle high traffic volumes while ensuring secure data flow. From optimizing server performance to managing backups and updates, I make sure that everything runs smoothly and without interruption, providing a solid foundation for web applications. </p> <p> Every server project is approached with a focus on reliability and scalability, ensuring that your infrastructure can grow with your business. Whether configuring a new server or troubleshooting issues with an existing one, my goal is to provide maintenance that ensures maximum uptime and optimal performance."
+    }
+  },
+  "stack": {
+    "name": "Stack",
+    "desc": "I have over 4 years of experience as a developer, mastering a number of key technologies and frameworks. My expertise includes HTML, CSS, JavaScript, TypeScript, PHP, Laravel, and ReactJS. These languages and tools have enabled me to build dynamic and interactive web projects, from layout and styling to creating complex features and full-scale applications."
+  },
+  "soft": {
+    "name": "Soft",
+    "desc": "I have a diverse set of tools for effectively creating and managing digital content. I can work with graphic editors Figma and Canva, as well as build websites using the WordPress and Tilda platforms."
+  },
+  "portfolio": {
+    "name": "Portfolio",
+    "all_projects": "View all projects",
+    "architectural_agency": [
+      "The site was developed for an <span>Architectural advertising agency</span> with more than <span>20 years of experience</span> in the Azerbaijani market and abroad.",
+      "The company didn't have a website, and our team was tasked with incorporating the company's <span>years of experience</span> and history into a simple, easy-to-use portfolio.",
+      "The design and concept were <span>developed on a turnkey basis</span> in accordance with all the <span>wishes and requirements</span> of the client.",
+      "The site is <span>designed in two color modes</span> - day and night and in <span>two languages</span>, and an admin panel was developed for <span>complete content management</span> from the client."
+    ],
+    "psychologist_nigar": [
+      "Creation from scratch of a <span>multi-page business card site</span> for psychologist Nigar Gadashova.",
+      "Work was done on <span>design and layout</span>. A simple and <span>convenient</span> site where you can easily get acquainted with the <span>services and information</span> about the experience and education of a specialist, as well as easily contact Nigar through contact information or social networks."
+    ],
+    "photography": [
+      "The site is a <span>business card</span> for a young talented <span>photographer Fakhri Bagirov.</span> He started his career as a photographer while studying at a <span>university in Poland</span> and devoted most of his <span>time and life</span> to photography.",
+      "The task was to build a <span>simple site from scratch</span> with a light and clear design, for a brief <span>description</span> of the services provided and data for communication, along with a <span>detailed gallery</span> written in jQuery."
+    ],
+    "building": [
+      "<span>LLC 'UTC Parus'</span> collects the best educational programs from the most visited <span>educational centers</span> in Russia. They create new training courses and translate them into a distance learning format to make them even <span>more accessible</span>.",
+      "For this site, I was <span>engaged</span> in assembling the <span>Front part</span> according to the finished technical task and design."
+    ],
+    "aile": [
+      "<span>A-GROUP</span> was founded in 1995. It is a private and 100% <span>national company</span> dealing with various types of insurance, including <span>Medical, Accident, Property, and Vehicle Insurance</span>.",
+      "The <span>task was</span> to create a <span>promo page</span> for a <span>marketing project</span> for the sale of family insurance policies. More than <span>2,000 applications</span> passed through this page."
+    ],
+    "fintrend": [
+      "<span>'FinTrend'</span> operates on the basis of a license from the Central Bank of the Republic of Azerbaijan. Their mission is to support <span>small and medium-sized enterprises</span> by providing financial resources.",
+      "The site is a <span>business card</span> built from scratch with a <span>minimalistic and strict design</span> to convey necessary information and communication."
+    ],
+    "ati": [
+      "<span>Azerbaijan Travel International</span> specializes in organizing events and conferences, leisure and business trips for corporate clients and individuals.",
+      ""
+    ]
+  },
+  "contact": {
+    "name": "  Leave your details for feedback or contact me in a way convenient for you.",
+    "form": {
+      "name": "Name",
+      "name_desc": "Your name",
+      "number": "Number",
+      "number_desc": "Your mobile number",
+      "email": "E-mail",
+      "email_desc": "Your e-mail adress",
+      "help": "How can I help you ?",
+      "help_desc": "Leave the message",
+      "help2": "How can I contact you ?",
+      "terms_desc": "I give my consent to the processing of personal data in accordance with the Terms",
+      "button": "Send request"
+    },
+    "footer": {
+      "footer_1": "Daker Creative Studio",
+      "footer_2": "© 2022 daker.website - All rights reserved"
+    }
+  }
+}

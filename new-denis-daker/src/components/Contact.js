@@ -5,13 +5,16 @@ import ContactForm from "./contact/ContactForm";
 import ContactFooter from "./contact/ContactFooter";
 import ContactPolygons from "./contact/ContactPolygons";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section id="contact">
       <div className="contact__wrapper">
         <div className="contact__desc">
           <p>
-            Leave your details for feedback or contact me in a way convenient for you.
+          {t('contact.name')}
           </p>
         </div>
 

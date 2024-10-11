@@ -9,6 +9,7 @@ import Soft from "./components/Soft";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import ScrollToTopButton from "./components/ScrollToTopButton"; // Import ScrollToTopButton component
+import './i18n';
 
 function App() {
   return (

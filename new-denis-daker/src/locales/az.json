@@ -1,0 +1,120 @@
+{
+  "header": {
+    "about": "Haqqında",
+    "services": "Xidmətlər",
+    "portfolio": "Portfel",
+    "contact": "Əlaqə"
+  },
+  "hero": {
+    "title": "FULL-STACK VEB TƏRTİBATÇISI",
+    "name": "Denis Akerşteyn",
+    "welcome": "Xoş gəlmisiniz!",
+    "hero1": "Mən Denis Akerşteynəm — sizi saytımda qarşılamağa şadam",
+    "hero2": "Artıq 4 ildən çoxdur ki, bu sahədə bacarıqlarımı davamlı olaraq təkmilləşdirirəm.",
+    "hero3": "Geniş veb sayt tərtibatı təcrübəm, böyük layihələrdə iştirakım var və indi həm öz xidmətlərimi, həm də studiyanın təmsil etdiyi xidmətləri fərdi müştərilərə təklif edirəm.",
+    "skills1": "Saytların hazırlanması və emalı",
+    "skills2": "B2C Arxitektura",
+    "skills3": "Veb saytların yaradılması",
+    "skills4": "Dizayn"
+  },
+  "about": {
+    "name": "Haqqımda",
+    "experience": "İLLİK TƏCRÜBƏ",
+    "projects": "TAMAMLANMIŞ LAYİHƏLƏR",
+    "hi": "Salam!",
+    "about1": "Mənim adım Denis Akerşteyndir, və mən veb saytlar və açılış səhifələrini tam şəkildə hazırlayıram.",
+    "about2": "Artıq 4 ildən çoxdur ki, bu sahədə bacarıqlarımı davamlı olaraq təkmilləşdirirəm.",
+    "about3": "Geniş veb sayt tərtibatı təcrübəm və böyük layihələrdə iştirakım var, indi həm öz xidmətlərimi, həm də studiyanın təmsil etdiyi xidmətləri fərdi müştərilərə təklif edirəm.",
+    "about4": "Mən hər hansı bir biznesin inkişafına və yeni təşəbbüslərinə kömək etməyə daim səmimi qəlbdən hazıram və bunu etməkdən məmnunam. Müştərilərinizin biznesinizi necə görməli olduğunu həyata keçirmək mənim işimin əsas məqsədidir.",
+    "contactme": "Əlaqə saxlayın"
+  },
+  "services": {
+    "name": "Xidmətlər",
+    "web": {
+      "web_dev": "Veb saytların yaradılması",
+      "web_dev_desc": "Mən PHP, Laravel, HTML, CSS və JavaScript istifadə edərək müasir, genişlənə bilən veb saytlar yaradıram. Məqsədim, biznes ehtiyaclarınıza uyğun, effektiv və təhlükəsiz saytlar qurmaqdır. Frontend və backend sahəsində təcrübəm sayəsində istifadəçilər üçün rahat təcrübələr və optimallaşdırılmış performans təmin edirəm."
+    },
+    "design": {
+      "des_dev": "Dizayn",
+      "des_dev_desc": "Təmiz, müasir veb dizaynların yaradılması, istifadəçi təcrübəsini artırmaq və brend kimliyini vurğulamaq. Dizayn təkcə estetikadan ibarət deyil, həm də funksionallıqdır, hər elementin həm faydalı, həm də vizual olaraq cəlbedici olmasını təmin edir."
+    },
+    "b2C": {
+      "b2c_dev": "B2C Arxitektura",
+      "b2c_dev_desc": "Müştərilərlə biznes arasında rahat qarşılıqlı əlaqəni təmin edən B2C layihələri üçün iş məntiqinin hazırlanmasında təcrübə. İstifadəçi dostu, genişlənə bilən sistemlərin yaradılmasına və biznes məqsədlərinə səmərəli nail olmağa yönəlmişəm."
+    },
+    "server": {
+      "serveR_dev": "Serverlərin texniki dəstəyi",
+      "serveR_dev_desc": "Effektiv və etibarlı performans üçün Nginx ilə işləmək də daxil olmaqla serverlərin quraşdırılması və texniki dəstək sahəsində təcrübəm var."
+    }
+  },
+  "services2": {
+    "web_dev": {
+      "name": "Veb saytların yaradılması",
+      "desc": "PHP, Laravel, HTML & CSS və JavaScript ilə geniş təcrübəyə malik olaraq, müştərilərin ehtiyaclarına uyğun dayanıqlı və genişlənə bilən veb saytlar yaratmaqda ixtisaslaşıram. Sadə veb sayt vizitlərdən tutmuş mürəkkəb veb tətbiqlərinə qədər, həm estetik, həm də yüksək funksional həllər təqdim edirəm. Müasir veb inkişafı haqqında dərin anlayışım, istifadəçi təcrübəsini gücləndirən və nəticələr gətirən veb saytlar yaratmağa imkan verir. </p> <p> MySQL və qabaqcıl verilənlər bazası idarəetmə bacarıqlarından istifadə edərək, veb saytınızın trafik və ya məlumat həcminə baxmayaraq səmərəli işləməsini təmin edirəm. Backend inkişaf sahəsindəki təcrübəm sürətli, təhlükəsiz və genişlənə bilən həllər təqdim edir, frontend bacarıqlarım isə saytınızın yalnız funksional deyil, həm də vizual olaraq cəlbedici olmasını təmin edir. </p> <p> Hər bir layihəyə dəqiqlik və diqqət ilə yanaşıram, nəticədə etibarlı və asan idarə olunan veb saytlar meydana gəlir. İstər xüsusi kod yazılması, istərsə də üçüncü tərəf alətlərin inteqrasiyası olsun, məqsədim brendinizi əks etdirən və biznes hədəflərinizi dəstəkləyən rəqəmsal varlıq yaratmaqdır."
+    },
+    "design": {
+      "name": "Dizayn",
+      "desc": {
+        "design_desc1": "Canva, Photoshop və Figma kimi dizayn alətlərində təcrübəm var və daha böyük layihələrdə ətraflı dizayn işləri tələb edən müxtəlif layihələrdə iştirak etmişəm. Dizayn mənim əsas fokusum olmasa da, uğurla vizual olaraq cəlbedici və istifadəçi dostu dizaynlar təqdim etmişəm ki, bu da yaratdığım saytların funksionallığını tamamlayır. Dizayna yanaşmam sadəlik və aydınlığı vurğulayır, vizual elementlərin ümumi istifadəçi təcrübəsini dəstəkləməsini təmin edir.",
+        "design_desc2": "Veb dizayn prinsiplərini anlamaqdan istifadə edərək, dizaynların adaptiv, təmiz və brendin kimliyinə uyğun olmasını təmin edirəm. Loqolar və bannerlərdən tutmuş bütün veb saytların tərtibatlarına qədər hər şeyi yarada bilirəm və dizaynın istifadəçi səyahətini gücləndirməsini təmin edirəm.",
+        "design_desc3": "Hər bir dizayn layihəsinə praktik yanaşıram, müxtəlif cihazlar və platformalarda asan tətbiq olunmasını və idarə edilməsini təmin edirəm. Digər dizaynerlərlə əməkdaşlıq etməyimdən və ya müstəqil işləməyimdən asılı olmayaraq, məqsədim yalnız yaxşı görünən deyil, həm də istifadəyə yararlı və effektivliyi artıran dizaynlar yaratmaqdır."
+      }
+    },
+    "b2c": {
+      "name": "B2C Arxitektura",
+      "desc": {
+        "b2c_desc": "İstifadəçilər və bizneslər üçün qüsursuz təcrübələrin yaradılması B2C arxitekturasına yanaşmamın əsasını təşkil edir. İllər ərzində kiçik startaplardan tutmuş böyük müəssisələrə qədər müxtəlif layihələr üzərində işləmişəm və müştəri qarşılıqlı əlaqələrini və iş proseslərini sadələşdirən sistemlərin qurulmasına diqqət yetirmişəm. Məqsədim hər zaman arxitekturanın biznes hədəflərinə uyğun olmasını və həmçinin intuitiv və istifadəçi dostu təcrübə təqdim etməsini təmin etməkdir. <p> Backend təcrübəsindən istifadə edərək, yüksək trafik və mürəkkəb iş axınları idarə edə bilən genişlənə bilən həllər dizayn edirəm. Müştəri məlumatlarının idarə olunması və ya əməliyyatların optimallaşdırılması olsun, arxitektura həllərim performansı artırmaq və həm biznes, həm də son istifadəçi üçün qüsursuz təcrübə təmin etmək məqsədilə qurulmuşdur. <p> Hər bir layihə praktik yanaşma ilə işlənib, uyğunlaşma və tətbiq asanlığı təmin edilir. İstər üçüncü tərəf xidmətlərinin inteqrasiyası, istərsə də xüsusi həllərin yaradılması olsun, məqsədim biznesinizlə birlikdə böyüyən və müştərilərinizə davamlı dəyər təqdim edən möhkəm infrastruktur qurmaqdır."
+      }
+    },
+    "server": {
+      "name": "Serverlərin texniki dəstəyi",
+      "desc": "Serverlərin texniki dəstəyi veb saytların səmərəli və etibarlı işini təmin etməyin əsas aspektidir. Xüsusilə sürət və təhlükəsizlik üçün serverləri optimallaşdıraraq Nginx ilə server konfiqurasiyasında iş təcrübəm var. Baxmayaraq ki, bu iş adətən kənardan görünmür, serverlərin saxlanması saytların fasiləsiz işini təmin etmək və dayanma vaxtını minimuma endirmək üçün vacibdir. <p> Server idarəetmə sahəsində biliklərimdən istifadə edərək serverləri yüksək trafik həcmlərini idarə etmək üçün quraşdırıram, izləyirəm və saxlayıram, məlumat axınını təhlükəsiz təmin edirəm. Serverlərin performansının optimallaşdırılması, ehtiyat nüsxələrin və yeniləmələrin idarə olunması kimi işlər fasiləsiz iş və yüksək performans təmin etmək məqsədilə həyata keçirilir. <p> Hər bir server layihəsi etibarlılıq və genişlənmə ilə yanaşı aparılır, bu da infrastrukturunuzun biznesinizlə birlikdə böyüməsinə imkan verir. Yeni serverlərin konfiqurasiyası və ya mövcud serverlərdə problemlərin aradan qaldırılması olsun, məqsədim maksimum fasiləsiz iş vaxtı və optimal performans təmin edən texniki dəstəkdir."
+    }
+  },
+  "stack": {
+    "name": "Texnologiyalar toplusu",
+    "desc": "Mən 4 ildən artıq inkişaf təcrübəsinə malikəm və əsas texnologiyalar və çərçivələr üzrə ixtisaslaşmışam. Bacarıqlarıma HTML, CSS, JavaScript, TypeScript, PHP, Laravel və ReactJS daxildir. Bu dillər və alətlər mənə dinamik və interaktiv veb layihələr yaratmağa imkan verir, tərtibatdan və üslublandırmadan mürəkkəb funksiyaların və tamhəcmli tətbiqlərin yaradılmasına qədər."
+  },
+  "soft": {
+    "name": "Proqramlar",
+    "desc": "Mən rəqəmsal məzmunun effektiv yaradılması və idarə olunması üçün müxtəlif alətlərə sahibəm. Figma və Canva qrafik redaktorları ilə işləyə bilirəm, həmçinin WordPress və Tilda platformalarından istifadə edərək saytlar yaradıram."
+  },
+  "portfolio": {
+    "name": "Portfolio",
+    "all_projects": "Portfolio baxmaq",
+    "architectural_agency": [
+      "Sayt <span>Memarlıq reklam agentliyi</span> üçün hazırlanmışdır, Azərbaycan bazarında və xaricdə <span>20 ildən çox təcrübəyə</span> malikdir.",
+      "Şirkətin veb saytı yox idi və komandamıza şirkətin <span>illərlə qazandığı təcrübəni</span> və tarixini sadə və istifadəçi dostu portfelə daxil etmək tapşırıldı.",
+      "Dizayn və konsepsiya müştərinin bütün <span>arzu və tələblərinə uyğun olaraq tam şəkildə hazırlanmışdır</span>.",
+      "Sayt <span>iki rəng rejimində</span> — gündüz və gecə, və <span>iki dildə</span> tərtib edilmişdir, həmçinin müştəri tərəfindən <span>tam məzmun idarəetməsi</span> üçün admin panel hazırlanmışdır."
+    ],
+    "psychologist_nigar": [
+      "Psixoloq Nigar Qadaşova üçün <span>çoxsəhifəli vizit sayt</span> sıfırdan yaradılmışdır.",
+      "Dizayn və <span>verstka</span> üzərində işlər aparılmışdır. Bu, sadə və <span>rahat</span> saytdır, burada <span>xidmətlər və mütəxəssisin təcrübəsi və təhsili haqqında məlumat</span> ilə tanış olmaq və Nigar ilə əlaqə məlumatları və ya sosial şəbəkələr vasitəsilə asanlıqla əlaqə saxlamaq mümkündür."
+    ],
+    "photography": [
+      "Sayt gənc istedadlı <span>fotoqraf Fəxri Bağırov</span> üçün <span>vizit kartıdır.</span> O, fotoqraf kimi karyerasına <span>Polşada universitetdə</span> təhsil alarkən başlamış və həyatının və <span>vaxtının çox hissəsini</span> fotoqrafiyaya həsr etmişdir.",
+      "Tapşırıq <span>sadə bir saytı sıfırdan</span> yaratmaq, yüngül və aydın dizaynla, təqdim olunan xidmətlərin qısa <span>təsviri</span> və əlaqə məlumatları ilə yanaşı, jQuery-də yazılmış <span>ətraflı bir qalereya</span> təmin etmək idi."
+    ]
+  },
+  "contact": {
+    "name": "Əlaqə üçün məlumatlarınızı buraxın və ya sizin üçün əlverişli bir üsulla mənimlə əlaqə saxlayın.",
+    "form": {
+      "name": "Ad",
+      "name_desc": "Sizin adınız",
+      "number": "Nömrə",
+      "number_desc": "Mobil nömrəniz",
+      "email": "E-mail",
+      "email_desc": "E-mail ünvanınız",
+      "help": "Sizə necə kömək edə bilərəm?",
+      "help_desc": "Mesajınızı buraxın",
+      "help2": "Sizinlə necə əlaqə saxlaya bilərəm?",
+      "terms_desc": "Şərtlərə uyğun olaraq şəxsi məlumatların işlənməsinə razıyam",
+      "button": "Sorğunu göndər"
+    },
+    "footer": {
+      "footer_1": "Daker Creative Studio",
+      "footer_2": "© 2022 daker.website - Bütün hüquqlar qorunur"
+    }
+  }
+}

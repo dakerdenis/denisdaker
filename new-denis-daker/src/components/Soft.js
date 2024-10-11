@@ -3,8 +3,10 @@ import "../styles/soft.css";
 import dot from "../assets/dot.svg";
 import SoftElement from "./soft/SoftElement";
 import SoftPlaceholder from "./soft/SoftPlaceholder";
+import { useTranslation } from "react-i18next";
 
 const Soft = () => {
+  const { t } = useTranslation();
   const softData = [
     { name: "Figma",image:'soft1.png', percentage: 100, rating: 10 },
     { name: "Canva",image:'soft2.png', percentage: 100, rating: 10 },
@@ -20,7 +22,7 @@ const Soft = () => {
     <section id="soft">
       <div className="soft__container">
         <div className="soft__name">
-          <p>Soft</p>
+          <p>{t('soft.name')}</p>
             <img src={dot} alt="" />
         </div>
 

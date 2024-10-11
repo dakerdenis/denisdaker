@@ -3,12 +3,13 @@ import "../styles/stack.css";
 import dot from "../assets/dot.svg";
 import StackElement from "./stacks/StackElement";
 import StackPlaceholder from "./stacks/StackPlaceholder";
-
+import { useTranslation } from "react-i18next";
 
 
 import polygon1 from "../assets/stack/poligon1.svg";
 import polygon2 from "../assets/stack/poligon2.svg";
 const Stack = () => {
+  const { t } = useTranslation();
   const stackData = [
     { name: "HTML/CSS", percentage: 100, rating: 10 },
     { name: "JavaScript", percentage: 90, rating: 9 },
@@ -22,7 +23,7 @@ const Stack = () => {
       <div className="stack__container">
         {/**name**/}
         <div className="stack__name">
-          <p>Stack</p>
+          <p>     {t('stack.name')}</p>
           <span>
             <img src={dot} alt="" />
           </span>
