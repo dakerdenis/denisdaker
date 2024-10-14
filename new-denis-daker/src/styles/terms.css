@@ -1,0 +1,14 @@
+.terms-container{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 320px;
+}
+.terms-container h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #1f9d96;
+
+    font-weight: 600;
+}

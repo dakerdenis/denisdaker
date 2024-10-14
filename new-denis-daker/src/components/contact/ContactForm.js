@@ -13,7 +13,7 @@ const ContactForm = () => {
             <div className="input-group">
               <label htmlFor="name">{t("contact.form.name")}</label>
               <div className="input-group-input">
-                <input type="text" id="name" placeholder={t("contact.form.name_desc")}  required />
+                <input type="text" id="name" placeholder={t("contact.form.name_desc")} required />
               </div>
             </div>
 
@@ -85,13 +85,14 @@ const ContactForm = () => {
           <div className="input-group">
             <input type="checkbox" id="terms" required />
             <label htmlFor="terms">
-            {t("contact.form.terms_desc")}
+              {t("contact.form.terms_desc")}
             </label>
-            <a target='_blank' href="www.google.com">
-            {t("contact.form.terms_link")}
+            <a target="_blank" rel="noopener noreferrer" href="/terms">
+              {t("contact.form.terms_link")}
             </a>
           </div>
         </div>
+
 
         {/**submit button***/}
         <div className="contact__form-button">
