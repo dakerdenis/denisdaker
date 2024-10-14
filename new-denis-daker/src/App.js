@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import ScrollToTopButton from "./components/ScrollToTopButton"; // Scroll-to-Top button
 import { useTranslation } from "react-i18next"; // Use i18n to track language
 import './i18n'; // Import i18n configuration
+import Preloader from './components/Preloader'; // Import the Preloader component
 
 function App() {
   const { i18n } = useTranslation(); // Access the i18n object for language detection

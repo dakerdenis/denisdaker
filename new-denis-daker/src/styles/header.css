@@ -118,19 +118,20 @@
     padding: 0;
   }
   
-  .header__lang-dropdown ul li {
+  .header__lang-dropdown button {
     padding: 8px 16px;
     cursor: pointer;
-    color: white;
+    color: white;background-color: rgba(0, 0, 0, 0.0);
     
   }
-  .header__lang-dropdown ul li:nth-child(2){
+  .header__lang-dropdown button:nth-child(2){
     border-top: 0.5px #e3e3e34f solid;
     border-bottom: 0.5px #e3e3e34f solid;;
   }
   
-  .header__lang-dropdown ul li:hover {
-
+  .header__lang-dropdown button:hover {
+    background-color: #fff;
+    color: #1C423F;
   }
   
 

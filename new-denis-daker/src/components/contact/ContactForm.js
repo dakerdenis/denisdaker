@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 import arrow from "../../assets/contact/Vector.svg";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   return (
     <div className="contact__form">
       <form className="contact__form-form" noValidate>
@@ -9,37 +11,37 @@ const ContactForm = () => {
         <div className="contact__form-input_container">
           <div className="contact__form-input__data">
             <div className="input-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">{t("contact.form.name")}</label>
               <div className="input-group-input">
-                <input type="text" id="name" placeholder="Your name" required />
+                <input type="text" id="name" placeholder={t("contact.form.name_desc")}  required />
               </div>
             </div>
 
             <div className="input-group">
-              <label htmlFor="number">Number</label>
+              <label htmlFor="number">{t("contact.form.number")} </label>
               <div className="input-group-input">
-                <input type="text" id="number" placeholder="Your mobile number" required />
+                <input type="text" id="number" placeholder={t("contact.form.number_desc")} required />
               </div>
             </div>
 
             <div className="input-group">
-              <label htmlFor="email">E-mail</label>
+              <label htmlFor="email">{t("contact.form.email")}</label>
               <div className="input-group-input">
-                <input type="email" id="email" placeholder="Your e-mail address" required />
+                <input type="email" id="email" placeholder={t("contact.form.email_desc")} required />
               </div>
             </div>
           </div>
 
           <div className="contact__form-input__data contact__form-input__data2">
             <div className="input-group">
-              <label htmlFor="message">How can I help you?</label>
+              <label htmlFor="message">{t("contact.form.help")}</label>
               <div className="contact-textarea">
-                <textarea id="message" placeholder="Leave the message" required></textarea>
+                <textarea id="message" placeholder={t("contact.form.help_desc")} required></textarea>
               </div>
             </div>
 
             <div className="input-group">
-              <label>How can I contact you?</label>
+              <label>{t("contact.form.help2")}</label>
               <div className="radio-group">
                 <div className="radio-block-group">
                   <input
@@ -83,7 +85,7 @@ const ContactForm = () => {
           <div className="input-group">
             <input type="checkbox" id="terms" required />
             <label htmlFor="terms">
-              I give my consent to the processing of personal data in accordance with the Terms*
+            {t("contact.form.terms_desc")}
             </label>
           </div>
         </div>
@@ -91,7 +93,7 @@ const ContactForm = () => {
         {/**submit button***/}
         <div className="contact__form-button">
           <button type="submit">
-            <p>Send request</p>
+            <p>{t("contact.form.button")}</p>
             <img src={arrow} alt="Submit Icon" />
           </button>
         </div>

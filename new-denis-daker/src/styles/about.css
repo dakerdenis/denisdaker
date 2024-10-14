@@ -120,7 +120,7 @@
   align-items: center;
   justify-content: center;
 }
-.about__button__contact button {
+.about__button__contact a {
   background-color: var(--blue_azure);
   color: #fff;
   width: 214px;
@@ -131,7 +131,7 @@
   align-items: center;
   justify-content: center;
 }
-.about__button__contact button p {
+.about__button__contact a p {
   font-size: 20px;
   font-weight: 500;
   line-height: 24.38px;

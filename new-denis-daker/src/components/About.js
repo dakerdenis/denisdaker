@@ -62,10 +62,10 @@ const About = () => {
               </div>
 
               <div className="about__button__contact">
-                <button>
+                <a href="#contact">
                   <p style={i18n.language === 'az' ? { fontSize: '18px' } : {}}>{t('about.contactme')}</p>
                   <img src={arrow_contact} alt="Arrow pointing to contact" />
-                </button>
+                </a>
               </div>
             </div>
           </div>

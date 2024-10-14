@@ -30,3 +30,10 @@
 .soft__name {
     width: 440px;
 }
+.about__desc__element div {
+width: 88px;
+    font-size: 44px;
+}
+.about__desc__element p {
+    font-size: 19px;
+}
