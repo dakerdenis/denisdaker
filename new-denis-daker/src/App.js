@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Make sure this is correct
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Correct import
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -12,12 +12,13 @@ import Contact from "./components/Contact";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Preloader from './components/Preloader';
 import Terms from "./components/Terms"; // Import the Terms component
+import PortfolioPage from "./components/PortfolioPage"; // Import the PortfolioPage component
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const minimumDuration = 1000;
+    const minimumDuration = 1000; // 1 second
     const startTime = Date.now();
 
     const handleLoad = () => {
@@ -39,9 +40,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!isLoaded && <Preloader />}
+        {!isLoaded && <Preloader />} {/* Show preloader until content is fully loaded */}
+        
         {isLoaded && (
           <Routes>
+            {/* Main site route */}
             <Route path="/denis-daker" element={
               <div className="main__wrapper">
                 <div className="main__container">
@@ -62,9 +65,15 @@ function App() {
                 </div>
               </div>              
             } />
-            <Route path="/terms" element={<Terms />} /> {/* Route for terms page */}
+
+            {/* Portfolio page route */}
+            <Route path="/portfolio" element={<PortfolioPage />} /> 
+
+            {/* Terms and conditions route */}
+            <Route path="/terms" element={<Terms />} /> 
           </Routes>
         )}
+        
         <ScrollToTopButton />
       </div>
     </Router>
