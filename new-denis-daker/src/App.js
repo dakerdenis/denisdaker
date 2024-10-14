@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css"; // Global App styles
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -14,74 +14,80 @@ import './i18n'; // Import i18n configuration
 import Preloader from './components/Preloader'; // Import the Preloader component
 
 function App() {
-  const { i18n } = useTranslation(); // Access the i18n object for language detection
+  // eslint-disable-next-line no-unused-vars
+  const { i18n } = useTranslation();
+
+  const [isLoaded, setIsLoaded] = useState(false); // Tracks when page has fully loaded
 
   useEffect(() => {
-    // Function to dynamically apply a new stylesheet and remove old ones
-    const applyStylesheet = (stylesheetPath) => {
-      // Remove any previously added language-specific styles
-      const existingStylesheet = document.getElementById("language-style");
-      if (existingStylesheet) {
-        existingStylesheet.remove();
-      }
+    // Minimum time for preloader (1.5 seconds)
+    const minimumDuration = 1500;
 
-      // Create a new link element for the new stylesheet
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = stylesheetPath;
-      link.id = "language-style"; // Add an ID to easily identify and remove it later
-      document.head.appendChild(link);
+    // Function to hide preloader after everything has loaded and minimum duration has passed
+    const handleLoad = () => {
+      const loadTime = Date.now() - startTime;
+      const remainingTime = minimumDuration - loadTime;
+
+      setTimeout(() => {
+        setIsLoaded(true);
+      }, remainingTime > 0 ? remainingTime : 0); // Ensure minimum duration is met
     };
 
-    // Determine which CSS file to load based on the current language
-    if (i18n.language === "ru") {
-      applyStylesheet(`${process.env.PUBLIC_URL}/styles/services_ru.css`); // Russian stylesheet
-    } else if (i18n.language === "az") {
-      applyStylesheet(`${process.env.PUBLIC_URL}/styles/services_az.css`); // Azerbaijani stylesheet
-    } else {
-      applyStylesheet(`${process.env.PUBLIC_URL}/styles/services.css`); // Default English stylesheet
-    }
-  }, [i18n.language]); // Re-run the effect whenever the language changes
+    const startTime = Date.now(); // Record the start time
+
+    // Wait for all assets (images, fonts, etc.) to load
+    window.addEventListener("load", handleLoad);
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
 
   return (
     <div className="App">
-      <div className="main__wrapper">
-        <div className="main__container">
-          {/**HEADER***/}
-          <Header />
+      {!isLoaded && <Preloader />} {/* Show Preloader until page is loaded */}
 
-          {/**HERO***/}
-          <Hero id="hero" />
+      {isLoaded && (
+        <div className="main__wrapper">
+          <div className="main__container">
+            {/**HEADER***/}
+            <Header />
 
-          {/**ABOUT ME***/}
-          <About />
+            {/**HERO***/}
+            <Hero id="hero" />
 
-          {/**SERVICES**/}
-          <Services />
+            {/**ABOUT ME***/}
+            <About />
 
-          {/**STACK**/}
-          <Stack />
+            {/**SERVICES**/}
+            <Services />
 
-          <div className="main__background__placeholder">
-            <div className="main__placeholder__background"></div>
-            <div className="main__placeholder__blur"></div>
-            <div className="main__placeholder__content">
-              {/**SOFT***/}
-              <Soft />
+            {/**STACK**/}
+            <Stack />
 
-              {/********* REST OF THE CONTENT ********/}
-              {/**PORTFOLIO***/}
-              <Portfolio />
+            <div className="main__background__placeholder">
+              <div className="main__placeholder__background"></div>
+              <div className="main__placeholder__blur"></div>
+              <div className="main__placeholder__content">
+                {/**SOFT***/}
+                <Soft />
 
-              {/***CONTACT***/}
-              <Contact />
+                {/********* REST OF THE CONTENT ********/}
+                {/**PORTFOLIO***/}
+                <Portfolio />
+
+                {/***CONTACT***/}
+                <Contact />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Scroll-to-Top Button */}
-      <ScrollToTopButton />
+      <ScrollToTopButton isLoaded={isLoaded} />
+
     </div>
   );
 }

@@ -126,7 +126,8 @@
       "help_desc": "Leave the message",
       "help2": "How can I contact you ?",
       "terms_desc": "I give my consent to the processing of personal data in accordance with the Terms",
-      "button": "Send request"
+      "button": "Send request",
+            "terms_link": "Terms *"
     },
     "footer": {
       "footer_1": "Daker Creative Studio",

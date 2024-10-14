@@ -87,6 +87,9 @@ const ContactForm = () => {
             <label htmlFor="terms">
             {t("contact.form.terms_desc")}
             </label>
+            <a target='_blank' href="www.google.com">
+            {t("contact.form.terms_link")}
+            </a>
           </div>
         </div>
 

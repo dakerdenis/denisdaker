@@ -110,7 +110,8 @@
       "help_desc": "Mesajınızı buraxın",
       "help2": "Sizinlə necə əlaqə saxlaya bilərəm?",
       "terms_desc": "Şərtlərə uyğun olaraq şəxsi məlumatların işlənməsinə razıyam",
-      "button": "Sorğunu göndər"
+      "button": "Sorğunu göndər",
+      "terms_link": "Şərtlərlə baxmaq *"
     },
     "footer": {
       "footer_1": "Daker Creative Studio",
