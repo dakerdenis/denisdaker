@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css"; // Global default CSS
 import AppRoutes from "./routes"; // Import routes from the routes file
-import ScrollToTopButton from "./components/ScrollToTopButton"; // Scroll to top button
+import ScrollToTopButton from "./components/ScrollToTopButton"; // Import Scroll-to-Top button
 import Preloader from './components/Preloader'; // Preloader
 import { usePreloader } from './hooks/usePreloader'; // Custom hook for preloader
 import { useDynamicStyles } from './hooks/useDynamicStyles'; // Custom hook for dynamic styles
@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         {!isLoaded && <Preloader />} {/* Show preloader until page is loaded */}
         {isLoaded && <AppRoutes />} {/* Load routes when loaded */}
-        <ScrollToTopButton /> {/* Scroll-to-top button always available */}
+        <ScrollToTopButton /> {/* Always show Scroll-to-Top button */}
       </div>
     </Router>
   );

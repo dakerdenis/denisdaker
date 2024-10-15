@@ -5,10 +5,12 @@ import arrow_portfolio from "../assets/arow_portfolio.svg";
 import PortfolioContainer from "./portfolio/PortfolioContainer";
 import portfolioData from "./portfolio/portfolioData";
 import { useTranslation } from "react-i18next";
-
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 
 const Portfolio = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate(); // Declare navigate to use later
+
   return (
     <section id="portfolio">
       <div className="section__portfolio__container">
@@ -18,11 +20,10 @@ const Portfolio = () => {
             <img src={dot} alt="Dot" />
           </div>
           <div className="porfolio__name-link porfolio__name-link-pc">
-            <button type="button">
-            <p>{t('portfolio.all_projects')}</p>
-            <img src={arrow_portfolio} alt="View all projects" />
+            <button type="button" onClick={() => navigate('/portfolio')}>
+              <p>{t('portfolio.all_projects')}</p>
+              <img src={arrow_portfolio} alt="View all projects" />
             </button>
-
           </div>
         </div>
 
@@ -33,8 +34,8 @@ const Portfolio = () => {
         </div>
 
         <div className="porfolio__name-link porfolio__name-link-mobile">
-          <button>
-            <p>View all projects</p>
+          <button type="button" onClick={() => navigate('/portfolio')}>
+            <p>{t('portfolio.all_projects')}</p>
             <img src={arrow_portfolio} alt="View all projects" />
           </button>
         </div>

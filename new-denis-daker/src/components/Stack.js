@@ -5,9 +5,9 @@ import StackElement from "./stacks/StackElement";
 import StackPlaceholder from "./stacks/StackPlaceholder";
 import { useTranslation } from "react-i18next";
 
-
 import polygon1 from "../assets/stack/poligon1.svg";
 import polygon2 from "../assets/stack/poligon2.svg";
+
 const Stack = () => {
   const { t } = useTranslation();
   const stackData = [
@@ -23,7 +23,7 @@ const Stack = () => {
       <div className="stack__container">
         {/**name**/}
         <div className="stack__name">
-          <p>     {t('stack.name')}</p>
+          <p>{t('stack.name')}</p>
           <span>
             <img src={dot} alt="" />
           </span>
@@ -31,27 +31,24 @@ const Stack = () => {
         {/**Content**/}
         <div className="stack__elements__wrapper">
           {stackData.map((item, index) => (
-            <>
+            <React.Fragment key={item.name}>
               <StackElement
-                key={item.name} // Use unique key based on item name
                 name={item.name}
                 percentage={item.percentage}
                 rating={item.rating}
               />
-              {index === 0 && <StackPlaceholder key="placeholder" />}
-            </>
+              {index === 0 && <StackPlaceholder key={`placeholder-${index}`} />}
+            </React.Fragment>
           ))}
         </div>
         {/**polygons**/}
 
-
         <div className="stack__polygon stack__polygon1">
-            <img src={polygon1} alt="" />
+          <img src={polygon1} alt="" />
         </div>
         <div className="stack__polygon stack__polygon2">
-            <img src={polygon2} alt="" />
+          <img src={polygon2} alt="" />
         </div>
-
       </div>
     </section>
   );

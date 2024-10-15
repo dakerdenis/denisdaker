@@ -7,6 +7,7 @@ import PortfolioSlide from "./PortfolioSlide";
 import "../../styles/portfolio.css";
 
 
+
 const PortfolioContainer = ({ portfolios }) => {
   const [spaceBetween, setSpaceBetween] = useState(43);
   const [slideStyle, setSlideStyle] = useState({

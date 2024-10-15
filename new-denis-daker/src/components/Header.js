@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next"; // Import the translation hook
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import "../styles/header.css";
 import logo from "../assets/Logo.svg";
 import lang from "../assets/lang.svg";
@@ -9,9 +10,20 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
   const [showLangDropdown, setShowLangDropdown] = useState(false); // State for language dropdown visibility
+  const navigate = useNavigate(); // For programmatic navigation
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng); // Switch the language
+  };
+
+  const handleNavigation = (path, sectionId) => {
+    navigate(path); // Navigate to the main page ("/denis-daker")
+    setTimeout(() => {
+      const element = document.getElementById(sectionId); // Scroll to the section
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Add a small delay to ensure navigation completes
   };
 
   useEffect(() => {
@@ -48,32 +60,32 @@ const Header = () => {
           <div className="header__navigation">
             <ul>
               <li>
-                <a href="#about">
+                <button onClick={() => handleNavigation("/denis-daker", "about")} className="nav-link-button">
                   <span className="blue-symbol">&lt;</span>
                   {t('header.about')}
                   <span className="blue-symbol">&gt;</span>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#services">
+                <button onClick={() => handleNavigation("/denis-daker", "services")} className="nav-link-button">
                   <span className="blue-symbol">&lt;</span>
                   {t('header.services')}
                   <span className="blue-symbol">&gt;</span>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#portfolio">
+                <button onClick={() => handleNavigation("/denis-daker", "portfolio")} className="nav-link-button">
                   <span className="blue-symbol">&lt;</span>
                   {t('header.portfolio')}
                   <span className="blue-symbol">&gt;</span>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#contact">
+                <button onClick={() => handleNavigation("/denis-daker", "contact")} className="nav-link-button">
                   <span className="blue-symbol">&lt;</span>
                   {t('header.contact')}
                   <span className="blue-symbol">&gt;</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -88,9 +100,9 @@ const Header = () => {
 
             {showLangDropdown && (
               <div className="header__lang-dropdown">
-              <button onClick={() => changeLanguage('az')}>AZ</button>
-              <button onClick={() => changeLanguage('ru')}>RU</button>
-              <button onClick={() => changeLanguage('en')}>EN</button>
+                <button onClick={() => changeLanguage('az')}>AZ</button>
+                <button onClick={() => changeLanguage('ru')}>RU</button>
+                <button onClick={() => changeLanguage('en')}>EN</button>
               </div>
             )}
           </div>

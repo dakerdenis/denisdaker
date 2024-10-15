@@ -288,10 +288,7 @@
     text-align: left;
 
 }
-.swiper__portfolio__desc p:nth-child(1){
-    margin-bottom: 15px;
 
-}
 
 .swiper__portfolio__additional-photo{
     width: 455px;
@@ -318,6 +315,9 @@
     display: none;
     visibility: hidden;
 }
+
+/*************************/
+
 @media only screen and (max-width: 768px) {
     .porfolio__wrapper__swiper .swiper-slide:first-child{
         margin-left: 20px;
@@ -353,9 +353,7 @@
     .swiper__portfolio__desc span{
         font-size: 10px;
     }
-    .swiper__portfolio__desc p:nth-child(1){
-        margin-bottom: 8px;
-    }
+
     .swiper__border__left {
         width: 60px;
     }

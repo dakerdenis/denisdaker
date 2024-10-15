@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/scrollToTopButton.css"; // We'll create a CSS file for styling
 
-const ScrollToTopButton = ({ isLoaded }) => {
+const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const scrollToTop = () => {
@@ -13,27 +13,23 @@ const ScrollToTopButton = ({ isLoaded }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroElement = document.getElementById("hero");
+      const scrollThreshold = 200; // Adjust this threshold based on when you want the button to appear
 
-      if (heroElement) {
-        const heroHeight = heroElement.offsetHeight;
-
-        if (window.scrollY > heroHeight) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
+      if (window.scrollY > scrollThreshold) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
       }
     };
 
-    if (isLoaded) {
-      window.addEventListener("scroll", handleScroll);
-    }
+    // Always attach the scroll event listener, since the button should be available everywhere
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLoaded]); // Only add scroll listener after content is loaded
+  }, []);
 
   return (
     <div>

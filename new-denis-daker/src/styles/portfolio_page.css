@@ -1,0 +1,38 @@
+.hero__social{
+    top: -60px;
+}
+
+
+.portfolio-page{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-page__content{
+    width: 100%;
+    min-height: 150vh;
+}
+
+.portfolio_custom_wrapper{
+    width: 1061px;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    z-index: 500;
+
+    margin-top: 100px;
+
+}
+.portfolio_custom_slide{
+    height: 598px;
+    width: 767px;
+
+    position: relative;
+    margin-bottom: 350px;
+    transform: scale(1.3) translateX(100px) translateY(70px);
+
+}
+
+.portfolio_custom_slide .swiper__block_porfolio{
+
+}

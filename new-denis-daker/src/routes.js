@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Preloader from './components/Preloader'; // Your Preloader for lazy loading
+import Preloader from './components/Preloader'; // Preloader for lazy loading
 
-// Lazy loading your components
+// Lazy loading components
 const Header = lazy(() => import('./components/Header'));
 const Hero = lazy(() => import('./components/Hero'));
 const About = lazy(() => import('./components/About'));
@@ -12,9 +12,10 @@ const Soft = lazy(() => import('./components/Soft'));
 const Portfolio = lazy(() => import('./components/Portfolio'));
 const Contact = lazy(() => import('./components/Contact'));
 const Terms = lazy(() => import('./components/Terms'));
+const PortfolioPage = lazy(() => import('./components/PortfolioPage')); // Lazy-load new PortfolioPage
 
 const AppRoutes = () => (
-  <Suspense fallback={<Preloader />}> {/* Show preloader while loading */}
+  <Suspense fallback={<Preloader />}>
     <Routes>
       <Route path="/denis-daker" element={
         <div className="main__wrapper">
@@ -36,6 +37,7 @@ const AppRoutes = () => (
           </div>
         </div>
       } />
+      <Route path="/portfolio" element={<PortfolioPage />} /> {/* New PortfolioPage route */}
       <Route path="/terms" element={<Terms />} /> {/* Route for terms page */}
     </Routes>
   </Suspense>
