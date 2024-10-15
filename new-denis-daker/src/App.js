@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Correct import
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css"; // This is your global default CSS
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -12,13 +13,14 @@ import Contact from "./components/Contact";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Preloader from './components/Preloader';
 import Terms from "./components/Terms"; // Import the Terms component
-import PortfolioPage from "./components/PortfolioPage"; // Import the PortfolioPage component
+import { useTranslation } from "react-i18next"; // i18n for language detection
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const { i18n } = useTranslation(); // Detect the current language
 
   useEffect(() => {
-    const minimumDuration = 1000; // 1 second
+    const minimumDuration = 1000;
     const startTime = Date.now();
 
     const handleLoad = () => {
@@ -37,14 +39,40 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    // Function to dynamically apply a new stylesheet and remove old ones
+    const applyStylesheet = (stylesheetPath) => {
+      // Remove any previously added language-specific styles
+      const existingStylesheet = document.getElementById("language-style");
+      if (existingStylesheet) {
+        existingStylesheet.remove();
+      }
+
+      // Create a new link element for the new stylesheet
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = stylesheetPath;
+      link.id = "language-style"; // Add an ID to easily identify and remove it later
+      document.head.appendChild(link);
+    };
+
+    // Apply the correct CSS based on the current language
+    if (i18n.language === "ru") {
+      applyStylesheet(`${process.env.PUBLIC_URL}/styles/style_ru.css`);
+    } else if (i18n.language === "en") {
+      applyStylesheet(`${process.env.PUBLIC_URL}/styles/style_en.css`);
+    } else {
+      // You can add more languages here if needed
+      applyStylesheet(`${process.env.PUBLIC_URL}/styles/style_en.css`); // Default to English
+    }
+  }, [i18n.language]); // This runs whenever the language changes
+
   return (
     <Router>
       <div className="App">
-        {!isLoaded && <Preloader />} {/* Show preloader until content is fully loaded */}
-        
+        {!isLoaded && <Preloader />}
         {isLoaded && (
           <Routes>
-            {/* Main site route */}
             <Route path="/denis-daker" element={
               <div className="main__wrapper">
                 <div className="main__container">
@@ -65,15 +93,9 @@ function App() {
                 </div>
               </div>              
             } />
-
-            {/* Portfolio page route */}
-            <Route path="/portfolio" element={<PortfolioPage />} /> 
-
-            {/* Terms and conditions route */}
-            <Route path="/terms" element={<Terms />} /> 
+            <Route path="/terms" element={<Terms />} /> {/* Route for terms page */}
           </Routes>
         )}
-        
         <ScrollToTopButton />
       </div>
     </Router>
