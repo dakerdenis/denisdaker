@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate, Link } from 'react-router-dom'; // Import Link for navigation
+import { useNavigate, Link } from "react-router-dom"; // Import Link for navigation
 import "../styles/header.css";
 import logo from "../assets/Logo.svg";
 import lang from "../assets/lang.svg";
@@ -13,17 +13,17 @@ const Header = () => {
   const navigate = useNavigate();
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng); 
+    i18n.changeLanguage(lng);
   };
 
   const handleNavigation = (path, sectionId) => {
-    navigate(path); 
+    navigate(path);
     setTimeout(() => {
-      const element = document.getElementById(sectionId); 
+      const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100); 
+    }, 100);
   };
 
   useEffect(() => {
@@ -49,7 +49,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`header ${isSticky ? "sticky" : ""} ${hasBackground ? "with-background" : ""}`}>
+    <header
+      className={`header ${isSticky ? "sticky" : ""} ${
+        hasBackground ? "with-background" : ""
+      }`}
+    >
       <div className="header__container">
         <div className="header__logo">
           <Link to="/denis-daker">
@@ -60,30 +64,42 @@ const Header = () => {
           <div className="header__navigation">
             <ul>
               <li>
-                <button onClick={() => handleNavigation("/denis-daker", "about")} className="nav-link-button">
+                <button
+                  onClick={() => handleNavigation("/denis-daker", "about")}
+                  className="nav-link-button"
+                >
                   <span className="blue-symbol">&lt;</span>
-                  {t('header.about')}
+                  {t("header.about")}
                   <span className="blue-symbol">&gt;</span>
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavigation("/denis-daker", "services")} className="nav-link-button">
+                <button
+                  onClick={() => handleNavigation("/denis-daker", "services")}
+                  className="nav-link-button"
+                >
                   <span className="blue-symbol">&lt;</span>
-                  {t('header.services')}
+                  {t("header.services")}
                   <span className="blue-symbol">&gt;</span>
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavigation("/denis-daker", "portfolio")} className="nav-link-button">
+                <button
+                  onClick={() => handleNavigation("/denis-daker", "portfolio")}
+                  className="nav-link-button"
+                >
                   <span className="blue-symbol">&lt;</span>
-                  {t('header.portfolio')}
+                  {t("header.portfolio")}
                   <span className="blue-symbol">&gt;</span>
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavigation("/denis-daker", "contact")} className="nav-link-button">
+                <button
+                  onClick={() => handleNavigation("/denis-daker", "contact")}
+                  className="nav-link-button"
+                >
                   <span className="blue-symbol">&lt;</span>
-                  {t('header.contact')}
+                  {t("header.contact")}
                   <span className="blue-symbol">&gt;</span>
                 </button>
               </li>
@@ -98,12 +114,16 @@ const Header = () => {
             <img src={lang} alt="Language" />
             {showLangDropdown && (
               <div className="header__lang-dropdown">
-                <button onClick={() => changeLanguage('az')}>AZ</button>
-                <button onClick={() => changeLanguage('ru')}>RU</button>
-                <button onClick={() => changeLanguage('en')}>EN</button>
+                <button onClick={() => changeLanguage("az")}>AZ</button>
+                <button onClick={() => changeLanguage("ru")}>RU</button>
+                <button onClick={() => changeLanguage("en")}>EN</button>
               </div>
             )}
           </div>
+        </div>
+
+        <div className="header__navigaion__lang-mobile">
+          {/****HEre should be burger menu for mobile devices****/}
         </div>
       </div>
     </header>

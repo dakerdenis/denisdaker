@@ -134,7 +134,10 @@
     background-color: #fff;
     color: #1C423F;
   }
-  
+  .header__navigaion__lang-mobile{
+    display: none;
+    visibility: hidden;
+  }
 
 @media only screen and (max-width: 790px) {
   .header {

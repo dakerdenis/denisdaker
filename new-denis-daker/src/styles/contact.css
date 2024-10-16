@@ -852,7 +852,23 @@ input[type="checkbox"]:hover {
   .contact__footer_image{
     margin-top: 10px;
   }
-
+  .card::before {
+    width: 240px;
+    height: 240px;
+    top: -3%;
+    left: -3%;
+}
+.card::after{
+  top: -22%;
+  left: -35px;
+}
+.contact__image-name p {
+  font-size: 30px;
+}
+.contact__image-name img {
+  right: 2px;
+  bottom: 12px;
+}
 }
 @media only screen and (max-width: 360px) {
       .radio-block-group:nth-child(3){
