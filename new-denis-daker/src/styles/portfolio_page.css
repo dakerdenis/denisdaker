@@ -22,17 +22,124 @@
 
     margin-top: 100px;
 
+
 }
-.portfolio_cusstom_slide{
+.portfolio_custom_slide{
     height: 598px;
     width: 767px;
-
     position: relative;
-    margin-bottom: 350px;
-    transform: scale(1.3) translateX(100px) translateY(70px);
 
+    transform: scale(1.3) translateX(100px) translateY(70px);
+    margin-bottom: 350px;
 }
 
 .portfolio_custom_slide .swiper__block_porfolio{
+    
 
+}
+@media only screen and (max-width: 1610px) {
+    .portfolio_custom_slide{
+        transform: scale(1.1) translateX(160px) translateY(70px);
+        margin-bottom: 300px;
+    }
+
+}
+@media only screen and (max-width: 1460px) {
+    .portfolio_custom_slide{
+        transform: scale(1) translateX(180px) translateY(70px);
+        margin-bottom: 200px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .portfolio_custom_wrapper{
+        width: 100%;
+    }
+    .portfolio_custom_slide{
+        width: 90%;
+        height: 350px;
+    }
+    .swiper__image__container {
+        height: 168px;
+    }
+    .swiper__portfolio__quotes{
+        bottom: initial;
+        bottom: initial;
+        top: 144px;
+        left: 32px;
+    transform: scale(0.4);
+    }
+    
+    .swiper__portfolio__additional-photo {
+        width: 310px;
+        height: 64px;
+        bottom: 256px;
+    }
+    .swiper__portfolio__additional-photo img{
+        max-width: 108px;
+    }
+    .swiper__portfolio__desc{
+        width: 300px;
+        height: 223px;
+        bottom: 25px;
+        left: calc(50% - 150px);
+    }
+    .swiper__portfolio__desc p{
+        font-size: 10px;
+    }
+    .swiper__portfolio__desc span{
+        font-size: 10px;
+    }
+
+    .swiper__border__left {
+        width: 60px;
+    }
+    .swiper__button {
+        left: 59px;
+
+    }.swiper__border__right {
+        width: 100px;
+    }
+    .swiper__border__right2 {
+        width: 52px;
+    }
+    .swiper__border__left3{
+        width: 24px;
+    }
+    .swiper__button3{
+        left: 23px;
+    }
+    .swiper__border__right3 {
+        width: 27px;
+    }
+    .swiper__border__right5{
+        width: 61px;
+    }
+    .swiper__border__right7 {
+        width: 146px;
+    }
+    .porfolio__name{
+        flex-direction: column;
+        align-items: center;
+        height: initial;
+    }
+    .porfolio__name-link {
+        margin-top: 20px;
+    }
+    .porfolio__name-link-pc{
+        display: none;
+        visibility: hidden;
+    }
+    .porfolio__container__swiper{
+        height: 530px;
+    }
+    .porfolio__name-link-mobile{
+        visibility: visible;
+        margin: 0 auto;margin-top: 30px;
+    }  
+    .portfolio_custom_slide{
+        transform: none;
+        width: 100%;
+        height: 460px;
+    
+    } 
 }

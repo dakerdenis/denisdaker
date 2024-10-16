@@ -137,6 +137,9 @@
   
 
 @media only screen and (max-width: 790px) {
+  .header {
+
+  }
     .header__navigation__lang{
         display: none;
     }
