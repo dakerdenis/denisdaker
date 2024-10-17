@@ -288,9 +288,9 @@ height: 650px;
     right: 24%;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
   .hero__skills {
-    width: 536px;
+
   }
   .hero__additional{
     width: 965px;
@@ -302,6 +302,7 @@ height: 650px;
   .hero__image__daker {
     height: 191px;
     width: 469px;
+
   }
   .hero__image__main{
     height: 580px;

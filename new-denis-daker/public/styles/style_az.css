@@ -16,7 +16,7 @@
     width: 250px;
 }
 .stack__name{
-    width: 520px !important;
+    width: 337px !important;
 
 }
 .stack__name p {
@@ -56,4 +56,74 @@
     .about__desc__element p {
         font-size: 19px !important;
     }
+}
+
+
+@media only screen and (max-width: 1370px) {
+    .second-swiper-name p{
+        font-size: 40px  !important;
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+    .services__name__block p{
+        font-size: 40px !important;
+    }
+    .services__name__block img{
+        height: 9px;
+        width: 9px;
+    }
+    .swiper__desc{
+        min-height: 168px !important;
+    }
+    .stack__name{
+        width: 300px !important;
+    }
+    .stack__name p{
+        font-size: 36px !important;
+    }
+    .stack__name img{
+        bottom: 7px !important;
+    }
+    .swiper_name {
+        font-size: 25px !important;
+    }
+
+    .soft__name p {
+        font-size: 36px !important;
+    }
+    .soft__name img{
+        width: 9px !important;
+        bottom: 5px !important;
+    }
+    .soft__name {
+        width: 257px !important;
+    }
+    .porfolio__name-name p{
+        font-size: 36px !important;
+    }
+    .porfolio__name-name img{
+        bottom: 19px !important;
+        height: 8px !important;
+    }
+    .contact__desc p{
+        font-size: 20px !important;
+    }
+    .input-group label{
+        font-size: 17px !important;
+    }
+    .contact__form-terms label{
+        font-size: 11px !important;
+    }
+    .radio-block-group label{
+        font-size: 14px !important;
+    }
+    input[type="checkbox"] {
+        width: 44px !important;
+        }
+        .contact__form-terms a{
+            margin-left: 0px !important;
+            font-size: 12px !important;
+        }
 }

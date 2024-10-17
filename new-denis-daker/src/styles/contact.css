@@ -869,6 +869,13 @@ input[type="checkbox"]:hover {
   right: 2px;
   bottom: 12px;
 }
+input[type="checkbox"] {
+  width: 42px;
+  }
+  .contact__form-terms label {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 @media only screen and (max-width: 360px) {
       .radio-block-group:nth-child(3){

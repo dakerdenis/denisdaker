@@ -362,4 +362,15 @@ color: #fff;
   .section__services__background{
     min-height: initial;
   }
+  .swiper__desc {
+    font-size: 12px;
+    min-height: 167px;
+  }
+  input[type="checkbox"] {
+  width: 37px;
+  }
+  .contact__form-terms label {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
