@@ -57,9 +57,8 @@ const Header = () => {
 
   return (
     <header
-      className={`header ${isSticky ? "sticky" : ""} ${
-        hasBackground ? "with-background" : ""
-      }`}
+      className={`header ${isSticky ? "sticky" : ""} ${hasBackground ? "with-background" : ""
+        }`}
     >
       <div className="header__container">
         {/* Logo */}
@@ -147,31 +146,35 @@ const Header = () => {
         <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
 
           <div className="mobile-menu-wrapper">
-          <button className="close-button" onClick={toggleMobileMenu}>
-            X {/* Close Button */}
-          </button>
-          <ul>
-            <li>
+
+            <div className="mobile-menu-logo">
+              <Link to="/denis-daker">
+                <img src={logo} alt="Logo" />
+              </Link>
+            </div>
+
+
+            <button className="close-button" onClick={toggleMobileMenu}>
+              X {/* Close Button */}
+            </button>
+            <div className="mobile-menu-navigation">
               <button onClick={() => handleNavigation("/denis-daker", "about")}>
                 {t("header.about")}
               </button>
-            </li>
-            <li>
               <button onClick={() => handleNavigation("/denis-daker", "services")}>
                 {t("header.services")}
               </button>
-            </li>
-            <li>
               <button onClick={() => handleNavigation("/denis-daker", "portfolio")}>
                 {t("header.portfolio")}
               </button>
-            </li>
-            <li>
               <button onClick={() => handleNavigation("/denis-daker", "contact")}>
                 {t("header.contact")}
               </button>
-            </li>
-          </ul>
+            </div>
+
+            <div className="mobile-menu-created">
+
+            </div>
           </div>
 
 
