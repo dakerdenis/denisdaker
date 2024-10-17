@@ -93,7 +93,10 @@
     width: 50px;
     
 }
-
+.header__navigation__lang-mobile{
+  display: none;
+  visibility: hidden;
+}
 /********** language toggle***/
 /* Positioning for the language dropdown */
 .header__lang {
@@ -146,4 +149,10 @@
     .header__navigation__lang{
         display: none;
     }
+
+.header__navigation__lang-mobile
+{
+  display: initial;
+  visibility: visible;
+}
 }

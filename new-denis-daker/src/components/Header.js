@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom"; // Import Link for navigation
 import "../styles/header.css";
-import logo from "../assets/Logo.svg";
+import "../styles/burger.css";
+import logo from "../assets/Logo.svg"; // Preserved your logo import
 import lang from "../assets/lang.svg";
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
   const [showLangDropdown, setShowLangDropdown] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // For burger menu
   const navigate = useNavigate();
 
   const changeLanguage = (lng) => {
@@ -17,6 +19,7 @@ const Header = () => {
   };
 
   const handleNavigation = (path, sectionId) => {
+    setIsMobileMenuOpen(false); // Close the mobile menu on navigation
     navigate(path);
     setTimeout(() => {
       const element = document.getElementById(sectionId);
@@ -24,6 +27,10 @@ const Header = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }, 100);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle burger menu
   };
 
   useEffect(() => {
@@ -55,11 +62,14 @@ const Header = () => {
       }`}
     >
       <div className="header__container">
+        {/* Logo */}
         <div className="header__logo">
           <Link to="/denis-daker">
             <img src={logo} alt="Logo" />
           </Link>
         </div>
+
+        {/* Desktop Navigation */}
         <div className="header__navigation__lang">
           <div className="header__navigation">
             <ul>
@@ -106,6 +116,7 @@ const Header = () => {
             </ul>
           </div>
 
+          {/* Language Selection */}
           <div
             className="header__lang"
             onMouseEnter={() => setShowLangDropdown(true)}
@@ -122,8 +133,50 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header__navigaion__lang-mobile">
-          {/****HEre should be burger menu for mobile devices****/}
+        {/* Burger Menu for Mobile */}
+        <div className="header__navigation__lang-mobile">
+          <button
+            className={`burger-menu-button ${isMobileMenuOpen ? "open" : ""}`}
+            onClick={toggleMobileMenu}
+          >
+            {/* Button content handled in CSS */}
+          </button>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
+
+          <div className="mobile-menu-wrapper">
+          <button className="close-button" onClick={toggleMobileMenu}>
+            X {/* Close Button */}
+          </button>
+          <ul>
+            <li>
+              <button onClick={() => handleNavigation("/denis-daker", "about")}>
+                {t("header.about")}
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigation("/denis-daker", "services")}>
+                {t("header.services")}
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigation("/denis-daker", "portfolio")}>
+                {t("header.portfolio")}
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigation("/denis-daker", "contact")}>
+                {t("header.contact")}
+              </button>
+            </li>
+          </ul>
+          </div>
+
+
+
+
         </div>
       </div>
     </header>

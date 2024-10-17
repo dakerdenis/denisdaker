@@ -1,0 +1,111 @@
+/* Burger menu button */
+.burger-menu-button {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .burger-menu-button::before,
+  .burger-menu-button::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .burger-menu-button::before {
+    top: 0;
+  }
+  
+  .burger-menu-button::after {
+    bottom: 0;
+  }
+  
+  .burger-menu-button.open::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  
+  .burger-menu-button.open::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  
+  .burger-menu-button.open {
+    background-color: transparent;
+  }
+  
+  /* Mobile menu with slide-in animation */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333;
+    border-image-source: linear-gradient(152.69deg, #433E42 3.41%, rgba(0, 0, 0, 0) 82.98%);
+    z-index: 100;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease-in-out; /* Smooth sliding animation */
+  }
+  .mobile-menu-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.11);
+  }
+  .mobile-menu.open {
+    left: 0; /* Slide in when open */
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-menu button {
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust font size */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu and Burger Icon visibility */
+  @media (max-width: 768px) {
+    .header__navigation__lang {
+      display: none;
+    }
+  
+    .header__navigation__lang-mobile {
+      display: block;
+    }
+  
+    .burger-menu-button {
+      display: block;
+    }
+  }
+  
