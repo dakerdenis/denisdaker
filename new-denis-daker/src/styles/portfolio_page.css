@@ -6,6 +6,7 @@
 .portfolio-page{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .portfolio-page__content{
     width: 100%;
@@ -19,7 +20,7 @@
     min-height: 100vh;
     position: relative;
     z-index: 500;
-
+    overflow: hidden;
     margin-top: 100px;
 
 
@@ -142,4 +143,22 @@
         height: 460px;
     
     } 
+    .portfolio_custom_slide {
+        width: 330px;
+        height: 457px;
+    }
+
+    .swiper__image__container{
+        width: calc(100% + 2px);
+    }
+    .hero_rectangle {
+
+    }
+
+    .portfolio_custom_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

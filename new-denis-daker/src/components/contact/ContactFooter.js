@@ -11,7 +11,7 @@ const ContactFooter = () => {
         Daker Creative Studio
         </div>
         <div className='contact__social__text contact__social__text2'>
-        © 2022 daker.website - All rights reserved
+        © 2024 daker.website - All rights reserved
         </div>
     </div>
   );

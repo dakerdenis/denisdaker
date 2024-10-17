@@ -6,6 +6,7 @@ import "../styles/burger.css";
 import logo from "../assets/Logo.svg"; // Preserved your logo import
 import lang from "../assets/lang.svg";
 
+
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
@@ -172,8 +173,14 @@ const Header = () => {
               </button>
             </div>
 
-            <div className="mobile-menu-created">
 
+
+
+
+
+
+            <div className="mobile-menu-created">
+              <p>© 2024 daker.website - All rights reserved</p>
             </div>
           </div>
 
