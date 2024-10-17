@@ -38,3 +38,42 @@ width: 88px;
 .about__desc__element p {
     font-size: 19px;
 }
+
+@media only screen and (max-width: 790px) {
+    .hero__general__name p:nth-child(2){
+        font-size: 32px !important;
+    }
+    .stack__name{
+        width: 300px !important;
+    }
+    .stack__name p {
+        font-size: 30px !important;
+    }
+    .stack__name img {
+
+    right: 1px !important;
+    bottom: 7px !important;
+    height: 12px !important;
+    width: 9px !important;
+    }
+    .soft__name {
+        width: 300px !important;
+    }
+    .soft__name p{
+        font-size: 33px !important;
+    }
+    .soft__name img {
+        width: 7px !important;
+        bottom: 5px !important;
+        right: 16px !important;
+    }
+    .porfolio__name-name p {
+        font-size: 40px !important;
+    }
+    .input-group label{
+        font-size: 16px !important;
+    }
+    .contact__form-terms label{
+        font-size: 10px !important;
+    }
+}

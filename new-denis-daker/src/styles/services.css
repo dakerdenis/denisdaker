@@ -324,6 +324,15 @@ color: #fff;
 .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
   background: linear-gradient(135deg, #180B0B 0%, #1C423F 89.58%);
 }
+.swiper__desc {
+  min-height: 126px;
+}
+.swiper_name{
+  min-height: 78px;
+}
+.swiper__number {
+  font-size: 110px;
+}
 @media only screen and (max-width: 790px) {
   #services {
     margin-top: 120px;
@@ -366,11 +375,5 @@ color: #fff;
     font-size: 12px;
     min-height: 167px;
   }
-  input[type="checkbox"] {
-  width: 37px;
-  }
-  .contact__form-terms label {
-    font-size: 10px;
-    line-height: 15px;
-  }
+
 }

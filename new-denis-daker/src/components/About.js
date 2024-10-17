@@ -40,7 +40,7 @@ const About = () => {
             {/*****EXPERIENCE*****/}
             <div className="about__desc__exp">
               <div className="about__desc__element">
-                <div>3+</div>
+                <div>4+</div>
                 <p>{t('about.experience')}</p>
               </div>
               {/**********/}
