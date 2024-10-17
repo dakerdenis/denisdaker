@@ -214,10 +214,16 @@
             margin-bottom: 10px;
     }
     .stack__element__container {
-        width: 143px;
+        width: 166px;
+    }
+    .stack__element__name{
+        font-size: 20px;
     }
     .stack__rating__block {
         margin-right: 9.1px;
+    }
+    .stack__element__percentage{
+        font-size: 13px;
     }
 }
 

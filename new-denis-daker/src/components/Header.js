@@ -38,17 +38,37 @@ const Header = () => {
     const handleScroll = () => {
       const stickyThreshold = 40;
       const earlyThreshold = stickyThreshold + 150;
-
+  
+      // Sticky header behavior
       if (window.scrollY > stickyThreshold) {
         setIsSticky(true);
         setHasBackground(true);
       }
-
+  
       if (window.scrollY < earlyThreshold) {
         setIsSticky(false);
         setHasBackground(false);
       }
     };
+  
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+  
+    // Add/remove no-scroll class based on mobile menu state
+    if (isMobileMenuOpen) {
+      document.body.classList.add("no-scroll"); // Disable scrolling
+    } else {
+      document.body.classList.remove("no-scroll"); // Enable scrolling
+    }
+  
+    // Cleanup event listeners when component unmounts or updates
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.body.classList.remove("no-scroll"); // Ensure scroll is enabled when component unmounts
+    };
+  }, [isMobileMenuOpen]); // Adding isMobileMenuOpen dependency so effect runs when burger state changes
+  
+    
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -159,6 +179,27 @@ const Header = () => {
               X {/* Close Button */}
             </button>
             <div className="mobile-menu-navigation">
+              <div className="header__lang-dropdown">
+                <button
+                  onClick={() => changeLanguage("az")}
+                  className={i18n.language === "az" ? "active-lang" : ""}
+                >
+                  AZ
+                </button>
+                <button
+                  onClick={() => changeLanguage("ru")}
+                  className={i18n.language === "ru" ? "active-lang" : ""}
+                >
+                  RU
+                </button>
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className={i18n.language === "en" ? "active-lang" : ""}
+                >
+                  EN
+                </button>
+              </div>
+
               <button onClick={() => handleNavigation("/denis-daker", "about")}>
                 {t("header.about")}
               </button>

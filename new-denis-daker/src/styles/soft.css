@@ -118,14 +118,14 @@ text-align: justify;
 
   @media only screen and (max-width: 768px) {
     .soft__element__container{
-        width: 150px;
-        height: 100px;
+        width: 170px;
+        height: 112px;
         padding: 10px;
         margin-top: 10px;
         border-radius: 7px;
     }
     .soft__element__name p{
-        font-size: 16px;
+        font-size: 18.5px;
         line-height: initial;
         margin-top: 0px;
     }
@@ -134,7 +134,7 @@ text-align: justify;
         
     }
     .soft__element__percentage{
-        font-size: 10px;
+        font-size: 11.5px;
         line-height: initial;
         top: 6px;
         right: 10px;
@@ -143,7 +143,7 @@ text-align: justify;
         margin-top: 15px;
     }
     .soft__rating__block{
-        height: 30px;
+        height: 41px;
         margin-right: 9.7px;
         border-radius: 1.5px;
     }
