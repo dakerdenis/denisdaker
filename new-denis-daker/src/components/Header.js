@@ -37,7 +37,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const stickyThreshold = 40;
-      const earlyThreshold = stickyThreshold + 150;
+      const earlyThreshold = stickyThreshold + 10;
 
       // Sticky header behavior
       if (window.scrollY > stickyThreshold) {
