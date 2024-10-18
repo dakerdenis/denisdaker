@@ -125,7 +125,9 @@
     margin-top: 10px;
     padding-top: 40px;
     position: absolute;
-    width: 100%;
+    width: 240px;
+    left: calc(50% - 120px);
+
     z-index: 400;
     height: 350px;
     justify-content: space-evenly;
@@ -143,6 +145,18 @@ left: 0;
 .mobile-menu-navigation button{
     position: relative;
 }
+.mobile-menu-navigation button:active {
+    background-color: #1f9d96; /* Change background color when pressed */
+    color: #fff;
+  }
+  .mobile-menu-navigation button:focus {
+    outline: none; /* Remove the default focus outline */
+    background-color: #1f9d96; /* Different background color when focused */
+    color: #fff;
+  }
+  .mobile-menu-navigation button:active::before{
+    height: 0px;
+  }
 .mobile-menu-navigation button::before{
     content: "";
     width: 50px;
@@ -197,9 +211,7 @@ left: 0;
   .header__lang-dropdown button:nth-child(2){
     border: none;
   }
-  .active-lang {
-    background: #1f9d96; /* You can adjust this color as needed */
-  }
+
   /* Mobile Menu and Burger Icon visibility */
   @media (max-width: 768px) {
     .header__navigation__lang {
@@ -213,5 +225,8 @@ left: 0;
     .burger-menu-button {
       display: block;
     }
+    .active-lang {
+        background: #1f9d96; /* You can adjust this color as needed */
+      }
   }
   

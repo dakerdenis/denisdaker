@@ -6,7 +6,6 @@ import "../styles/burger.css";
 import logo from "../assets/Logo.svg"; // Preserved your logo import
 import lang from "../assets/lang.svg";
 
-
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
@@ -17,6 +16,7 @@ const Header = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setIsMobileMenuOpen(false); // Automatically close the burger menu after language change
   };
 
   const handleNavigation = (path, sectionId) => {
@@ -38,43 +38,35 @@ const Header = () => {
     const handleScroll = () => {
       const stickyThreshold = 40;
       const earlyThreshold = stickyThreshold + 150;
-  
+
       // Sticky header behavior
       if (window.scrollY > stickyThreshold) {
         setIsSticky(true);
         setHasBackground(true);
       }
-  
+
       if (window.scrollY < earlyThreshold) {
         setIsSticky(false);
         setHasBackground(false);
       }
     };
-  
+
     // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
-  
+
     // Add/remove no-scroll class based on mobile menu state
     if (isMobileMenuOpen) {
       document.body.classList.add("no-scroll"); // Disable scrolling
     } else {
       document.body.classList.remove("no-scroll"); // Enable scrolling
     }
-  
+
     // Cleanup event listeners when component unmounts or updates
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.body.classList.remove("no-scroll"); // Ensure scroll is enabled when component unmounts
     };
   }, [isMobileMenuOpen]); // Adding isMobileMenuOpen dependency so effect runs when burger state changes
-  
-    
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <header
@@ -165,15 +157,12 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-
           <div className="mobile-menu-wrapper">
-
             <div className="mobile-menu-logo">
               <Link to="/denis-daker">
                 <img src={logo} alt="Logo" />
               </Link>
             </div>
-
 
             <button className="close-button" onClick={toggleMobileMenu}>
               X {/* Close Button */}
@@ -214,20 +203,10 @@ const Header = () => {
               </button>
             </div>
 
-
-
-
-
-
-
             <div className="mobile-menu-created">
               <p>© 2024 daker.website - All rights reserved</p>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </header>

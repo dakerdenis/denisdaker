@@ -76,4 +76,10 @@ width: 88px;
     .contact__form-terms label{
         font-size: 10px !important;
     }
+    .services__name__block p{
+        font-size: 40px !important;
+    }
+    .swiper__image {
+        height: 56px !important;
+    }
 }
