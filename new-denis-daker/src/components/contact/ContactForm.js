@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom"; // Import Link from react-router
 import arrow from "../../assets/contact/Vector.svg";
 
 const ContactForm = () => {
@@ -87,9 +88,11 @@ const ContactForm = () => {
             <label htmlFor="terms">
               {t("contact.form.terms_desc")}
             </label>
-            <a target="_blank" rel="noopener noreferrer" href="/terms">
-              {t("contact.form.terms_link")}
-            </a>
+
+            <Link to="/terms" target="_blank" rel="noopener noreferrer">
+  {t("contact.form.terms_link")}
+</Link>
+
           </div>
         </div>
 
