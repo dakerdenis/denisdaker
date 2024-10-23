@@ -43,6 +43,7 @@
   
   /* Mobile menu with slide-in animation */
   .mobile-menu {
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: -102%; /* Initially hidden off-screen */

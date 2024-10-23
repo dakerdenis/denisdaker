@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import "./App.css"; // Global default CSS
 import AppRoutes from "./routes"; // Import routes from the routes file
 import ScrollToTopButton from "./components/ScrollToTopButton"; // Import Scroll-to-Top button
@@ -8,21 +7,22 @@ import Preloader from './components/Preloader'; // Preloader
 import { usePreloader } from './hooks/usePreloader'; // Custom hook for preloader
 import { useDynamicStyles } from './hooks/useDynamicStyles'; // Custom hook for dynamic styles
 
-const history = createBrowserHistory({ basename: "/denis-daker" });
-
 function App() {
-  const isLoaded = usePreloader(); // Use the preloader hook
+  // const isLoaded = usePreloader(); // Comment out the preloader
   useDynamicStyles(); // Apply dynamic styles based on language
 
   return (
-    <Router basename="/denis-daker" history={history}> {/* Added basename */}
+    <Router>
       <div className="App">
-        {!isLoaded && <Preloader />} {/* Show preloader until page is loaded */}
-        {isLoaded && <AppRoutes />} {/* Load routes when loaded */}
+        {/* {!isLoaded && <Preloader />} */}
+        {/* Just render the routes for now */}
+        <AppRoutes />
         <ScrollToTopButton /> {/* Always show Scroll-to-Top button */}
       </div>
     </Router>
   );
 }
+
+
 
 export default App;
