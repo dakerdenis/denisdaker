@@ -29,10 +29,7 @@ import subportfolio6_1 from "../../assets/portfolio/6/1.png";
 import subportfolio6_2 from "../../assets/portfolio/6/2.png";
 import subportfolio6_3 from "../../assets/portfolio/6/3.png";
 
-import portfolio7 from "../../assets/portfolio/7.png";
-import subportfolio7_1 from "../../assets/portfolio/7/1.png";
-import subportfolio7_2 from "../../assets/portfolio/7/2.png";
-import subportfolio7_3 from "../../assets/portfolio/7/3.png";
+
 
 import quotes from "../../assets/portfolio/quotes.svg";
 import link from "../../assets/swiper/link.svg";
@@ -110,18 +107,7 @@ const portfolioData = [
     borderClass: "swiper__border__right6",
     buttonClass: "swiper__button_image6"
   },
-  {
-    image: portfolio7,
-    title: "Azerbaijan Travel International",
-    quotes: quotes,
-    descriptionKey: "portfolio.psychologist_nigar",
-    additionalImages: [subportfolio7_1, subportfolio7_2, subportfolio7_3],
-    link: "https://ati.az/",
-    linkText: "ati.az",
-    buttonImage: link,
-    borderClass: "swiper__border__right7",
-    buttonClass: "swiper__button_image7"
-  }
+
 ];
 
 export default portfolioData;
