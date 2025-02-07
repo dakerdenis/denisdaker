@@ -105,10 +105,12 @@
   
   .header__lang-dropdown {
     position: absolute;
-    top: 100%; /* Places it below the language icon */
+    top: 51px;
     left: -10px;
     background: linear-gradient(180deg, #07E6D9 10%, #1C423F 80.58%);
-
+    width: 60px;
+    display: flex;
+    flex-direction: column;
     box-shadow: #ffffff4f 0px -2px 10px;
     padding: 10px;
     border-radius: 5px;
@@ -123,7 +125,7 @@
   }
   
   .header__lang-dropdown button {
-    padding: 8px 16px;
+    padding: 8px 5px;
     cursor: pointer;
     color: white;background-color: rgba(0, 0, 0, 0.0);
     

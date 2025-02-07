@@ -90,8 +90,8 @@ const ContactForm = () => {
             </label>
 
             <Link to="/terms" target="_blank" rel="noopener noreferrer">
-  {t("contact.form.terms_link")}
-</Link>
+              {t("contact.form.terms_link")}
+            </Link>
 
           </div>
         </div>

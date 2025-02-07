@@ -144,6 +144,7 @@ const Header = () => {
             )}
           </div>
         </div>
+        
 
         {/* Burger Menu for Mobile */}
         <div className="header__navigation__lang-mobile">

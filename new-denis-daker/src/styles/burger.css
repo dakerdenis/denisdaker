@@ -203,12 +203,7 @@ left: 0;
     height: 50px;
 
   }
-  .header__lang-dropdown{
-    top: 0;
-    background: none;
-    box-shadow: none;
-    left: calc(50% - 110px);
-  }
+
   .header__lang-dropdown button:nth-child(2){
     border: none;
   }
